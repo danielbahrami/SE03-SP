@@ -1,23 +1,22 @@
 <template>
   <div class="login">
-    <h2>Username</h2>
-    <input class="login" placeholder="Username">
-    <h2>Password</h2>
-    <input class="login" placeholder="Password">
+    <h1 class="h1">Login</h1>
+    <h2 class="h2">Email</h2>
+    <input class="input" placeholder="Email">
+    <h2 class="h2">Password</h2>
+    <input class="input" placeholder="Password">
     <br><br>
-    <a class="password-reset" href="/password-reset">Forgot your password?</a>
+    <button class="button" ><slot>Login</slot></button>
     <br><br>
-      <button class="button" ><slot>Login</slot></button>
+    <a class="link" href="/password-reset">Forgot your password?</a>
     <br><br>
-    <h3>Don't have an account?</h3>
-    <button class="button" v-on:click="goToNewUserPage">Sign up for Spotify</button>
+    <a class="link" href="/signup">Sign up</a>
     <br><br>
      </div>
 </template>
 
 <script>
 export default {
-  name: "loginFields",
   props: {
     username: String,
     password: String
@@ -33,7 +32,24 @@ export default {
 <style>
 
 .login {
-  font-family: "Comic Sans MS";
+  text-align: center;
+}
+
+
+.h1 {
+  color: rgb(212,205,138);
+}
+
+.h2 {
+  color: white;
+}
+
+.input {
+  background-color: white;
+}
+
+.login {
+  background-color: rgb(30,30,30);
 }
 
 .button {
@@ -42,15 +58,14 @@ export default {
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
-  font-family: "Comic Sans MS";
-  background-color: rgb(102,212,110);
+  font-family: "Arial";
+  background-color: rgb(212,205,138);
   border-radius: 12px;
 }
 
 
-
-.password-reset {
-  color: gray;
+.link {
+  color: white;
 }
 
 </style>

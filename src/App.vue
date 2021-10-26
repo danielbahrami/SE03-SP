@@ -1,17 +1,17 @@
 <template>
   <div class="app">
-    <loginPage></loginPage>
+    <login></login>
   </div>
 </template>
 
 <script>
 
-import loginPage from "@/views/Login";
+import Login from "@/components/Login";
 
 export default {
   name: 'App',
   components: {
-    loginPage
+    Login
   }
 }
 
