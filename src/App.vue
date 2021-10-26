@@ -5,12 +5,11 @@
 
 
 </template>
-
+// template displayer alt på localhost porten. I.e det vi ser i browseren
 <script>
+import HelloWorld from './components/HelloWorld.vue' //Henter komponenten HelloWorld.vue og tillader brugen af elementet i template
 
-import Homepage from './components/Homepage.vue'
-
-
+// Lader andre elementer til App.vue (eller vilkårlig komponent)
 export default {
   name: 'App',
   components: {
@@ -19,6 +18,7 @@ export default {
 }
 </script>
 
+// bar styling
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
