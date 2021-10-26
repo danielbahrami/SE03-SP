@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="dyt">
   <h1 class="header1">Recommended Playlists</h1>
 
   <img class="image1" src="https://pbs.twimg.com/media/Cs47zArVYAAg5dS.jpg:large" />
@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style scoped>
+
 
 
 .header1{
