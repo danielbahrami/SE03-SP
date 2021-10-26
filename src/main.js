@@ -5,7 +5,7 @@ Vue.use(VueRouter);
 
 //import all pages u want to go to
 import App from "@/App";
-import newUser from "@/view/newUser";
+import newUser from "@/views/signUp";
 
 //set up the page paths
 const router = new VueRouter({
@@ -13,7 +13,7 @@ const router = new VueRouter({
   base: __dirname,
   routes: [
     {path: "/", component: App },
-    {path: "/newUser", component: newUser }
+    {path: "/signup", component: newUser }
   ]
 });
 

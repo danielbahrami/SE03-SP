@@ -1,13 +1,16 @@
 <template>
   <div class="login">
     <h2>Username</h2>
-    <input class="login" v-model="username" placeholder="Username">
+    <input class="login" placeholder="Username">
     <h2>Password</h2>
-    <input class="login" v-model="password" placeholder="Password">
+    <input class="login" placeholder="Password">
     <br><br>
     <a class="password-reset" href="/password-reset">Forgot your password?</a>
     <br><br>
-      <button v-on:click="goToNewUserPage" class="button loginbutton" ><slot>Login</slot></button>
+      <button class="button" ><slot>Login</slot></button>
+    <br><br>
+    <h3>Don't have an account?</h3>
+    <button class="button" v-on:click="goToNewUserPage">Sign up for Spotify</button>
     <br><br>
      </div>
 </template>
@@ -21,7 +24,7 @@ export default {
   },
   methods: {
     goToNewUserPage: function (){
-      this.$router.push({path: "/newUser"})
+      this.$router.push({path: "/signup"})
     }
   }
 }
@@ -43,6 +46,8 @@ export default {
   background-color: rgb(102,212,110);
   border-radius: 12px;
 }
+
+
 
 .password-reset {
   color: gray;
