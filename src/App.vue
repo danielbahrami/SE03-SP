@@ -7,7 +7,7 @@
 </template>
 // template displayer alt på localhost porten. I.e det vi ser i browseren
 <script>
-import Homepage from './components/Homepage' //Henter komponenten HelloWorld.vue og tillader brugen af elementet i template
+import Homepage from './components/Home-page' //Henter komponenten HelloWorld.vue og tillader brugen af elementet i template
 
 // Lader andre elementer til App.vue (eller vilkårlig komponent)
 export default {
@@ -27,6 +27,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+}
+body{
+  background: #080808;
 }
 </style>
 
