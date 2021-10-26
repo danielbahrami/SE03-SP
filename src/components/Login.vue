@@ -1,39 +1,46 @@
 <template>
   <div class="login">
-    <p>{{"Username"}}</p>
-    <input v-model="usernameText" placeholder="username">
-    <p>{{"Password"}}</p>
-    <input v-model="passwordText" placeholder="password">
+    <h2>Username</h2>
+    <input class="login" v-model="username" placeholder="Username">
+    <h2>Password</h2>
+    <input class="login" v-model="password" placeholder="Password">
     <br><br>
-      <button class="login"><slot>Login</slot></button>
+    <a class="password-reset" href="/password-reset">Forgot your password?</a>
     <br><br>
-    <button class="forgot_password"><slot>Forgot Password</slot></button>
+      <button class="button loginbutton" ><slot>Login</slot></button>
+    <br><br>
      </div>
 </template>
 
 <script>
 export default {
-  name: "Login",
+  name: "loginFields",
   props: {
-    usernameText: String,
-    passwordText: String
-  },
-
-  //uses the router to go to a new page
-  methods: {
-    goToNewUserPage() {
-      this.$router.push({path: "/newUser"})
-    }
+    username: String,
+    password: String
   }
 }
 </script>
 
-<style scoped>
-.forgotButton {
-  margin-left: -70px;
+<style>
+
+.login {
+  font-family: "Comic Sans MS";
 }
-.loginButton {
-  margin-left: 120px;
-  margin-top: -21px;
+
+.button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Comic Sans MS";
+  background-color: rgb(102,212,110);
+  border-radius: 12px;
 }
+
+.password-reset {
+  color: gray;
+}
+
 </style>
