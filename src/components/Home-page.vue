@@ -1,6 +1,6 @@
 <template>
-<div>
-  <h1 class="header1">Recommended Songs</h1>
+<div class="dyt">
+  <h1 class="header1">Recommended Playlists</h1>
 
   <a class="prev1">previous</a>
   <a class="next1">next</a>
@@ -14,7 +14,7 @@
   <img class="image5" src="https://upload.wikimedia.org/wikipedia/en/a/a0/Ariana_Grande_-_Positions.png"/>
   <img class="image6" src="https://video-images.vice.com/_uncategorized/1527898271751-0bffd93463afe53e7f651f72bedfc78b1000x1000x1.jpeg" />
 
-  <h1 class="header2"> Workout Songs</h1>
+  <h1 class="header2"> Workout Playlists</h1>
 
 </div>
 
@@ -64,6 +64,7 @@ export default {
   bottom: 27.28%;
 
   color: #D6CD81;}
+
 
 .header1{
   position: absolute;
