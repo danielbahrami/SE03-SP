@@ -1,15 +1,13 @@
 <template>
-  <div class="Login">
+  <div class="login">
     <p>{{"Username"}}</p>
     <input v-model="usernameText" placeholder="username">
     <p>{{"Password"}}</p>
     <input v-model="passwordText" placeholder="password">
-    <p>{{""}}</p>
-    <button class="Button"><slot>Forgot Password</slot></button>
-    <div class="loginButton">
-      <button class="Button"><slot>Login</slot></button>
-    </div>
-
+    <br><br>
+      <button class="login"><slot>Login</slot></button>
+    <br><br>
+    <button class="forgot_password"><slot>Forgot Password</slot></button>
      </div>
 </template>
 
