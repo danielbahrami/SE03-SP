@@ -16,7 +16,6 @@ export default {
   components: {
     Login,
     HelloWorld
-
   }
 }
 </script>
@@ -36,5 +35,4 @@ export default {
   height: 100px;
   width: 100px;
 }
-
 </style>

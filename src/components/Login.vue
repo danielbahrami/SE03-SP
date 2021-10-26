@@ -1,18 +1,13 @@
 <template>
-  <div class="Login">
+  <div class="login">
     <p>{{"Username"}}</p>
     <input v-model="usernameText" placeholder="username">
     <p>{{"Password"}}</p>
     <input v-model="passwordText" placeholder="password">
-    <p>{{""}}</p>
-      <div class="forgotButton">
-        <button class="Button"><slot>Forgot Password</slot></button>
-      </div>
-
-      <div class="loginButton">
-        <button @click="goToNewUserPage" class="Button"><slot>Login</slot></button>
-      </div>
-
+    <br><br>
+      <button class="login"><slot>Login</slot></button>
+    <br><br>
+    <button class="forgot_password"><slot>Forgot Password</slot></button>
      </div>
 </template>
 
