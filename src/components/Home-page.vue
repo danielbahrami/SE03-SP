@@ -2,6 +2,11 @@
 <div>
   <h1 class="header1">Recommended Songs</h1>
 
+  <a class="prev1">previous</a>
+  <a class="next1">next</a>
+  <a class="prev2">previous</a>
+  <a class="next2">next</a>
+
   <img class="image1" src="https://pbs.twimg.com/media/Cs47zArVYAAg5dS.jpg:large" />
   <img class="image2" src="https://1265745076.rsc.cdn77.org/1024/jpg/47466-travis-scott-astroworld-LP-5ba0adf4935c7.jpg"/>
   <img class="image3" src="https://linkstorage.linkfire.com/medialinks/images/e28991cd-3750-4e87-9d6b-b360aecb6c67/artwork-440x440.jpg" />
@@ -16,9 +21,8 @@
 
 </template>
 
-
-
 <script>
+
 export default {
   name: 'Homepage',
   props: {
@@ -29,6 +33,37 @@ export default {
 
 <style scoped>
 
+.prev1{
+  position: absolute;
+  left: 23.47%;
+  right: 75.83%;
+  top: 29.2%;
+  bottom: 69.27%;
+  color: #D6CD81;
+  cursor: pointer;
+}
+.next1{
+  position: absolute;
+  left: 97.5%;
+  right: 0;
+  top: 29.2%;
+  bottom: 69.27%;
+  color: #D6CD81;}
+.prev2{
+  position: absolute;
+  left: 23.82%;
+  right: 75.48%;
+  top: 71.19%;
+  bottom: 27.28%;
+  color: #D6CD81;}
+.next2{
+  position: absolute;
+  left: 97.15%;
+  right: 2.15%;
+  top: 71.19%;
+  bottom: 27.28%;
+
+  color: #D6CD81;}
 
 .header1{
   position: absolute;

@@ -1,5 +1,5 @@
 <template>
-  <Homepage/>
+  <Home-page/>
 </template>
 // template displayer alt på localhost porten. I.e det vi ser i browseren
 
@@ -10,6 +10,7 @@ import Homepage from './components/Home-page.vue' //Henter komponenten HelloWorl
 
 // Lader andre elementer til App.vue (eller vilkårlig komponent)
 //ændre components til indholde ønsket komponents
+
 export default {
   name: 'App',
   components: {
