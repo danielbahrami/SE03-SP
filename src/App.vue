@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="logo" alt="logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Spotify"/>
+    <br>
     <Login></Login>
   </div>
 </template>
@@ -28,5 +29,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: gray;
 }
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
 </style>
