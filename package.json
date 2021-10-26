@@ -12,6 +12,7 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@syncfusion/ej2-inputs": "^19.3.44",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
