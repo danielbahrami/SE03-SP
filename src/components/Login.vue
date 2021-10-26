@@ -5,10 +5,13 @@
     <p>{{"Password"}}</p>
     <input v-model="passwordText" placeholder="password">
     <p>{{""}}</p>
-    <button class="Button"><slot>Forgot Password</slot></button>
-    <div class="loginButton">
-      <button class="Button"><slot>Login</slot></button>
-    </div>
+      <div class="forgotButton">
+        <button class="Button"><slot>Forgot Password</slot></button>
+      </div>
+
+      <div class="loginButton">
+        <button @click="goToNewUserPage" class="Button"><slot>Login</slot></button>
+      </div>
 
      </div>
 </template>
@@ -19,12 +22,23 @@ export default {
   props: {
     usernameText: String,
     passwordText: String
+  },
+
+  //uses the router to go to a new page
+  methods: {
+    goToNewUserPage() {
+      this.$router.push({path: "/newUser"})
+    }
   }
 }
 </script>
 
 <style scoped>
+.forgotButton {
+  margin-left: -70px;
+}
 .loginButton {
-  margin-left: 30%;
+  margin-left: 120px;
+  margin-top: -21px;
 }
 </style>
