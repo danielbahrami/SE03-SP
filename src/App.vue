@@ -1,19 +1,19 @@
 <template>
-
-    <Homepage />
-
-
-
+  <Homepage/>
 </template>
 // template displayer alt på localhost porten. I.e det vi ser i browseren
+
 <script>
-import Homepage from './components/Home-page' //Henter komponenten HelloWorld.vue og tillader brugen af elementet i template
+import Homepage from './components/Home-page.vue' //Henter komponenten HelloWorld.vue og tillader brugen af elementet i template
+// Import <name of the import> from <path to the import>
+//import bliver til tags som skal bruges i template
 
 // Lader andre elementer til App.vue (eller vilkårlig komponent)
+//ændre components til indholde ønsket komponents
 export default {
   name: 'App',
   components: {
-   Homepage
+    Homepage
   }
 }
 </script>
@@ -30,7 +30,7 @@ export default {
 
 }
 body{
-  background: #080808;
+  background: #1E1E1E;
 }
 </style>
 
