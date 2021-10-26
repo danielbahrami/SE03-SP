@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h1 class="header1">Recommended Songs</h1>
+  <h1 class="header1">Recommended Playlists</h1>
 
   <img class="image1" src="https://pbs.twimg.com/media/Cs47zArVYAAg5dS.jpg:large" />
   <img class="image2" src="https://1265745076.rsc.cdn77.org/1024/jpg/47466-travis-scott-astroworld-LP-5ba0adf4935c7.jpg"/>
@@ -9,7 +9,7 @@
   <img class="image5" src="https://upload.wikimedia.org/wikipedia/en/a/a0/Ariana_Grande_-_Positions.png"/>
   <img class="image6" src="https://video-images.vice.com/_uncategorized/1527898271751-0bffd93463afe53e7f651f72bedfc78b1000x1000x1.jpeg" />
 
-  <h1 class="header2"> Workout Songs</h1>
+  <h1 class="header2"> Workout Playlists</h1>
 
 </div>
 
