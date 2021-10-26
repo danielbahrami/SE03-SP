@@ -7,7 +7,7 @@
     <br><br>
     <a class="password-reset" href="/password-reset">Forgot your password?</a>
     <br><br>
-      <button class="button loginbutton" ><slot>Login</slot></button>
+      <button v-on:click="goToNewUserPage" class="button loginbutton" ><slot>Login</slot></button>
     <br><br>
      </div>
 </template>
@@ -18,6 +18,11 @@ export default {
   props: {
     username: String,
     password: String
+  },
+  methods: {
+    goToNewUserPage: function (){
+      this.$router.push({path: "/newUser"})
+    }
   }
 }
 </script>
