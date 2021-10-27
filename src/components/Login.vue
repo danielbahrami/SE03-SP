@@ -33,8 +33,10 @@ export default {
 
 .login {
   text-align: center;
+  width: 350px;
+  border: 5px solid rgb(30,30,30);
+  background-color: rgb(30,30,30);
 }
-
 
 .h1 {
   color: rgb(212,205,138);
@@ -48,10 +50,6 @@ export default {
   background-color: white;
 }
 
-.login {
-  background-color: rgb(30,30,30);
-}
-
 .button {
   border: none;
   color: black;
@@ -62,7 +60,6 @@ export default {
   background-color: rgb(212,205,138);
   border-radius: 12px;
 }
-
 
 .link {
   color: white;
