@@ -4,6 +4,7 @@
   <div>
   <Canvas></Canvas>
   <Homepage></Homepage>
+    <Specificplaylist></Specificplaylist>
   </div>
 
 </template>
@@ -11,7 +12,8 @@
 
 <script>
 import Homepage from './components/Home-page.vue'
-import Canvas from "./components/Canvas"; //Retrieves the implied component and allow the use of said component in template
+import Canvas from "./components/Canvas";
+import Specificplaylist from "@/components/Specific-playlist"; //Retrieves the implied component and allow the use of said component in template
 // Import <name of the import> from <path to the import>
 // Import becomes tags available for use in template
 
@@ -24,6 +26,7 @@ import Canvas from "./components/Canvas"; //Retrieves the implied component and 
 export default {
   name: 'App',
   components: {
+    Specificplaylist,
     Canvas,
     Homepage
   }
@@ -33,6 +36,7 @@ export default {
 // bar styling
 <style>
 #app {
+
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
