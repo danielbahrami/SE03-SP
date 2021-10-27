@@ -8,7 +8,7 @@
     <br><br>
     <button class="button" ><slot>Login</slot></button>
     <br><br>
-    <a class="link" href="/password-reset">Forgot your password?</a>
+    <a class="link" href="/password-reset">Forgot password?</a>
     <br><br>
     <a class="link" href="/signup">Sign up</a>
     <br><br>
