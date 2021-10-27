@@ -2,8 +2,11 @@
 
 
   <div>
+
   <Canvas></Canvas>
+
   <Homepage></Homepage>
+    <side-bar></side-bar>
   </div>
 
 </template>
@@ -11,7 +14,8 @@
 
 <script>
 import Homepage from './components/Home-page.vue'
-import Canvas from "./components/Canvas"; //Retrieves the implied component and allow the use of said component in template
+import Canvas from "./components/Canvas";
+import SideBar from "./components/Side-bar"; //Retrieves the implied component and allow the use of said component in template
 // Import <name of the import> from <path to the import>
 // Import becomes tags available for use in template
 
@@ -24,6 +28,7 @@ import Canvas from "./components/Canvas"; //Retrieves the implied component and 
 export default {
   name: 'App',
   components: {
+    SideBar,
     Canvas,
     Homepage
   }

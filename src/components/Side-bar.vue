@@ -8,9 +8,9 @@ export default {
     return {
       menu: [
         {
-          header: true,
+          header: false,
           title: 'Sidebar',
-          hiddenOnCollapse: true
+          hiddenOnCollapse: false
         },
         {
           href: '/',

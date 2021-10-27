@@ -6,13 +6,7 @@
       <span class="le-title">Alrakis</span>
       <input type="text" placeholder="search...">
     </div>
-    <div class="sidenav">
-      <a style="color: white" href="#">Home</a>
-      <a style="color: white" href="#">Playlists</a>
-      <a style="color: white" href="#">Genre</a>
-      <a style="color: white" href="#">Recently played</a>
-      <a style="color: white" href="#">Search</a>
-    </div>
+    
   </div>
 </template>
 <script>
