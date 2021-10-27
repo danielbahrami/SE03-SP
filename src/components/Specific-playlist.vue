@@ -2,26 +2,26 @@
 
   <div>
     <h1 class="header1">SpecificPlaylist:</h1>
-    <hr class="line1">
-    <hr class="line2">
-    <hr class="line3">
-    <hr class="line4">
-    <hr class="line4">
-    <hr class="line5">
-    <hr class="line6">
-    <hr class="line7">
-    <h2 class="name">Name</h2>
-    <h2 class="artist">Artist</h2>
-    <h2 class="album">Album</h2>
+    <h2 class="name">Name</h2><h2 class="artist">Artist</h2><h2 class="album">Album</h2>
+    <h3 class="s1">Song 1</h3><h3 class="s2">Song 2</h3><h3 class="s3">Song 3</h3>
+    <h3 class="a1">Artist 1</h3><h3 class="a2">Artist 2</h3><h3 class="a3">Artist 3</h3>
+    <h3 class="al1">Album 1</h3><h3 class="al2">Album 2</h3><h3 class="al3">Album 3</h3>
+    <i  class="i1 fas fa-star"></i><i  class="i2 fas fa-star"></i><i  class="i3 fas fa-star"></i>
+    <i class="i4 fas fa-plus"></i><i class="i5 fas fa-plus"></i><i class="i6 fas fa-plus"></i>
+    <i class="i7 fas fa-ellipsis-v"></i><i class="i8 fas fa-ellipsis-v"></i><i class="i9 fas fa-ellipsis-v"></i>
 
   </div>
 
 
 
 
+
 </template>
 
+
 <script>
+
+
 export default {
   name: "Specificplaylist"
 }
@@ -30,6 +30,11 @@ export default {
 <style scoped>
 
 .header1{
+  position: absolute;
+  width: 217px;
+  height: 43px;
+  left: 329px;
+  top: 109px;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
@@ -38,58 +43,6 @@ export default {
   letter-spacing: -0.02em;
   color: #D6CD81;
 }
-.line1{position: absolute;
-  width: 1148px;
-  height: 0px;
-  left: 307px;
-  top: 165px;
-
-  border: 2px solid #323232;}
-.line2{position: absolute;
-  width: 1148px;
-  height: 0px;
-  left: 306px;
-  top: 206px;
-
-  border: 2px solid #323232;}
-.line3{position: absolute;
-  width: 1133px;
-  height: 0px;
-  left: 307px;
-  top: 256px;
-
-  border: 2px solid #201F1F;
-  transform: rotate(-0.05deg);}
-.line4{position: absolute;
-  width: 1133px;
-  height: 0px;
-  left: 306px;
-  top: 306px;
-
-  border: 2px solid #201F1F;
-  transform: rotate(-0.05deg);}
-.line5{position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 100%;
-  bottom: 0%;
-
-  border: 2px solid #201F1F;
-  transform: rotate(-0.05deg);}
-.line6{position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 100%;
-  bottom: 0%;
-  border: 2px solid #201F1F;
-  transform: rotate(-0.05deg);}
-.line7{position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 100%;
-  bottom: 0%;
-  border: 2px solid #201F1F;
-  transform: rotate(-0.05deg);}
 .artist{position: absolute;
   width: 176px;
   height: 33px;
@@ -135,8 +88,179 @@ export default {
   letter-spacing: -0.02em;
 
   color: #FFFFFF;}
+.s1{
+  position: absolute;
+  width: 147px;
+  height: 43px;
+  left: 329px;
+  top: 212px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.s2{
+  position: absolute;
+  width: 146px;
+  height: 27px;
+  left: 330px;
+  top: 265px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.s3{position: absolute;
+  width: 116px;
+  height: 31px;
+  left: 329px;
+  top: 310px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;}
+.a1{position: absolute;
+  width: 154px;
+  height: 35px;
+  left: 720px;
+  top: 218px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;}
+.a2{position: absolute;
+  width: 165px;
+  height: 37px;
+  left: 720px;
+  top: 265px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;}
+.a3{
+  position: absolute;
+  width: 116px;
+  height: 31px;
+  left: 720px;
+  top: 310px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.al1{position: absolute;
+  width: 162px;
+  height: 26px;
+  left: 1065px;
+  top: 218px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;}
+.al2{position: absolute;
+  width: 138px;
+  height: 29px;
+  left: 1065px;
+  top: 265px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;}
+.al3{
+  position: absolute;
+  width: 141px;
+  height: 27px;
+  left: 1065px;
+  top: 312px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;}
+.i1{
+  color: #2C3539;
+  position: absolute;
+  left: 1333px;
+  top: 245px;
+  border-radius: 0px;
+}
+.i2{
+  color: #2C3539;
+  position: absolute;
+  left: 1333px;
+  top: 290px;
+  border-radius: 0px;
+}
+.i3{
+  color: #2C3539;
+  position: absolute;
+  left: 1333px;
+  top: 335px;
+  border-radius: 0px;
+}
+.i4{
+  color: #FFFFFF;
+  position: absolute;
+  left: 1376px;
+  top: 245px;
+}
+.i5{
+  color: #FFFFFF;
 
-
+  position: absolute;
+  left: 1376px;
+  top: 290px;
+}
+.i6{
+  color: #FFFFFF;
+  position: absolute;
+  left: 1376px;
+  top: 335px;
+}
+.i7{
+  color: #FFFFFF;
+  position: absolute;
+  left: 1418px;
+  top: 245px;
+}
+.i8{
+  color: #FFFFFF;
+  position: absolute;
+  left: 1418px;
+  top: 290px;
+}
+.i9{
+  color: #FFFFFF;
+  position: absolute;
+  left: 1418px;
+  top: 335px;
+}
 
 
 
