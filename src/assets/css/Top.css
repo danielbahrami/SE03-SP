@@ -1,0 +1,203 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+:root {
+    --clr-primary: #ee6352;
+    --clr-body: #333;
+    --clr-bg: #ddd;
+}
+
+.parent {
+    position: relative;
+    background: rgb(63, 63, 63);
+    height: 60px;
+    display: grid;
+    font-family: basic-sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    padding: 5px;
+} 
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 5; }
+    .div3 { grid-area: 1 / 5 / 2 / 6; }
+
+.content {
+    padding: 5px;
+    width: 50vw;
+}
+
+/*
+Apply closing css on search bar
+for when screen is smaller than 601px
+*/
+@media only screen and (max-width: 900px) {
+    .search {
+    margin-left: 90px;
+    --size: 20px;
+    border: 2px solid #333;
+    display: flex;
+    border-radius: 100vh;
+    overflow: hidden;
+    font-size: 1.25em;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+        /* margin-left: auto; */
+    transition: width 450ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    padding: 3px;
+    }
+
+    .search__input {
+    border: 0;
+    padding: .25em 1em;
+    flex-grow: 1;
+    outline: 0;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    background: transparent;
+    opacity: 0;
+    cursor: pointer;
+    }
+
+    .search__submit {
+    font-size: 0.5rem;
+    margin-left: auto;
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 200ms ease-out;
+        -webkit-transition: background 200ms ease-out;
+        -moz-transition: background 200ms ease-out;
+        -o-transition: background 200ms ease-out;
+    width: calc(var(--size) - 10px);
+    height: calc(var(--size) - 10px);
+    color: #333;
+    }
+
+    .search:focus-within {
+        width: 100%;
+    }
+    .search__input {
+        opacity: 1;
+        z-index: initial;
+        cursor: initial;
+        width: calc(80% - var(--size));
+    }
+
+    .search__submit {
+        background: white;
+        color: grey;
+        box-shadow: 0 0 10px rgba(0,0,0,.15);
+    }
+    .search__submit:hover,
+    .search__submit:focus {
+        outline: 0;
+        /* transform: rotate(1turn); */
+        box-shadow: 0 0 10px rgba(0,0,0,.65);
+    }
+}
+.search {
+    --size: 40px;
+    border: 2px solid #333;
+    display: flex;
+    border-radius: 100vh;
+    height: var(--size);
+    padding: 2px;
+    font-size: 1.25em;
+    background: white;
+}
+
+.search__input {
+    flex-grow: 1;
+    padding: .25em 1em;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+    .search__input:focus {
+        outline: 0;
+    }
+
+.search__submit {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    border-radius: 50%;
+    background: white;
+    width: calc(var(--size) - 10px);
+    height: calc(var(--size) - 10px);
+}
+
+.search:focus-within {
+    width: 100%;
+}
+.search__input {
+    opacity: 1;
+    z-index: initial;
+    cursor: initial;
+    width: calc(100% - var(--size));
+}
+
+.search__submit {
+    background: white;
+    color: grey;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
+.search__submit:hover,
+.search__submit:focus {
+    outline: 0;
+    /* transform: rotate(1turn); */
+    box-shadow: 0 0 10px rgba(0,0,0,.65);
+}
+
+/* User button */
+.user__actions,
+.VIP__STAR {
+    display: inline-block;
+    right: 0;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    border-radius: 50%;
+}
+
+/*Logo and text*/
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    .logo .imageholder p {
+        display: none;
+        color: transparent;
+    }
+}
+.logo .imageholder{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.logo .imageholder img {
+    position: absolute;
+    left: 30px;
+    box-sizing: unset;
+}
+.logo p {
+    display: flex;
+    padding-left: 100px;
+    font-size: 30px;
+    color: white;
+    display: inline;
+}
+
