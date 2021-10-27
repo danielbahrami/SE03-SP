@@ -1,12 +1,21 @@
 <template>
-  <div>
+  <div class="canvas">
     <div class="topnav">
-      <img style="vertical-align: center" width="80" height="80"
-           src="https://cdn.discordapp.com/attachments/779250503741079563/902135385298190357/tetete-removebg-preview.png">
-      <span class="le-title">Alrakis</span>
+      <img class="le-icon" width="80" height="80"
+           src="https://cdn.discordapp.com/attachments/897789111509844029/902849681950908446/Star.png">
+      <span class="le-title" style="color: #FFFFFF">Alrakis</span>
       <input type="text" placeholder="search...">
+      <div class="topIcon">
+        <i class="fas fa-user" style="font-size: 40px"></i>
+        <i class="fab fa-jedi-order" style="font-size: 40px"></i>
+      </div>
     </div>
-    
+    <div class="sidenav">
+      <a href="#" style="color: #FFFFFF">Home</a>
+      <a href="#" style="color: #FFFFFF">Playlist</a>
+      <a href="#" style="color: #FFFFFF">Genre</a>
+      <a href="#" style="color: #FFFFFF">Recently played</a>
+    </div>
   </div>
 </template>
 <script>
@@ -19,22 +28,35 @@ export default {
 .topnav {
   overflow: hidden;
   background: #3F3F3F;
+  display: flex;
+  align-items: center;
+}
+
+.le-icon{
+  margin-left: 10px;
 }
 
 .le-title {
   font-family: Arial;
   font-size: 80px;
+  margin-left: 10px;
 }
 
 .topnav input[type=text] {
   float: right;
   padding: 7px;
   border: none;
-  margin-top: 8px;
-  margin-right: 16px;
   font-size: 17px;
-  display: flex;
-  align-items: center;
+  border-radius: 7px;
+  margin-left: 380px;
+}
+
+.fa-jedi-order{
+  margin-left: 25px;
+}
+
+.fa-user{
+  margin-left: 780px;
 }
 
 .sidenav {
@@ -61,6 +83,10 @@ export default {
   text-align: left;
   cursor: pointer;
   outline: none;
+}
+
+.canvas{
+  background-color: #1E1E1E;
 }
 
 </style>
