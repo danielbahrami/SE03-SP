@@ -2,7 +2,7 @@
   <div class="dyt">
     <h1 class="header1">Recommended Playlists</h1>
 
-<<<<<<< HEAD
+
   <a class="prev1">previous</a>
   <a class="next1">next</a>
   <a class="prev2">previous</a>
@@ -14,18 +14,6 @@
   <img class="image4" src="https://graphicriver.img.customer.envatousercontent.com/files/322229646/archetypology-albumcover-template-preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=590&s=f9568e3ec730fd8a51926762468c375d" />
   <img class="image5" src="https://upload.wikimedia.org/wikipedia/en/a/a0/Ariana_Grande_-_Positions.png"/>
   <img class="image6" src="https://video-images.vice.com/_uncategorized/1527898271751-0bffd93463afe53e7f651f72bedfc78b1000x1000x1.jpeg" />
-=======
-    <img class="image1" src="https://pbs.twimg.com/media/Cs47zArVYAAg5dS.jpg:large"/>
-    <img class="image2"
-         src="https://1265745076.rsc.cdn77.org/1024/jpg/47466-travis-scott-astroworld-LP-5ba0adf4935c7.jpg"/>
-    <img class="image3"
-         src="https://linkstorage.linkfire.com/medialinks/images/e28991cd-3750-4e87-9d6b-b360aecb6c67/artwork-440x440.jpg"/>
-    <img class="image4"
-         src="https://graphicriver.img.customer.envatousercontent.com/files/322229646/archetypology-albumcover-template-preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=590&s=f9568e3ec730fd8a51926762468c375d"/>
-    <img class="image5" src="https://upload.wikimedia.org/wikipedia/en/a/a0/Ariana_Grande_-_Positions.png"/>
-    <img class="image6"
-         src="https://video-images.vice.com/_uncategorized/1527898271751-0bffd93463afe53e7f651f72bedfc78b1000x1000x1.jpeg"/>
->>>>>>> jaasmu
 
     <h1 class="header2"> Workout Playlists</h1>
 
@@ -34,10 +22,7 @@
 
 </template>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> jaasmu
 <script>
 
 export default {
@@ -49,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-<<<<<<< HEAD
+
 
 .prev1{
   position: absolute;
@@ -84,10 +69,9 @@ export default {
   color: #D6CD81;}
 
 
-.header1{
-=======
+
 .header1 {
->>>>>>> jaasmu
+
   position: absolute;
   width: 527px;
   height: 44px;
