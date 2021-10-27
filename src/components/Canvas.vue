@@ -7,26 +7,11 @@
       <input type="text" placeholder="search...">
     </div>
     <div class="sidenav">
-      <button class="home-dropdown">Home</button>
-      <button class="playlist-dropdown">Playlists</button>
-      <button class="hitlist-dropdown">Hitlists</button>
-      <button class="genre-dropdown">Genres</button>
-      <button class="recent-dropdown">Recently played</button>
-      <div class="home-container">
-        <a>link #1</a>
-      </div>
-      <div class="playlist-container">
-        <a>link #1</a>
-      </div>
-      <div class="hitlist-container">
-        <a>link #1</a>
-      </div>
-      <div class="genre-container">
-        <a>link #1</a>
-      </div>
-      <div class="recent-container">
-        <a>link #1</a>
-      </div>
+      <a style="color: white" href="#">Home</a>
+      <a style="color: white" href="#">Playlists</a>
+      <a style="color: white" href="#">Genre</a>
+      <a style="color: white" href="#">Recently played</a>
+      <a style="color: white" href="#">Search</a>
     </div>
   </div>
 </template>
@@ -59,7 +44,7 @@ export default {
 }
 
 .sidenav {
-  
+  height: 840px;
   width: 200px;
   top: 0;
   left: 0;
@@ -68,6 +53,20 @@ export default {
   position: relative;
   padding-top: 5px;
   horiz-align: left;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #1E1E1E;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
 </style>
