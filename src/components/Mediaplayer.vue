@@ -2,18 +2,18 @@
     <div class="parent-media">
         <div class="div1-media">
             <button class="music__back" aria-label="Song back">
-                <i class="fas fa-step-backward fa-2x"></i>
+                <BackwardIcon />
             </button>
         </div>
         <div class="div2-media">
             <button v-if="isHidden" v-on:click="isHidden = !isHidden" class="music__play" aria-label="Song Play">
-                <i class="fas fa-play fa-2x"></i>
+                <PlayIcon />
             </button>
             <clip-loader v-if="!isHidden" :loading="loading" :color="color1" :size="size"></clip-loader>
         </div>
         <div class="div3-media">
             <button class="music__forward" aria-label="Song forward">
-                <i class="fas fa-step-forward fa-2x"></i>
+                <ForwardIcon />
             </button>
         </div>
         <div class="div4-media">
@@ -22,28 +22,35 @@
         <!-- TODO: change to actual repeat button -->
         <div class="div5-media">
             <button class="music__repeat" aria-label="Song repeat">
-                <i class="fas fa-redo fa-2x"></i>
+                <RepeatIcon />
             </button>
         </div>
         <div class="div6-media">
             <button class="music__random" aria-label="Song shuffle">
-                <i class="fas fa-random fa-2x"></i>
+                <ShuffleIcon />
             </button>
         </div>
         <div class="div7-media">
             <button class="music__plus" aria-label="Add Song?">
-                <i class="fas fa-plus fa-2x"></i>
+                <AddIcon />
             </button>
         </div>
         <div class="div8-media">
             <button class="music__favorite" aria-label="Mark as favorite">
-                <i class="fas fa-star fa-2x"></i>
+                <StarIcon />
             </button>
         </div>
     </div>
 </template>
 <script>
     import ClipLoader from 'vue-spinner/src/ClipLoader.vue'
+    import RepeatIcon from 'vue-material-design-icons/Repeat.vue' 
+    import BackwardIcon from 'vue-material-design-icons/SkipBackward.vue'
+    import PlayIcon from 'vue-material-design-icons/Play.vue'
+    import ForwardIcon from 'vue-material-design-icons/SkipForward.vue'
+    import ShuffleIcon from 'vue-material-design-icons/Shuffle.vue'  
+    import AddIcon from 'vue-material-design-icons/Plus.vue'
+    import StarIcon from 'vue-material-design-icons/Star.vue'
     export default {
         name: 'Mediaplayer',
         data () {
@@ -58,6 +65,13 @@
         },
         components: {
             ClipLoader,
+            RepeatIcon,
+            BackwardIcon,
+            PlayIcon,
+            ForwardIcon,
+            ShuffleIcon,
+            AddIcon,
+            StarIcon
         }
     }
 </script>
