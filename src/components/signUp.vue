@@ -1,14 +1,14 @@
 <template>
   <div id="signUp">
     <h1 class="h1">Registration</h1>
-      <div class="registrationAreas">
-        <h3 class="h3">Username</h3>
-        <input placeholder="Username">
-        <h3 class="h3">Password</h3>
-        <input placeholder="password">
-        <h3 class="h3">Email</h3>
-        <input placeholder="Email">
-      </div>
+    <div class="registrationAreas">
+      <h3 class="h3">Username</h3>
+      <input placeholder="Username">
+      <h3 class="h3">Password</h3>
+      <input placeholder="password">
+      <h3 class="h3">Email</h3>
+      <input placeholder="Email">
+    </div>
     <div class="SignUp">
       <button class="button"><slot>Sign Up</slot></button>
     </div>
@@ -20,7 +20,7 @@
 export default {
   name: 'signUp',
   components: {
-     },
+  },
   props: {
     emailText: String,
     newPasswordText: String,
@@ -43,7 +43,7 @@ export default {
   background-color: rgb(30,30,30);
 }
 .SignUp{
- margin-top: 30px;
+  margin-top: 30px;
 }
 
 .userInformation {

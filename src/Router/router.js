@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "@/App";
-import signUp from "@/views/signUp";
+import signUp from "@/components/signUp";
 import LoginPage from "@/views/LoginPage";
 
 Vue.use(VueRouter);
