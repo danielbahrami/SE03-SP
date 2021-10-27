@@ -1,8 +1,11 @@
 <template>
+
+
   <div>
   <Canvas></Canvas>
   <Homepage></Homepage>
   </div>
+
 </template>
 // template displayer alt på localhost porten. I.e det vi ser i browseren
 
@@ -12,7 +15,12 @@ import Canvas from "./components/Canvas"; //Retrieves the implied component and 
 // Import <name of the import> from <path to the import>
 // Import becomes tags available for use in template
 
+
+// Lader andre elementer til App.vue (eller vilkårlig komponent)
+//ændre components til indholde ønsket komponents
+
 // Allow App.vue access to other components
+
 export default {
   name: 'App',
   components: {
