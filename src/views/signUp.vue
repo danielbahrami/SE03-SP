@@ -36,14 +36,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
   background-color: gray;
   width: 350px;
   border: 5px solid rgb(30,30,30);
   background-color: rgb(30,30,30);
 }
 .SignUp{
- 
+ margin-top: 30px;
 }
 
 .userInformation {
