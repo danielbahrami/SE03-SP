@@ -1,6 +1,9 @@
 <template>
   <div class="login">
-    <h1 class="h1">Login</h1>
+    <div id="parent">
+      <close-button class="Close_Button"></close-button>
+      <h1 class="h1">Login</h1>
+    </div>
     <h2 class="h2">Email</h2>
     <input class="input" placeholder="Email">
     <h2 class="h2">Password</h2>
@@ -16,6 +19,9 @@
 </template>
 
 <script>
+
+import closeButton from "@/components/closeButton";
+
 export default {
   props: {
     username: String,
@@ -25,6 +31,9 @@ export default {
     goToNewUserPage(){
       this.$route
     }
+  },
+  components: {
+    closeButton
   }
 }
 </script>
@@ -40,6 +49,7 @@ export default {
 
 .h1 {
   color: rgb(212,205,138);
+
 }
 
 .h2 {
@@ -63,6 +73,14 @@ export default {
 
 .link {
   color: white;
+}
+
+.Close_Button {
+  float: left;
+}
+
+#parent {
+padding-left: 10px;
 }
 
 </style>

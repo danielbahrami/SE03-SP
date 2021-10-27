@@ -1,17 +1,26 @@
 <template>
-  <div class="close_button">
-
-  </div>
+  <img class="image" :src=logo v-on:click="closeWindow" >
 </template>
 
 <script>
 
 export default {
-
+  data: () => ({
+    logo: require('@/assets/Close_Button.png')
+  }),
+  methods: {
+    closeWindow(){
+      this.$router.push("/app");
+    }
+  }
 }
-
 </script>
 
-<style>
+<style scoped>
+
+.image {
+  height: 35px;
+  width: 35px;
+}
 
 </style>

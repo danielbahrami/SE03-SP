@@ -1,6 +1,7 @@
 <template>
   <div id="LoginPage">
     <Login></Login>
+
   </div>
 </template>
 
@@ -8,6 +9,7 @@
 <script>
 
 import Login from "@/components/Login";
+
 
 export default {
   name: "LoginPage",
@@ -18,5 +20,9 @@ export default {
 </script>
 
 <style scoped>
+
+.Close_Button {
+
+}
 
 </style>
