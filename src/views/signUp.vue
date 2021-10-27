@@ -1,12 +1,12 @@
 <template>
   <div id="signUp">
-    <h2>Registration</h2>
+    <h1 class="h1">Registration</h1>
       <div class="registrationAreas">
-        <h3>Username</h3>
+        <h3 class="h3">Username</h3>
         <input placeholder="Username">
-        <h3>Password</h3>
+        <h3 class="h3">Password</h3>
         <input placeholder="password">
-        <h3>Email</h3>
+        <h3 class="h3">Email</h3>
         <input placeholder="Email">
       </div>
     <div class="SignUp">
@@ -38,6 +38,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   background-color: gray;
+  width: 350px;
+  border: 5px solid rgb(30,30,30);
+  background-color: rgb(30,30,30);
 }
 .SignUp{
   margin-top: 30px;
@@ -56,6 +59,19 @@ export default {
   font-family: "Comic Sans MS";
   background-color: rgb(102,212,110);
   border-radius: 12px;
+}
+
+.h1 {
+  color: rgb(212,205,138);
+}
+
+.h3 {
+  color: white;
+  text-align: center;
+}
+
+.Login {
+  color: white;
 }
 
 </style>
