@@ -43,7 +43,7 @@ export default {
   background-color: rgb(30,30,30);
 }
 .SignUp{
-  margin-top: 30px;
+ 
 }
 
 .userInformation {
