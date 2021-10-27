@@ -1,30 +1,28 @@
 <template>
-  <div id="newUser">
-    <div class="userInformation"><p>{{"Create a new profile for free"}}</p>
-      <p>{{"What's your email?"}}</p>
-      <input v-model="emailText" placeholder="Enter your email.">
-      <p>{{"Confirm your email"}}</p>
-      <input v-model="secondEmailText" placeholder="Enter your email again.">
-      <p>{{"Create a password"}}</p>
-      <input v-model="newPasswordText" placeholder="Create a password.">
-      <p>{{"What should we call you? "}}</p>
-      <input v-model="newUsernameText" placeholder="Enter a profile name.">
-    </div>
-
+  <div id="signUp">
+    <h2>Registration</h2>
+      <div class="registrationAreas">
+        <h3>Username</h3>
+        <input placeholder="Username">
+        <h3>Password</h3>
+        <input placeholder="password">
+        <h3>Email</h3>
+        <input placeholder="Email">
+      </div>
     <div class="SignUp">
-      <button class="Button"><slot>Sign Up</slot></button>
+      <button class="button"><slot>Sign Up</slot></button>
     </div>
+    <a class="Login" href="/Login">Login</a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'newUser',
+  name: 'signUp',
   components: {
      },
   props: {
     emailText: String,
-    secondEmailText: String,
     newPasswordText: String,
     newUsernameText: String
   }
@@ -32,7 +30,7 @@ export default {
 </script>
 
 <style>
-#newUser {
+#signUp {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -47,6 +45,17 @@ export default {
 
 .userInformation {
   margin-top: 200px;
+}
+
+.button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Comic Sans MS";
+  background-color: rgb(102,212,110);
+  border-radius: 12px;
 }
 
 </style>

@@ -10,7 +10,7 @@
     <br><br>
     <a class="link" href="/password-reset">Forgot password?</a>
     <br><br>
-    <a class="link" href="/signup">Sign up</a>
+    <router-link class="link" to="/signUp">signUp</router-link>
     <br><br>
      </div>
 </template>
@@ -22,8 +22,8 @@ export default {
     password: String
   },
   methods: {
-    goToNewUserPage: function (){
-      this.$router.push({path: "/signup"})
+    goToNewUserPage(){
+      this.$route
     }
   }
 }
