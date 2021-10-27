@@ -14,22 +14,25 @@
     height: 60px;
     display: grid;
     font-family: basic-sans, sans-serif;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.125em;
     line-height: 1.6;
     color: #333;
     margin: 0;
-    grid-template-columns: repeat(5, 1fr);
+    
+    grid-template-columns: .4fr repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 0px;
     padding: 5px;
 } 
     .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 5; }
-    .div3 { grid-area: 1 / 5 / 2 / 6; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 6; }
+    .div4 { 
+        grid-area: 1 / 6 / 2 / 7;
+    }
 
 .content {
     padding: 5px;
@@ -42,7 +45,6 @@ for when screen is smaller than 601px
 */
 @media only screen and (max-width: 900px) {
     .search {
-    margin-left: 90px;
     --size: 20px;
     border: 2px solid #333;
     display: flex;
@@ -166,10 +168,13 @@ for when screen is smaller than 601px
 }
 
 /* User button */
+.div4{
+    display: flex;
+    justify-self: end;
+    align-content: flex-end;
+}
 .user__actions,
 .VIP__STAR {
-    display: inline-block;
-    right: 0;
     cursor: pointer;
     border: 0;
     background: transparent;
@@ -178,26 +183,23 @@ for when screen is smaller than 601px
 
 /*Logo and text*/
 @media only screen and (min-width: 0px) and (max-width: 600px) {
-    .logo .imageholder p {
+    .div2 p {
         display: none;
         color: transparent;
     }
 }
-.logo .imageholder{
+.logo{
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 0;
+    height: 100%;
 }
-.logo .imageholder img {
+.div2 {
     position: absolute;
-    left: 30px;
-    box-sizing: unset;
 }
-.logo p {
-    display: flex;
-    padding-left: 100px;
-    font-size: 30px;
-    color: white;
-    display: inline;
-}
+    .div2 p { 
+        text-align: left;
+        font-size: 30px;
+        color: white;
+    }
 
