@@ -37,5 +37,5 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 });
-
+router.replace({path: "/app", redirect: "login"}).then(() => "/login")
 export default router;
