@@ -1,5 +1,5 @@
 <template>
-  <div class playlists>
+  <div class="playlists">
     <h1 class="header1">SpecificPlaylist:</h1>
     <hr class="l1"><hr class="l2"><hr class="l3"><hr class="l4"><hr class="l5">
     <h2 class="name">Name</h2><h2 class="artist">Artist</h2><h2 class="album">Album</h2>
@@ -22,6 +22,17 @@
 </script>
 
 <style scoped>
+
+.playlists{
+  overflow:hidden;
+  list-style:none;
+  float:left;
+  text-align:center;
+  margin-left:4em;
+  font-size: medium;
+  color: white;
+  font-weight: bolder;
+}
 
 .l1{
 
