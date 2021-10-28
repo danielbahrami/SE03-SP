@@ -11,7 +11,8 @@ const routes = [
     {
         path: "/app",
         name: "app",
-        component: App
+        component: App,
+        redirect: "/login"
     },
     {
         path: "/signup",
@@ -29,6 +30,7 @@ const routes = [
         component: ForgotPassword
     }
 ];
+
 
 const router = new VueRouter({
     mode: "history",
