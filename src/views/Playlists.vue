@@ -1,6 +1,7 @@
 <template>
   <div class playlists>
     <h1 class="header1">SpecificPlaylist:</h1>
+    <hr class="l1"><hr class="l2"><hr class="l3"><hr class="l4"><hr class="l5">
     <h2 class="name">Name</h2><h2 class="artist">Artist</h2><h2 class="album">Album</h2>
     <h3 class="s1">Song 1</h3><h3 class="s2">Song 2</h3><h3 class="s3">Song 3</h3>
     <h3 class="a1">Artist 1</h3><h3 class="a2">Artist 2</h3><h3 class="a3">Artist 3</h3>
@@ -22,7 +23,50 @@
 
 <style scoped>
 
+.l1{
 
+  position: absolute;
+  width: 1148px;
+  height: 0px;
+  left: 307px;
+  top: 165px;
+
+  border: 2px solid #323232;
+}
+.l2{position: absolute;
+  width: 1148px;
+  height: 0px;
+  left: 307px;
+  top: 206px;
+
+  border: 2px solid #323232;}
+.l3{position: absolute;
+  width: 1148px;
+  height: 0px;
+  left: 307px;
+  top: 256px;
+
+  border: 2px solid #201F1F;
+  transform: rotate(-0.05deg);}
+.l4{position: absolute;
+  width: 1148px;
+  height: 0px;
+  left: 307px;
+  top: 306px;
+
+  border: 2px solid #201F1F;
+  transform: rotate(-0.05deg);}
+.l5{
+  position: absolute;
+  width: 1148px;
+  height: 0px;
+  left: 307px;
+  top: 356px;
+
+  border: 2px solid #201F1F;
+  transform: rotate(-0.05deg);
+
+}
 .header1{
   position: absolute;
   width: 217px;
@@ -38,9 +82,10 @@
   color: #D6CD81;
 }
 .artist{position: absolute;
+  position: absolute;
   width: 176px;
   height: 33px;
-  left: 720px;
+  left: 685px;
   top: 169px;
   font-family: Work Sans;
   font-style: normal;
@@ -54,7 +99,6 @@
   height: 23px;
   left: 1065px;
   top: 169px;
-
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
@@ -71,21 +115,16 @@
   height: 30px;
   left: 329px;
   top: 169px;
-
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
-
-  /* identical to box height, or 150% */
   letter-spacing: -0.02em;
-
   color: #FFFFFF;}
-.s1{
-  position: absolute;
-  width: 147px;
-  height: 43px;
+.s1{position: absolute;
+  width: 116px;
+  height: 31px;
   left: 329px;
   top: 212px;
   font-family: Work Sans;
@@ -94,13 +133,11 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
-}
-.s2{
-  position: absolute;
-  width: 146px;
-  height: 27px;
-  left: 330px;
+  color: #FFFFFF;}
+.s2{position: absolute;
+  width: 116px;
+  height: 31px;
+  left: 329px;
   top: 265px;
   font-family: Work Sans;
   font-style: normal;
@@ -108,8 +145,8 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
-}
+  color: #FFFFFF;}
+
 .s3{position: absolute;
   width: 116px;
   height: 31px;
@@ -123,8 +160,8 @@
   letter-spacing: -0.02em;
   color: #FFFFFF;}
 .a1{position: absolute;
-  width: 154px;
-  height: 35px;
+  width: 116px;
+  height: 31px;
   left: 720px;
   top: 218px;
   font-family: Work Sans;
@@ -135,8 +172,8 @@
   letter-spacing: -0.02em;
   color: #FFFFFF;}
 .a2{position: absolute;
-  width: 165px;
-  height: 37px;
+  width: 116px;
+  height: 31px;
   left: 720px;
   top: 265px;
   font-family: Work Sans;
@@ -163,7 +200,7 @@
 .al1{position: absolute;
   width: 162px;
   height: 26px;
-  left: 1065px;
+  left: 1050px;
   top: 218px;
   font-family: Work Sans;
   font-style: normal;
