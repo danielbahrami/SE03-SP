@@ -12,7 +12,7 @@ const routes = [
         path: "/app",
         name: "app",
         component: App,
-        redirect: "/login"
+        redirect: "/login" //TODO change to HOME
     },
     {
         path: "/signup",
@@ -37,5 +37,6 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 });
+//Redirects the app to load a view from the start TODO change this to HOME
 router.replace({path: "/app", redirect: "login"}).then(() => "/login")
 export default router;
