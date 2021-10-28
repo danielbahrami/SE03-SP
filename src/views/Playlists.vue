@@ -1,7 +1,6 @@
 <template>
-
-  <div>
-    <h1 class="header1">SpecificPlaylist: CHILD CHECK</h1>
+  <div class playlists>
+    <h1 class="header1">SpecificPlaylist:</h1>
     <h2 class="name">Name</h2><h2 class="artist">Artist</h2><h2 class="album">Album</h2>
     <h3 class="s1">Song 1</h3><h3 class="s2">Song 2</h3><h3 class="s3">Song 3</h3>
     <h3 class="a1">Artist 1</h3><h3 class="a2">Artist 2</h3><h3 class="a3">Artist 3</h3>
@@ -13,21 +12,16 @@
   </div>
 
 
-
-
-
 </template>
 
-
 <script>
+    export default {
 
-
-export default {
-  name: "Specificplaylist"
-}
+    }
 </script>
 
 <style scoped>
+
 
 .header1{
   position: absolute;
@@ -261,7 +255,6 @@ export default {
   left: 1418px;
   top: 335px;
 }
-
 
 
 </style>
