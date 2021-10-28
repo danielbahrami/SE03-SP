@@ -63,6 +63,7 @@ export default {
 
 .h1 {
   color: rgb(212,205,138);
+  margin-left: 50px;
 }
 
 .h3 {

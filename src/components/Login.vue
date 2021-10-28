@@ -49,6 +49,7 @@ export default {
 
 .h1 {
   color: rgb(212,205,138);
+  margin-right: 40px;
 
 }
 
