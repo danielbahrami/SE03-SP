@@ -15,7 +15,7 @@
     <div class="SignUp">
       <button class="button"><slot>Sign Up</slot></button>
     </div>
-    <router-link class="Login" to="/loginPage">Login</router-link>
+    <router-link class="Login" to="/login">Login</router-link>
   </div>
 </template>
 

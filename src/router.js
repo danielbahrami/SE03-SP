@@ -14,17 +14,17 @@ const routes = [
         component: App
     },
     {
-        path: "/signUp",
+        path: "/signup",
         name: "signUp",
         component: signUp
     },
     {
-        path: "/loginPage",
+        path: "/login",
         name: "loginPage",
         component: LoginPage
     },
     {
-        path: "/forgotPassword",
+        path: "/password-reset",
         name: "forgotPassword",
         component: ForgotPassword
     }

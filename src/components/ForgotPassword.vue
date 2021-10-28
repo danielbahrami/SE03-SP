@@ -9,7 +9,7 @@
     <br><br>
     <button class="button" ><slot>Send mail</slot></button>
     <br><br>
-    <router-link class="link" to="/loginPage">Back to login</router-link>
+    <router-link class="link" to="/login">Back to login</router-link>
   </div>
 
 </template>

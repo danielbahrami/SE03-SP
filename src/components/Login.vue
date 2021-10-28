@@ -11,9 +11,9 @@
     <br><br>
     <button class="button" ><slot>Login</slot></button>
     <br><br>
-    <router-link class="link" to="/forgotPassword">Forgot Password</router-link>
+    <router-link class="link" to="/password-reset">Forgot password?</router-link>
     <br><br>
-    <router-link class="link" to="/signUp">signUp</router-link>
+    <router-link class="link" to="/signup">Sign up</router-link>
     <br><br>
      </div>
 </template>
