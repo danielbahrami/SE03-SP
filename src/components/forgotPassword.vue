@@ -7,7 +7,7 @@
     <h2 class="h2">Email</h2>
     <input class="input" placeholder="Email">
     <br><br>
-    <button class="button" ><slot>Send mail</slot></button>
+    <button class="button" ><slot>Send email</slot></button>
     <br><br>
     <router-link class="link" to="/login">Back to login</router-link>
   </div>
