@@ -9,7 +9,6 @@
     <i  class="i1 fas fa-star"></i><i  class="i2 fas fa-star"></i><i  class="i3 fas fa-star"></i>
     <i class="i4 fas fa-plus"></i><i class="i5 fas fa-plus"></i><i class="i6 fas fa-plus"></i>
     <i class="i7 fas fa-ellipsis-v"></i><i class="i8 fas fa-ellipsis-v"></i><i class="i9 fas fa-ellipsis-v"></i>
-
   </div>
 
 
@@ -17,7 +16,6 @@
 
 <script>
     export default {
-
     }
 </script>
 
