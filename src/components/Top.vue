@@ -1,34 +1,40 @@
 <template>
     <div class="parent">
         <div class="div1 logo">
-            <img src="../assets/logo.png" alt="her ikke det rigtige logo" height="50px">
+            <img src="../assets/logo.png" alt="Logo" height="50px">
         </div>
         <div class="div2"> 
-            <p>Alrakis</p>
+            <span>Alrakis</span>
         </div>
         <div class="div3 content">
             <div class="search">
                 <input type="text" class="search__input" aria-label="search" placeholder="enter your search">
                 <button class="search__submit" aria-label="submit search">
-                    <i class="fas fa-search"></i>
+                    <SearchIcon />
                 </button>
             </div>
         </div>
         <div class="div4 buttons">
             <!-- Login button and that other weird button -->
             <button class="user__actions" aria-label="User">
-                <i class="fas fa-user fa-2x"></i>
+                <PersonIcon />
             </button>
             <button class="VIP__STAR" aria-label="har ingen ide hvad denne knap er til for">
-                <i class="fas fa-star fa-2x"></i>
+                <img src="../assets/free-rating-star-icon-2793-thumb.png" height="24px" />
             </button>
         </div>
     </div>
 </template>
 
 <script>
+    import PersonIcon from 'vue-material-design-icons/Account.vue'
+    import SearchIcon from 'vue-material-design-icons/Magnify.vue' 
     export default {
-        name: 'Top'
+        name: 'Top',
+        components: {
+            PersonIcon,
+            SearchIcon
+        }
     }
 </script>
 <style scoped src="../assets/css/Top.css">
