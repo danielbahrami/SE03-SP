@@ -2,8 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "@/App";
 import signUp from "@/components/signUp";
-import LoginPage from "@/views/LoginPage";
-import ForgotPassword from "@/components/ForgotPassword";
+import loginPage from "@/views/loginPage";
+import forgotPassword from "@/components/forgotPassword";
 
 Vue.use(VueRouter);
 
@@ -22,12 +22,12 @@ const routes = [
     {
         path: "/login",
         name: "loginPage",
-        component: LoginPage
+        component: loginPage
     },
     {
         path: "/password-reset",
         name: "forgotPassword",
-        component: ForgotPassword
+        component: forgotPassword
     }
 ];
 
