@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import App from "@/App";
 import signUp from "@/components/signUp";
 import LoginPage from "@/views/LoginPage";
+import ForgotPassword from "@/components/ForgotPassword";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
         path: "/loginPage",
         name: "loginPage",
         component: LoginPage
+    },
+    {
+        path: "/forgotPassword",
+        name: "forgotPassword",
+        component: ForgotPassword
     }
 ];
 

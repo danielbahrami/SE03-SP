@@ -1,6 +1,9 @@
 <template>
   <div id="signUp">
-    <h1 class="h1">Registration</h1>
+    <div id="parent">
+      <close-button class="Close_Button"></close-button>
+      <h1 class="h1">Registration</h1>
+    </div>
     <div class="registrationAreas">
       <h3 class="h3">Username</h3>
       <input placeholder="Username">
@@ -12,14 +15,18 @@
     <div class="SignUp">
       <button class="button"><slot>Sign Up</slot></button>
     </div>
-    <a class="Login" href="/Login">Login</a>
+    <router-link class="Login" to="/loginPage">Login</router-link>
   </div>
 </template>
 
 <script>
+
+import closeButton from "@/components/closeButton";
+
 export default {
   name: 'signUp',
   components: {
+    closeButton
   },
   props: {
     emailText: String,
@@ -63,7 +70,7 @@ export default {
 
 .h1 {
   color: rgb(212,205,138);
-  margin-left: 50px;
+
 }
 
 .h3 {
@@ -73,6 +80,10 @@ export default {
 
 .Login {
   color: white;
+}
+
+#parent {
+  padding-left: 10px;
 }
 
 </style>
