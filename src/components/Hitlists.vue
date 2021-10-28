@@ -7,7 +7,7 @@
         <p class="greatText">Bruno Mars</p></li>
       <li><img src="../assets/albumArts/starboy.png" width="200" height="180"/>
         <p class="greatText">The Weeknd</p></li>
-      <li><img src="../assets/albumArts/Justin.png" width="200" height="180"/>
+      <li><img src="../assets/albumArts/suit&tie.png" width="200" height="180"/>
         <p class="greatText">Justin Timberlake</p></li>
       <li><img src="../assets/albumArts/katy_perry.png" width="200" height="180"/>
         <p class="greatText"> Katy Perry</p></li>
@@ -32,7 +32,7 @@
       <li><img src="../assets/albumArts/DNCE.png" width="200" height="180"/>
         <p class="newText"></p>DNCE
       </li>
-      <li><img src="../assets/albumArts/Bieber.png" width="200" height="180"/>
+      <li><img src="../assets/albumArts/Justin.png" width="200" height="180"/>
         <p class="newText"></p>Justing Bieber
       </li>
       <li><img src="../assets/albumArts/David.png" width="200" height="180"/>
@@ -89,19 +89,19 @@ export default {}
 
 .great {
   text-align: left;
-  margin-left: 78px;
+  margin-left: 127px;
   color: #D6CD81;
 }
 
 .new {
   text-align: left;
-  margin-left: 78px;
+  margin-left: 127px;
   color: #D6CD81;
 }
 
 .Old {
   text-align: left;
-  margin-left: 78px;
+  margin-left: 127px;
   color: #D6CD81;
 }
 

@@ -11,23 +11,23 @@ const routes = [
         children: [
             {
                 path: '',
-                component: () => import(/* webpackChunkName: "Home" */ '../views/Home.vue')
+                component: () => import(/* webpackChunkName: "Home" */ '../components/Home.vue')
             },
             {
                 path: 'playlists',
-                component: () => import(/* webpackChunkName: "Playlists" */ '../views/Playlists.vue')
+                component: () => import(/* webpackChunkName: "Playlists" */ '../components/Playlists.vue')
             },
             {
                 path: 'hitlists',
-                component: () => import(/* webpackChunkName: "hitlists" */ '../views/Hitlists.vue')
+                component: () => import(/* webpackChunkName: "hitlists" */ '../components/Hitlists.vue')
             },
             {
                 path: 'genres',
-                component: () => import(/* webpackChunkName: "genres" */ '../views/Genres.vue')
+                component: () => import(/* webpackChunkName: "genres" */ '../components/Genres.vue')
             },
             {
                 path: 'recently',
-                component: () => import(/* webpackChunkName: "recently" */ '../views/Recently.vue')
+                component: () => import(/* webpackChunkName: "recently" */ '../components/Recently.vue')
             }
         ]
     }
