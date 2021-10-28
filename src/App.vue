@@ -1,8 +1,5 @@
 <template>
   <div class="app">
-    <div id="Startview">
-      <router-link to="/login">Login</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
