@@ -19,10 +19,10 @@
         <label class="newpassword" for="newpassword">Password:</label>
         <input id="newpassword" class="newpasswordinput" name="newpassword" type="text"><br><br>
 
-        <label class="replacepassword" for="replacepassword">Password</label>
+        <label class="replacepassword" for="replacepassword">Password:</label>
         <input id="replacepassword" class="replacepasswordinput" name="replacepassword" type="text"><br><br>
 
-        <label class="confirm" for="confirmpassword">Confirm Password</label>
+        <label class="confirm" for="confirmpassword">Confirm Password:</label>
         <input id="confirmpassword" class="confirminput" name="confirmpassword" type="text"><br><br>
 
         <input class="saveinput" type="submit" value="Save">
@@ -59,7 +59,6 @@ export default {}
   line-height: 30px;
   /* or 88% */
   letter-spacing: -0.02em;
-
   color: #D6CD81;
 }
 
@@ -67,25 +66,21 @@ export default {}
   position: absolute;
   width: 186px;
   height: 40px;
-  left: 343px;
-  top: 440px;
-
+  padding-left: 25px;
+  top: 480px;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-
-  /* or 125% */
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
 
 .username {
   width: 150px;
   height: 68px;
-  padding-left: 80px;
+  padding-left: 50px;
   top: 169px;
   display: flex;
   font-family: Work Sans;
@@ -101,7 +96,7 @@ export default {}
 .email {
   width: 150px;
   height: 59px;
-  padding-left: 80px;
+  padding-left: 50px;
   top: 241px;
   display: flex;
   font-family: Work Sans;
@@ -117,8 +112,8 @@ export default {}
 .newpassword {
   width: 150px;
   height: 53px;
-  padding-left: 80px;
-  top: 308px;
+  padding-left: 50px;
+  top: 50px;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
@@ -133,7 +128,7 @@ export default {}
 .confirm {
   width: 150px;
   height: 59px;
-  padding-left: 75px;
+  padding-left: 50px;
   top: 241px;
   display: flex;
   font-family: Work Sans;
@@ -148,9 +143,9 @@ export default {}
 
 .replacepassword {
   width: 150px;
-  height: 50px;
-  padding-leftt: 30px;
-  top: 469px;
+  height: 53px;
+  padding-left: 50px;
+  margin-top: 70px;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
@@ -163,48 +158,100 @@ export default {}
 }
 
 .usernameinput {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  right: 615px;
+  position: absolute;
+  top: 200px;
   color: white;
-  width: 200px;
+  width: 328px;
   height: 25px;
-  top: 180px;
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
 
 .emailinput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  right: 615px;
+  position: absolute;
+  top: 312px;
+  color: white;
+  width: 328px;
+  height: 25px;
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  color: white;
 }
 
 .newpasswordinput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  right: 615px;
+  position: absolute;
+  top: 417px;
+  color: white;
+  width: 328px;
+  height: 25px;
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
+}
+.replacepasswordinput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  right: 615px;
+  position: absolute;
+  top: 585px;
   color: white;
+  width: 328px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
 }
 
 .confirminput {
+
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  right: 615px;
+  top: 680px;
+  color: white;
+  width: 328px;
+  height: 25px;
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  color: white;
 }
 
-.replacepasswordinput {
-  color: white;
-  background: transparent;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-}
+
 
 .saveinput {
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  left: 250px;
+  top: 750px;
 }
 
 .profileName {
