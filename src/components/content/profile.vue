@@ -5,7 +5,7 @@
     <h3 class="headerUsername">Username:</h3>
     <h3 class="headerEmail">Email:</h3>
     <h3 class="headerPassword">Password:</h3>
-    <button class="buttonEditProfile">Edit Profile</button>
+    <router-link active-class="active" class="editButton" to="/profileedit"><button class="buttonEditProfile">Edit Profile</button></router-link>
     <button class="buttonLogOut">Log out</button>
 
     <h1 class="headerSettings">Settings</h1>

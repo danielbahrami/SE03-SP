@@ -8,6 +8,8 @@ import hitlists from "./components/content/hitlists";
 import playlists from "./components/content/playlists";
 import genres from "./components/content/genres";
 import recently from "./components/content/recently";
+import profile from "./components/content/profile";
+import profileedit from "./components/content/profileEdit";
 Vue.use(VueRouter);
 
 const routes = [
@@ -51,6 +53,16 @@ const routes = [
         path: "/recently",
         name: "recently",
         component: recently
+    },
+    {
+        path: "/profile",
+        name: "profile",
+        component: profile
+    },
+    {
+        path: "/profileedit",
+        name: "profileedit",
+        component: profileedit
     }
 
 ]

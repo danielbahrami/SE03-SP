@@ -16,9 +16,10 @@
     </div>
     <div class="div4 buttons">
       <!-- Login button and that other weird button -->
-      <button aria-label="User" class="user__actions">
+      <router-link active-class="active" class="top-btn" to="/profile"> <button aria-label="User" class="user__actions">
         <PersonIcon/>
       </button>
+      </router-link>
       <button aria-label="har ingen ide hvad denne knap er til for" class="VIP__STAR">
         <img height="24px" src="../../assets/free-rating-star-icon-2793-thumb.png"/>
       </button>
