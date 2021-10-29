@@ -13,7 +13,9 @@
       <input placeholder="Email">
     </div>
     <div class="SignUp">
-      <button class="button"><slot>Sign Up</slot></button>
+      <button class="button">
+        <slot>Sign Up</slot>
+      </button>
     </div>
     <router-link class="Login" to="/login">Login</router-link>
   </div>
@@ -46,10 +48,11 @@ export default {
   margin-top: 0px;
   background-color: gray;
   width: 350px;
-  border: 5px solid rgb(30,30,30);
-  background-color: rgb(30,30,30);
+  border: 5px solid rgb(30, 30, 30);
+  background-color: rgb(30, 30, 30);
 }
-.SignUp{
+
+.SignUp {
   margin-top: 30px;
 }
 
@@ -64,12 +67,12 @@ export default {
   text-align: center;
   font-size: 16px;
   font-family: "Comic Sans MS";
-  background-color: rgb(102,212,110);
+  background-color: rgb(102, 212, 110);
   border-radius: 12px;
 }
 
 .h1 {
-  color: rgb(212,205,138);
+  color: rgb(212, 205, 138);
 
 }
 

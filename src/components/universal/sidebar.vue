@@ -4,27 +4,27 @@
       Menu
     </div>
     <div class="menu-items">
-      <router-link to="/" active-class="active" tag="button" exact class="side-btn">
+      <router-link active-class="active" class="side-btn" exact tag="button" to="/">
         <div class="link-container">
           Home
         </div>
       </router-link>
-      <router-link to="/playlists" active-class="active" tag="button" exact class="side-btn">
+      <router-link active-class="active" class="side-btn" exact tag="button" to="/playlists">
         <div class="link-container">
           Playlists
         </div>
       </router-link>
-      <router-link to="/hitlists" active-class="active" tag="button" exact class="side-btn">
+      <router-link active-class="active" class="side-btn" exact tag="button" to="/hitlists">
         <div class="link-container">
           Hitlists
         </div>
       </router-link>
-      <router-link to="/genres" active-class="active" tag="button" exact class="side-btn">
+      <router-link active-class="active" class="side-btn" exact tag="button" to="/genres">
         <div class="link-container">
           Genres
         </div>
       </router-link>
-      <router-link to="/recently" active-class="active" tag="button" exact class="side-btn">
+      <router-link active-class="active" class="side-btn" exact tag="button" to="/recently">
         <div class="link-container">
           Recently
         </div>
@@ -34,9 +34,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style scoped>
@@ -58,6 +56,7 @@ export default {
 .menu-items > * {
   margin-top: 30px;
 }
+
 .side-btn {
   font-family: "Work Sans";
   font-weight: normal;
@@ -69,9 +68,11 @@ export default {
   color: grey;
   background-color: transparent;
 }
+
 .side-btn:focus {
   outline: none;
 }
+
 .side-btn.active {
   position: relative;
   background-color: white;

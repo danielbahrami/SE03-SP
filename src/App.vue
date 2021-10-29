@@ -4,8 +4,6 @@
   </div>
 
 
-
-
   <!--
     <div>
     <Canvas></Canvas>
@@ -24,7 +22,6 @@
 // Import becomes tags available for use in template
 
 
-
 // Lader andre elementer til App.vue (eller vilkårlig komponent)
 //ændre components til indholde ønsket komponents
 
@@ -32,21 +29,18 @@
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {}
 }
 
 </script>
 
 // bar styling
 <style>
-#StartView a.router-link-exact-active
-{
+
 
 #app {
 
-  font-family: Avenir, Helvetica, Arial, sans-serif, "Work Sans","Ag header 1";
+  font-family: Avenir, Helvetica, Arial, sans-serif, "Work Sans", "Ag header 1";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -55,7 +49,7 @@ export default {
 
 }
 
-body{
+body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;

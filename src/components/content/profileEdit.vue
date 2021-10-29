@@ -6,48 +6,48 @@
     <div>
       <form action="#">
         <label class="username" for="username">Username:</label>
-        <input class="usernameinput" type="text" id="username" name="username"><br><br>
+        <input id="username" class="usernameinput" name="username" type="text"><br><br>
 
         <label class="email" for="email">Email:</label>
-        <input class="emailinput" type="text" id="email" name="email"><br><br>
+        <input id="email" class="emailinput" name="email" type="text"><br><br>
 
       </form>
     </div>
 
     <div>
-    <form action="#">
-      <label class="newpassword" for="newpassword">Password:</label>
-      <input class="newpasswordinput" type="text" id="newpassword" name="newpassword"><br><br>
+      <form action="#">
+        <label class="newpassword" for="newpassword">Password:</label>
+        <input id="newpassword" class="newpasswordinput" name="newpassword" type="text"><br><br>
 
-      <label class="replacepassword" for="replacepassword">Password</label>
-      <input class="replacepasswordinput" type="text" id="replacepassword" name="replacepassword"><br><br>
+        <label class="replacepassword" for="replacepassword">Password</label>
+        <input id="replacepassword" class="replacepasswordinput" name="replacepassword" type="text"><br><br>
 
-      <label class="confirm" for="confirmpassword">Confirm Password</label>
-      <input class="confirminput" type="text" id="confirmpassword" name="confirmpassword"><br><br>
+        <label class="confirm" for="confirmpassword">Confirm Password</label>
+        <input id="confirmpassword" class="confirminput" name="confirmpassword" type="text"><br><br>
 
-      <input class="saveinput" type="submit" value="Save">
-    </form>
+        <input class="saveinput" type="submit" value="Save">
+      </form>
     </div>
 
     <div>
-      <img class="profileImage" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="212" height="207" alt="" />
+      <img alt=""
+           class="profileImage" height="207"
+           src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="212"/>
       <p class="profileName">Image Profile</p>
       <button class="buttonUploadImage">Upload Image</button>
     </div>
 
-    </div>
+  </div>
 
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style scoped>
 
-.headerProfile{
+.headerProfile {
   width: 150px;
   height: 38px;
   padding-left: 22px;
@@ -62,7 +62,9 @@ export default {
 
   color: #D6CD81;
 }
-.headerPassword{position: absolute;
+
+.headerPassword {
+  position: absolute;
   width: 186px;
   height: 40px;
   left: 343px;
@@ -77,14 +79,15 @@ export default {
   /* or 125% */
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
+  color: #FFFFFF;
+}
 
-.username{
+.username {
   width: 150px;
   height: 68px;
   padding-left: 80px;
   top: 169px;
-  display:flex;
+  display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -92,8 +95,11 @@ export default {
   line-height: 21px;
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
-.email{width: 150px;
+  color: #FFFFFF;
+}
+
+.email {
+  width: 150px;
   height: 59px;
   padding-left: 80px;
   top: 241px;
@@ -105,13 +111,15 @@ export default {
   line-height: 21px;
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
+  color: #FFFFFF;
+}
+
 .newpassword {
   width: 150px;
   height: 53px;
   padding-left: 80px;
   top: 308px;
-  display:flex;
+  display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -119,8 +127,10 @@ export default {
   line-height: 21px;
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
-.confirm{
+  color: #FFFFFF;
+}
+
+.confirm {
   width: 150px;
   height: 59px;
   padding-left: 75px;
@@ -133,9 +143,10 @@ export default {
   line-height: 21px;
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
+  color: #FFFFFF;
+}
 
-.replacepassword{
+.replacepassword {
   width: 150px;
   height: 50px;
   padding-leftt: 30px;
@@ -148,9 +159,10 @@ export default {
   line-height: 21px;
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
+  color: #FFFFFF;
+}
 
-.usernameinput{
+.usernameinput {
   color: white;
   width: 200px;
   height: 25px;
@@ -159,39 +171,44 @@ export default {
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
-.emailinput{
-  background: transparent;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-  color: white;
-}
-.newpasswordinput{
-  background: transparent;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-  color: white;
-}
-.confirminput{
-  background: transparent;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-  color: white;
-}
-.replacepasswordinput{
-  color: white;
-  background: transparent;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-}
 
-.saveinput{
+.emailinput {
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   color: white;
 }
 
-.profileName{position: absolute;
+.newpasswordinput {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  color: white;
+}
+
+.confirminput {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  color: white;
+}
+
+.replacepasswordinput {
+  color: white;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+.saveinput {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  color: white;
+}
+
+.profileName {
+  position: absolute;
   width: 135px;
   height: 53px;
   right: 109px;
@@ -204,28 +221,30 @@ export default {
   line-height: 28px;
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
-.profileImage{
-  position:absolute;
-  top:133px;
+  color: #FFFFFF;
+}
+
+.profileImage {
+  position: absolute;
+  top: 133px;
   right: 79px;
   width: 212px;
   height: 207px;
 }
-.buttonUploadImage{
+
+.buttonUploadImage {
   color: white;
   background: transparent;
   width: 100px;
   padding: 5px;
   height: 26px;
-  position:absolute;
-  top:420px;
+  position: absolute;
+  top: 420px;
   right: 125px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 4px;}
-
-
+  border-radius: 4px;
+}
 
 
 </style>

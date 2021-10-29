@@ -1,0 +1,43 @@
+<template>
+  <div class="parent">
+    <div class="div1 logo">
+      <img alt="Logo" height="50px" src="../assets/logo.png">
+    </div>
+    <div class="div2">
+      <span>Alrakis</span>
+    </div>
+    <div class="div3 content">
+      <div class="search">
+        <input aria-label="search" class="search__input" placeholder="enter your search" type="text">
+        <button aria-label="submit search" class="search__submit">
+          <SearchIcon/>
+        </button>
+      </div>
+    </div>
+    <div class="div4 buttons">
+      <!-- Login button and that other weird button -->
+      <button aria-label="User" class="user__actions">
+        <PersonIcon/>
+      </button>
+      <button aria-label="har ingen ide hvad denne knap er til for" class="VIP__STAR">
+        <img height="24px" src="../../assets/free-rating-star-icon-2793-thumb.png"/>
+      </button>
+    </div>
+  </div>
+</template>
+
+<script>
+import PersonIcon from 'vue-material-design-icons/Account.vue'
+import SearchIcon from 'vue-material-design-icons/Magnify.vue'
+
+export default {
+  name: 'Top',
+  components: {
+    PersonIcon,
+    SearchIcon
+  }
+}
+</script>
+<style scoped src="../../assets/css/Top.css">
+/* @import '../assets/css/Top.css'; */
+</style>

@@ -2,8 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "@/App";
 import signUp from "@/components/signUp";
-import loginPage from "@/views/loginPage";
 import forgotPassword from "@/components/forgotPassword";
+import canvas from "@/views/Canvas";
 
 Vue.use(VueRouter);
 
@@ -12,7 +12,7 @@ const routes = [
         path: "/app",
         name: "app",
         component: App,
-        redirect: "/login" //TODO change to HOME
+        redirect: "/home" //TODO change to HOME
     },
     {
         path: "/signup",
@@ -20,9 +20,9 @@ const routes = [
         component: signUp
     },
     {
-        path: "/login",
-        name: "loginPage",
-        component: loginPage
+        path: "/home",
+        name: "canvas",
+        component: canvas
     },
     {
         path: "/password-reset",
@@ -31,7 +31,7 @@ const routes = [
     }
 ];
 
-
+// DO NOT TOUCH!
 const router = new VueRouter({
     mode: "history",
     base: process.env.BASE_URL,

@@ -2,60 +2,60 @@
   <div class="hitlists">
     <h1 class="great">The greatest hits right now</h1>
     <ul class="container">
-      <li><img class="prev" src="../assets/arrow_prev.png"></li>
-      <li><img src="../assets/albumArts/Bruno.png" width="200" height="180"/>
+      <li><img class="prev" src="../../assets/arrow_prev.png"></li>
+      <li><img height="180" src="../../assets/albumArts/Bruno.png" width="200"/>
         <p class="greatText">Bruno Mars</p></li>
-      <li><img src="../assets/albumArts/starboy.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/starboy.png" width="200"/>
         <p class="greatText">The Weeknd</p></li>
-      <li><img src="../assets/albumArts/suit&tie.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/suit&tie.png" width="200"/>
         <p class="greatText">Justin Timberlake</p></li>
-      <li><img src="../assets/albumArts/katy_perry.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/katy_perry.png" width="200"/>
         <p class="greatText"> Katy Perry</p></li>
-      <li><img src="../assets/albumArts/Ariana.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/Ariana.png" width="200"/>
         <p class="greatText">Ariana Grande</p></li>
-      <li><img src="../assets/albumArts/Justin.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/Justin.png" width="200"/>
         <p class="greatText"> Justin Bieber</p></li>
-      <li><img class="next" src="../assets/arrow_next.png"></li>
+      <li><img class="next" src="../../assets/arrow_next.png"></li>
     </ul>
     <h1 class="new">New Music</h1>
     <ul class="container">
-      <li><img class="prev" src="../assets/arrow_prev.png"></li>
-      <li><img src="../assets/albumArts/Selena.png" width="200" height="180"/>
+      <li><img class="prev" src="../../assets/arrow_prev.png"></li>
+      <li><img height="180" src="../../assets/albumArts/Selena.png" width="200"/>
         <p class="newText"></p>Selena Gomez
       </li>
-      <li><img src="../assets/albumArts/kygo.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/kygo.png" width="200"/>
         <p class="newText"></p>Kygo
       </li>
-      <li><img src="../assets/albumArts/weeknd.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/weeknd.png" width="200"/>
         <p class="newText"></p>The Weeknd
       </li>
-      <li><img src="../assets/albumArts/DNCE.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/DNCE.png" width="200"/>
         <p class="newText"></p>DNCE
       </li>
-      <li><img src="../assets/albumArts/Justin.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/Justin.png" width="200"/>
         <p class="newText"></p>Justing Bieber
       </li>
-      <li><img src="../assets/albumArts/David.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/David.png" width="200"/>
         <p class="newText"></p>David Guetta
       </li>
-      <li><img class="next" src="../assets/arrow_next.png"></li>
+      <li><img class="next" src="../../assets/arrow_next.png"></li>
     </ul>
     <h1 class="Old">Old but Gold</h1>
     <ul class="container">
-      <li><img class="prev" src="../assets/arrow_prev.png"></li>
-      <li><img src="../assets/albumArts/Ricky.png" width="200" height="180"/>
+      <li><img class="prev" src="../../assets/arrow_prev.png"></li>
+      <li><img height="180" src="../../assets/albumArts/Ricky.png" width="200"/>
         <p class="oldText">Ricky Martin</p></li>
-      <li><img src="../assets/albumArts/Michael.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/Michael.png" width="200"/>
         <p class="oldText">Michael Jackson</p></li>
-      <li><img src="../assets/albumArts/icecube.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/icecube.png" width="200"/>
         <p class="oldText">IceCube</p></li>
-      <li><img src="../assets/albumArts/Phil.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/Phil.png" width="200"/>
         <p class="oldText">Phil Collins</p></li>
-      <li><img src="../assets/albumArts/Genesis.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/Genesis.png" width="200"/>
         <p class="oldText">Genesis</p></li>
-      <li><img src="../assets/albumArts/AC-DC.png" width="200" height="180"/>
+      <li><img height="180" src="../../assets/albumArts/AC-DC.png" width="200"/>
         <p class="oldText">AC/DC</p></li>
-      <li><img class="next" src="../assets/arrow_next.png"></li>
+      <li><img class="next" src="../../assets/arrow_next.png"></li>
     </ul>
   </div>
 </template>
@@ -64,7 +64,7 @@ export default {}
 </script>
 <style scoped>
 
-.prev{
+.prev {
   margin-top: 65px;
 }
 

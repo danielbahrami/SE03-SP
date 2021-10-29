@@ -1,5 +1,5 @@
 <template>
-  <img class="image" :src=logo v-on:click="closeWindow" >
+  <img :src=logo class="image" v-on:click="closeWindow">
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
     logo: require('@/assets/closeButton.png')
   }),
   methods: {
-    closeWindow(){
+    closeWindow() {
       this.$router.push("/app");
     }
   }

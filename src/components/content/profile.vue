@@ -15,7 +15,8 @@
     <a class="linkHelpCenter" href="#">Help center</a>
     <a class="linkDeleteAccount" href="#">Delete Account</a>
 
-    <img class="profileImage" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="212" height="207" alt="" />
+    <img alt="" class="profileImage"
+         height="207" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="212"/>
     <p class="profileName">Image Profile</p>
     <button class="buttonUploadImage">Upload Image</button>
 
@@ -24,17 +25,13 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style scoped>
 
 
-
-
-.headerProfile{
+.headerProfile {
   width: 150px;
   height: 38px;
   padding-left: 22px;
@@ -49,12 +46,13 @@ export default {
 
   color: #D6CD81;
 }
-.headerUsername{
+
+.headerUsername {
   width: 150px;
   height: 68px;
   padding-left: 80px;
   top: 169px;
-  display:flex;
+  display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -64,7 +62,8 @@ export default {
 
   color: #FFFFFF;
 }
-.headerEmail{
+
+.headerEmail {
   width: 150px;
   height: 59px;
   padding-left: 80px;
@@ -77,14 +76,16 @@ export default {
   line-height: 21px;
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
-.headerPassword{
+  color: #FFFFFF;
+}
+
+.headerPassword {
 
   width: 150px;
   height: 53px;
   padding-left: 80px;
   top: 308px;
-  display:flex;
+  display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -92,8 +93,10 @@ export default {
   line-height: 21px;
   letter-spacing: -0.02em;
 
-  color: #FFFFFF;}
-.buttonEditProfile{
+  color: #FFFFFF;
+}
+
+.buttonEditProfile {
   color: white;
   background: transparent;
   width: 80px;
@@ -104,8 +107,10 @@ export default {
   top: 375px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 4px;}
-.buttonLogOut{
+  border-radius: 4px;
+}
+
+.buttonLogOut {
   color: white;
   background: transparent;
   width: 80px;
@@ -117,10 +122,11 @@ export default {
   top: 420px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 4px;}
+  border-radius: 4px;
+}
 
 
-.headerSettings{
+.headerSettings {
   width: 150px;
   height: 40px;
   padding-left: 22px;
@@ -132,13 +138,15 @@ export default {
   line-height: 30px;
   letter-spacing: -0.02em;
 
-  color: #D6CD81;}
-.linkSubscription{
+  color: #D6CD81;
+}
+
+.linkSubscription {
   width: 150px;
   height: 68px;
   padding-left: 80px;
   top: 169px;
-  display:flex;
+  display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -147,13 +155,15 @@ export default {
   letter-spacing: -0.02em;
   text-decoration-line: underline;
 
-  color: #FFFFFF;}
-.linkPrivacySafety{
+  color: #FFFFFF;
+}
+
+.linkPrivacySafety {
   width: 150px;
   height: 68px;
   padding-left: 80px;
   top: 169px;
-  display:flex;
+  display: flex;
 
   font-family: Work Sans;
   font-style: normal;
@@ -163,14 +173,16 @@ export default {
   letter-spacing: -0.02em;
   text-decoration-line: underline;
 
-  color: #FFFFFF;}
-.linkDisplayLanguage{
+  color: #FFFFFF;
+}
+
+.linkDisplayLanguage {
   width: 150px;
   height: 68px;
   padding-left: 80px;
   margin-top: 1px;
   padding-bottom: 5px;
-  display:flex;
+  display: flex;
 
   font-family: Work Sans;
   font-style: normal;
@@ -180,15 +192,17 @@ export default {
   letter-spacing: -0.02em;
   text-decoration-line: underline;
 
-  color: #FFFFFF;}
-.linkHelpCenter{
+  color: #FFFFFF;
+}
+
+.linkHelpCenter {
 
   width: 150px;
   height: 68px;
   padding-left: 80px;
   padding-top: 1px;
   padding-bottom: 5px;
-  display:flex;
+  display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -197,15 +211,17 @@ export default {
   letter-spacing: -0.02em;
   text-decoration-line: underline;
 
-  color: #FFFFFF;}
-.linkDeleteAccount{
+  color: #FFFFFF;
+}
+
+.linkDeleteAccount {
 
   width: 150px;
   height: 20px;
   padding-left: 80px;
   padding-top: 1px;
   padding-bottom: 5px;
-  display:flex;
+  display: flex;
 
   font-family: Work Sans;
   font-style: normal;
@@ -215,9 +231,10 @@ export default {
   letter-spacing: -0.02em;
   text-decoration-line: underline;
 
-  color: #FFFFFF;}
+  color: #FFFFFF;
+}
 
-.profileName{
+.profileName {
   position: absolute;
   width: 135px;
   height: 53px;
@@ -233,30 +250,29 @@ export default {
 
   color: #FFFFFF;
 }
-.profileImage{
-  position:absolute;
-  top:133px;
+
+.profileImage {
+  position: absolute;
+  top: 133px;
   right: 79px;
   width: 212px;
   height: 207px;
 }
-.buttonUploadImage{
+
+.buttonUploadImage {
 
   color: white;
   background: transparent;
   width: 100px;
   padding: 5px;
   height: 26px;
-  position:absolute;
-  top:420px;
+  position: absolute;
+  top: 420px;
   right: 125px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
 }
-
-
-
 
 
 </style>

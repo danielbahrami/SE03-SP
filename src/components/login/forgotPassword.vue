@@ -1,21 +1,19 @@
 <template>
-  <div class="login">
+  <div class="forgotPassword">
     <div id="parent">
       <close-button class="Close_Button"></close-button>
-      <h1 class="h1">Login</h1>
+      <h1 class="h1">Forgot Password</h1>
     </div>
     <h2 class="h2">Email</h2>
     <input class="input" placeholder="Email">
-    <h2 class="h2">Password</h2>
-    <input class="input" placeholder="Password">
     <br><br>
-    <button class="button" ><slot>Login</slot></button>
+    <button class="button">
+      <slot>Send email</slot>
+    </button>
     <br><br>
-    <router-link class="link" to="/password-reset">Forgot password?</router-link>
-    <br><br>
-    <router-link class="link" to="/signup">Sign up</router-link>
-    <br><br>
-     </div>
+    <router-link class="link" to="/login">Back to login</router-link>
+  </div>
+
 </template>
 
 <script>
@@ -23,32 +21,24 @@
 import closeButton from "@/components/closeButton";
 
 export default {
-  props: {
-    username: String,
-    password: String
-  },
-  methods: {
-    goToNewUserPage(){
-      this.$route
-    }
-  },
+  name: "ForgotPassword",
   components: {
     closeButton
   }
 }
 </script>
 
-<style>
 
-.login {
+<style scoped>
+.forgotPassword {
   text-align: center;
   width: 350px;
-  border: 5px solid rgb(30,30,30);
-  background-color: rgb(30,30,30);
+  border: 5px solid rgb(30, 30, 30);
+  background-color: rgb(30, 30, 30);
 }
 
 .h1 {
-  color: rgb(212,205,138);
+  color: rgb(212, 205, 138);
   margin-right: 40px;
 
 }
@@ -68,7 +58,7 @@ export default {
   text-align: center;
   font-size: 16px;
   font-family: "Arial";
-  background-color: rgb(212,205,138);
+  background-color: rgb(212, 205, 138);
   border-radius: 12px;
 }
 
@@ -81,7 +71,7 @@ export default {
 }
 
 #parent {
-padding-left: 10px;
+  padding-left: 10px;
 }
 
 </style>
