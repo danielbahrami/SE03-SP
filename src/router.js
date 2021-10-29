@@ -1,10 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import App from "@/App";
-import signUp from "@/components/signUp";
-import forgotPassword from "@/components/forgotPassword";
-import canvas from "@/views/Canvas";
-
+import App from "./App";
+import signUp from "./components/login/signUp";
+import forgotPassword from "./components/login/forgotPassword";
+import canvas from "./views/main";
 Vue.use(VueRouter);
 
 const routes = [
