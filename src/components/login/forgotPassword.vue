@@ -18,7 +18,7 @@
 
 <script>
 
-import closeButton from "@/components/closeButton";
+import closeButton from "../universal/closeButton";
 
 export default {
   name: "ForgotPassword",
