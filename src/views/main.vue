@@ -1,6 +1,7 @@
 <template>
   <div class="canvas">
     <Sidebar/>
+    <topbar/>
     <div class="content">
       <router-view/>
     </div>
@@ -9,12 +10,14 @@
 
 <script>
 import Sidebar from '../components/universal/sidebar'
+import topbar from "../components/universal/topbar";
 
 export default {
   name: 'canvas',
 
   components: {
-    Sidebar
+    Sidebar,
+    topbar
   }
 }
 </script>
