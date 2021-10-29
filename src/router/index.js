@@ -28,6 +28,14 @@ const routes = [
             {
                 path: 'recently',
                 component: () => import(/* webpackChunkName: "recently" */ '../views/Recently.vue')
+            },
+            {
+                path: 'profileEdit',
+                component: () => import(/* webpackChunkName: "recently" */ '../views/profileEdit.vue')
+            },
+            {
+                path: 'profile',
+                component: () => import(/* webpackChunkName: "recently" */ '../views/profile.vue')
             }
         ]
     }
