@@ -11,11 +11,6 @@
         <label class="email" for="email">Email:</label>
         <input id="email" class="emailinput" name="email" type="text"><br><br>
 
-      </form>
-    </div>
-
-    <div>
-      <form action="#">
         <label class="newpassword" for="newpassword">Password:</label>
         <input id="newpassword" class="newpasswordinput" name="newpassword" type="password"><br><br>
 
