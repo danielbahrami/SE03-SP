@@ -94,7 +94,7 @@
         height:var(--size);
         padding:2px;
         font-size:1.25em;
-        background:#fff
+        background: #FFF;
     }
     .search__input{
         flex-grow:1;

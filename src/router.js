@@ -4,6 +4,7 @@ import App from "./App";
 import signUp from "./components/login/signUp";
 import forgotPassword from "./components/login/forgotPassword";
 import canvas from "./views/main";
+import hitlists from "./components/content/hitlists";
 Vue.use(VueRouter);
 
 const routes = [
@@ -27,6 +28,11 @@ const routes = [
         path: "/password-reset",
         name: "forgotPassword",
         component: forgotPassword
+    },
+    {
+        path: "/hitlists",
+        name: "hitlists",
+        component: hitlists
     }
 ];
 

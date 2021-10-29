@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <router-view/>
+    <media-player/>
   </div>
 
 
@@ -20,10 +21,13 @@
 // Import becomes tags available for use in template
 
 // Allow App.vue access to other components
+import mediaPlayer from "./components/universal/mediaPlayer";
 
 export default {
   name: 'App',
-  components: {}
+  components: {
+    mediaPlayer
+  }
 }
 
 </script>

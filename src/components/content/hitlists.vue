@@ -1,5 +1,12 @@
 <template>
   <div class="hitlists">
+    <div>
+      <album-art/>
+    </div>
+    <div>
+      <sidebar class="sidebar"/>
+    </div>
+    <topbar></topbar>
     <h1 class="great">The greatest hits right now</h1>
     <ul class="container">
       <li><img class="prev" src="../../assets/arrow_prev.png"></li>
@@ -60,7 +67,20 @@
   </div>
 </template>
 <script>
-export default {}
+import topbar from "../universal/topbar";
+import albumArt from "./albumArt";
+import sidebar from "../universal/sidebar";
+
+export default {
+  name: 'canvas',
+
+  components: {
+    topbar,
+    albumArt,
+    sidebar
+    // home,
+  }
+}
 </script>
 <style scoped>
 

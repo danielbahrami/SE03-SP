@@ -4,7 +4,7 @@
       Menu
     </div>
     <div class="menu-items">
-      <router-link active-class="active" class="side-btn" exact tag="button" to="/">
+      <router-link active-class="active" class="side-btn" exact tag="button" to="/home">
         <div class="link-container">
           Home
         </div>
