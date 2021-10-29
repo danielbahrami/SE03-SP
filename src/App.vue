@@ -1,22 +1,23 @@
 <template>
-  <div id="app">
-    <Top />
-    <Mediaplayer />
-    <AlbumArt />
+  <div class="app">
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Top from './components/Top.vue'
-import Mediaplayer from './components/Mediaplayer.vue'
-import AlbumArt from './components/AlbumArt.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Top,
-    Mediaplayer,
-    AlbumArt
   }
 }
+
 </script>
+
+<style>
+#StartView a.router-link-exact-active
+{
+
+}
+</style>
