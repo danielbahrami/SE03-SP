@@ -1,7 +1,7 @@
 <template>
   <div class="parent">
     <div class="div1 logo">
-      <img alt="Logo" height="50px" src="../assets/logo.png">
+      <img alt="Logo" height="50px" src="../../assets/logo.png">
     </div>
     <div class="div2">
       <span>Alrakis</span>

@@ -6,7 +6,7 @@
 
 export default {
   data: () => ({
-    logo: require('../assets/closeButton.png')
+    logo: require('../../assets/closeButton.png')
   }),
   methods: {
     closeWindow() {
