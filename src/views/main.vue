@@ -31,6 +31,6 @@ export default {
 
 .content {
   background-color: black;
-  margin: 0px 0px 0px 0px;
+  margin: unset;
 }
 </style>

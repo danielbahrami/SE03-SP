@@ -1,14 +1,10 @@
 <template>
   <div class="app">
     <topbar/>
-    <div style="width: 20%">
     <sidebar/>
-      <album-art/>
-    </div>
-    <div style="width: 80%">
+    <album-art/>
     <router-view/>
-      <media-player/>
-    </div>
+    <media-player/>
   </div>
 </template>
 <!--template displayer alt på localhost porten. I.e det vi ser i browseren-->
