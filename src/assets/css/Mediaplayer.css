@@ -27,13 +27,7 @@
     .div7-media { grid-area: 1 / 11 / 2 / 12; }
     .div8-media { grid-area: 1 / 12 / 2 / 13; }
 
-.music__back,
-.music__play, 
-.music__forward,
-.music__repeat, 
-.music__random,
-.music__plus,
-.music__favorite{
+.music{
     cursor: pointer;
     border: 0;
     background: transparent;

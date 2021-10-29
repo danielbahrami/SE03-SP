@@ -1,18 +1,18 @@
 <template>
     <div class="parent-media">
         <div class="div1-media">
-            <button class="music__back" aria-label="Song back">
+            <button class="music__back music" aria-label="Song back">
                 <BackwardIcon />
             </button>
         </div>
         <div class="div2-media">
-            <button v-if="isHidden" v-on:click="isHidden = !isHidden" class="music__play" aria-label="Song Play">
+            <button v-if="isHidden" v-on:click="isHidden = !isHidden" class="music__play music" aria-label="Song Play">
                 <PlayIcon />
             </button>
             <clip-loader v-if="!isHidden" :loading="loading" :color="color1" :size="size"></clip-loader>
         </div>
         <div class="div3-media">
-            <button class="music__forward" aria-label="Song forward">
+            <button class="music__forward music" aria-label="Song forward">
                 <ForwardIcon />
             </button>
         </div>
@@ -21,22 +21,22 @@
         </div>
         <!-- TODO: change to actual repeat button -->
         <div class="div5-media">
-            <button class="music__repeat" aria-label="Song repeat">
+            <button class="music__repeat music" aria-label="Song repeat">
                 <RepeatIcon />
             </button>
         </div>
         <div class="div6-media">
-            <button class="music__random" aria-label="Song shuffle">
+            <button class="music__random music" aria-label="Song shuffle">
                 <ShuffleIcon />
             </button>
         </div>
         <div class="div7-media">
-            <button class="music__plus" aria-label="Add Song?">
+            <button class="music__plus music" aria-label="Add Song?">
                 <AddIcon />
             </button>
         </div>
         <div class="div8-media">
-            <button class="music__favorite" aria-label="Mark as favorite">
+            <button class="music__favorite music" aria-label="Mark as favorite">
                 <StarIcon />
             </button>
         </div>
