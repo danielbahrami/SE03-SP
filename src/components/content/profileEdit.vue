@@ -17,13 +17,13 @@
     <div>
       <form action="#">
         <label class="newpassword" for="newpassword">Password:</label>
-        <input id="newpassword" class="newpasswordinput" name="newpassword" type="text"><br><br>
+        <input id="newpassword" class="newpasswordinput" name="newpassword" type="password"><br><br>
 
         <label class="replacepassword" for="replacepassword">Password:</label>
-        <input id="replacepassword" class="replacepasswordinput" name="replacepassword" type="text"><br><br>
+        <input id="replacepassword" class="replacepasswordinput" name="replacepassword" type="password"><br><br>
 
         <label class="confirm" for="confirmpassword">Confirm Password:</label>
-        <input id="confirmpassword" class="confirminput" name="confirmpassword" type="text"><br><br>
+        <input id="confirmpassword" class="confirminput" name="confirmpassword" type="password"><br><br>
 
         <input class="saveinput" type="submit" value="Save">
       </form>
