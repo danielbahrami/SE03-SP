@@ -1,7 +1,7 @@
 @import url(http://fonts.cdnfonts.com/css/ponnala);
     *,::after,::before{box-sizing:border-box}
     .parent{
-        position:relative;
+        position:fixed;
         background:#3f3f3f;
         height:60px;
         display:grid;

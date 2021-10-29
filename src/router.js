@@ -3,8 +3,11 @@ import VueRouter from "vue-router";
 import App from "./App";
 import signUp from "./components/login/signUp";
 import forgotPassword from "./components/login/forgotPassword";
-import canvas from "./views/main";
+import main from "./views/main";
 import hitlists from "./components/content/hitlists";
+import playlists from "./components/content/playlists";
+import genres from "./components/content/genres";
+import recently from "./components/content/recently";
 Vue.use(VueRouter);
 
 const routes = [
@@ -21,8 +24,8 @@ const routes = [
     },
     {
         path: "/home",
-        name: "canvas",
-        component: canvas
+        name: "main",
+        component: main
     },
     {
         path: "/password-reset",
@@ -33,8 +36,24 @@ const routes = [
         path: "/hitlists",
         name: "hitlists",
         component: hitlists
+    },
+    {
+        path: "/playlists",
+        name: "playlists",
+        component: playlists
+    },
+    {
+        path: "/genres",
+        name: "genres",
+        component: genres
+    },
+    {
+        path: "/recently",
+        name: "recently",
+        component: recently
     }
-];
+
+]
 
 // DO NOT TOUCH!
 const router = new VueRouter({

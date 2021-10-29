@@ -1,17 +1,11 @@
 <template>
   <div class="app">
     <router-view/>
+    <topbar/>
+    <sidebar/>
+    <album-art/>
     <media-player/>
   </div>
-
-
-  <!--
-    <div>
-    <Canvas></Canvas>
-    <Homepage></Homepage>
-   <Specificplaylist></Specificplaylist>
-  </div>
-  -->
 </template>
 <!--template displayer alt på localhost porten. I.e det vi ser i browseren-->
 
@@ -22,11 +16,17 @@
 
 // Allow App.vue access to other components
 import mediaPlayer from "./components/universal/mediaPlayer";
+import topbar from "./components/universal/topbar";
+import sidebar from "./components/universal/sidebar";
+import albumArt from "./components/content/albumArt";
 
 export default {
   name: 'App',
   components: {
-    mediaPlayer
+    mediaPlayer,
+    topbar,
+    sidebar,
+    albumArt,
   }
 }
 

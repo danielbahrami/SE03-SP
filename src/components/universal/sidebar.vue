@@ -41,7 +41,7 @@ export default {}
 .title {
   color: #D6CD81;
   font-size: 38px;
-  font-family: Ag header 1;
+  font-family: Ag header;
   font-weight: bolder;
   margin: 0px 0px 5px 10px;
 }
@@ -79,6 +79,10 @@ export default {}
   color: #D6CD81;
   font-weight: 600;
   margin-left: 0px;
+}
+
+.sidebar{
+  max-width: 350px;
 }
 
 </style>
