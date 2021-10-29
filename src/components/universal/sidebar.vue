@@ -82,7 +82,7 @@ export default {}
 }
 
 .sidebar{
-  max-width: 350px;
+
 }
 
 </style>

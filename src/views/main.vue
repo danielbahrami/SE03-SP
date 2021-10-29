@@ -1,8 +1,5 @@
 <template>
   <div class="canvas">
-    <Sidebar/>
-    <topbar/>
-    <album-art/>
     <div class="content">
       <router-view/>
     </div>
@@ -10,18 +7,14 @@
 </template>
 
 <script>
-import Sidebar from '../components/universal/sidebar'
-import topbar from "../components/universal/topbar";
-import albumArt from "../components/content/albumArt";
+
 // import home from "../components/content/home";
 
 export default {
   name: 'canvas',
 
   components: {
-    Sidebar,
-    topbar,
-    albumArt,
+
     // home,
   }
 }
