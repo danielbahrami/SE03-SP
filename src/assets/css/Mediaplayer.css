@@ -1,0 +1,39 @@
+.parent-media {
+    width: 60%;
+    height: 40px;
+    background: rgb(111, 110, 107);
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    border-right: 2px solid black;
+    
+    justify-content: center;
+    align-items: center;
+
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1-media { grid-area: 1 / 1 / 2 / 2; }
+    .div2-media { grid-area: 1 / 2 / 2 / 3; }
+    .div3-media { grid-area: 1 / 3 / 2 / 4; }
+    .div4-media { grid-area: 1 / 4 / 2 / 9; }
+    .div5-media { grid-area: 1 / 9 / 2 / 10; }
+    .div6-media { grid-area: 1 / 10 / 2 / 11; }
+    .div7-media { grid-area: 1 / 11 / 2 / 12; }
+    .div8-media { grid-area: 1 / 12 / 2 / 13; }
+
+.music{
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    border-radius: 50%;
+    width: 50px;
+}
+hr {
+    width: 100%;
+}
