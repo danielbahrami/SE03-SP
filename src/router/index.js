@@ -27,7 +27,7 @@ const routes = [
             },
             {
                 path: 'recently',
-                component: () => import(/* webpackChunkName: "recently" */ '../views/Recently.vue')
+                component: () => import(/* webpackChunkName: "recently" */ '../components/Recently.vue')
             },
             {
                 path: 'profileEdit',
