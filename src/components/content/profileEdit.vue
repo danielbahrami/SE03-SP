@@ -1,5 +1,6 @@
 <template>
 
+  <div class="profileEdit">
   <div>
     <h1 class="headerProfile">Profile</h1>
     <h2 class="headerPassword">New Password</h2>
@@ -33,7 +34,7 @@
     </div>
 
   </div>
-
+  </div>
 </template>
 
 <script>
@@ -41,6 +42,27 @@ export default {}
 </script>
 
 <style scoped>
+
+.profileEdit{
+  position: relative;
+  top: 4.25em;
+  right: 0;
+  left: 18%;
+  bottom: 2em;
+  width: 82%; /* 100% - sidebar@width */
+
+  overflow: hidden;
+
+  font-size: 15px;
+  text-align: center;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
 .headerProfile {
   width: 150px;
@@ -153,14 +175,14 @@ export default {}
 }
 
 .usernameinput {
-
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  right: 615px;
+
   position: absolute;
-  top: 200px;
+  top: 110px;
+  margin-left: 50px;
   color: white;
   width: 328px;
   height: 25px;
@@ -174,9 +196,9 @@ export default {}
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  right: 615px;
   position: absolute;
-  top: 312px;
+  top: 212px;
+  margin-left: 50px;
   color: white;
   width: 328px;
   height: 25px;
@@ -190,9 +212,9 @@ export default {}
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  right: 615px;
   position: absolute;
-  top: 417px;
+  top: 305px;
+  margin-left: 50px;
   color: white;
   width: 328px;
   height: 25px;
@@ -205,9 +227,9 @@ export default {}
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  right: 615px;
   position: absolute;
-  top: 585px;
+  top: 460px;
+  margin-left: 50px;
   color: white;
   width: 328px;
   height: 25px;
@@ -223,8 +245,8 @@ export default {}
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  right: 615px;
   top: 680px;
+  margin-left: 50px;
   color: white;
   width: 328px;
   height: 25px;
@@ -251,11 +273,9 @@ export default {}
 
 .profileName {
   position: absolute;
-  width: 135px;
-  height: 53px;
+  width: fit-content;
   right: 109px;
-  top: 353px;
-
+  top: 220px;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
@@ -267,8 +287,9 @@ export default {}
 }
 
 .profileImage {
+  box-sizing: border-box;
   position: absolute;
-  top: 133px;
+  top: 30px;
   right: 79px;
   width: 212px;
   height: 207px;
@@ -281,7 +302,7 @@ export default {}
   padding: 5px;
   height: 26px;
   position: absolute;
-  top: 420px;
+  top: 280px;
   right: 125px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;

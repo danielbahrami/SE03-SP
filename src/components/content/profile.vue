@@ -1,5 +1,5 @@
 <template>
-
+<div class="profile">
   <div>
     <h1 class="headerProfile">Profile</h1>
     <h3 class="headerUsername">Username:</h3>
@@ -21,7 +21,7 @@
     <button class="buttonUploadImage">Upload Image</button>
 
   </div>
-
+  </div>
 </template>
 
 <script>
@@ -30,7 +30,21 @@ export default {}
 
 <style scoped>
 
+.profile{
+  position: relative;
+  top: 4.25em;
+  right: 0;
+  left: 18%;
+  bottom: 2em;
+  width: 82%; /* 100% - sidebar@width */
 
+  overflow: hidden;
+
+  font-size: 15px;
+  text-align: center;
+  color: white;
+
+}
 .headerProfile {
   width: 150px;
   height: 38px;
@@ -142,105 +156,91 @@ export default {}
 }
 
 .linkSubscription {
-  width: 150px;
-  height: 68px;
-  padding-left: 80px;
-  top: 169px;
+  box-sizing: border-box;
+
+  margin-left: 80px;
+  width: fit-content;
   display: flex;
+
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-
   color: #FFFFFF;
 }
 
 .linkPrivacySafety {
-  width: 150px;
-  height: 68px;
-  padding-left: 80px;
-  top: 169px;
-  display: flex;
+  box-sizing: border-box;
 
+  margin-left: 80px;
+  width: fit-content;
+  margin-top: 20px;
+  display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-
   color: #FFFFFF;
 }
 
 .linkDisplayLanguage {
-  width: 150px;
-  height: 68px;
-  padding-left: 80px;
-  margin-top: 1px;
-  padding-bottom: 5px;
-  display: flex;
+  box-sizing: border-box;
 
+  margin-left: 80px;
+  width: fit-content;
+  margin-top: 20px;
+  display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-
   color: #FFFFFF;
 }
 
 .linkHelpCenter {
+  box-sizing: border-box;
 
-  width: 150px;
-  height: 68px;
-  padding-left: 80px;
-  padding-top: 1px;
-  padding-bottom: 5px;
+  margin-left: 80px;
+  width: fit-content;
+  margin-top: 20px;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-
   color: #FFFFFF;
 }
 
 .linkDeleteAccount {
+  box-sizing: border-box;
 
-  width: 150px;
-  height: 20px;
-  padding-left: 80px;
-  padding-top: 1px;
-  padding-bottom: 5px;
+  margin-left: 80px;
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 70px;
   display: flex;
-
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-
   color: #FFFFFF;
 }
 
 .profileName {
   position: absolute;
-  width: 135px;
-  height: 53px;
+  width: fit-content;
   right: 109px;
-  top: 353px;
-
+  top: 220px;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
@@ -252,22 +252,22 @@ export default {}
 }
 
 .profileImage {
+  box-sizing: border-box;
   position: absolute;
-  top: 133px;
+  top: 30px;
   right: 79px;
   width: 212px;
   height: 207px;
 }
 
 .buttonUploadImage {
-
   color: white;
   background: transparent;
   width: 100px;
   padding: 5px;
   height: 26px;
   position: absolute;
-  top: 420px;
+  top: 280px;
   right: 125px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
