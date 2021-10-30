@@ -74,7 +74,7 @@ export default {}
     .div5-sidebar { grid-area: 6 / 1 / 7 / 2; }
 
 .title {
-  text-align: left;
+  text-align: center;
   color: #D6CD81;
   font-size: 38px;
   font-family: Ag header;
@@ -100,7 +100,6 @@ export default {}
 
 .side-btn.active {
   position: relative;
-  background-color: white;
   color: #D6CD81;
   font-weight: 600;
   margin-left: 0px;
