@@ -10,6 +10,8 @@ import genres from "./components/content/genres";
 import recently from "./components/content/recently";
 import profile from "./components/content/profile";
 import profileedit from "./components/content/profileEdit";
+import AxiosTest from "@/flask/AxiosTest";
+import flaskTestView from "@/flask/flaskTestView";
 Vue.use(VueRouter);
 
 const routes = [
@@ -63,6 +65,16 @@ const routes = [
         path: "/profileedit",
         name: "profileedit",
         component: profileedit
+    },
+    {
+        path: "/axiosTest",
+        name: "axiosTest",
+        component: AxiosTest
+    },
+    {
+        path: "/flaskTestView",
+        name: "flaskTestView",
+        component: flaskTestView
     }
 
 ]
