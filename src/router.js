@@ -3,14 +3,15 @@ import VueRouter from "vue-router";
 import App from "./App";
 import signUp from "./components/login/signUp";
 import forgotPassword from "./components/login/forgotPassword";
-import main from "./views/main";
+import home from "./components/content/home";
 import hitlists from "./components/content/hitlists";
 import playlists from "./components/content/playlists";
 import genres from "./components/content/genres";
 import recently from "./components/content/recently";
 import profile from "./components/content/profile";
 import profileedit from "./components/content/profileEdit";
-import AxiosTest from "@/flask/AxiosTest";
+import flaskPlaylist from "@/flask/flaskPlaylist";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -27,8 +28,8 @@ const routes = [
     },
     {
         path: "/home",
-        name: "main",
-        component: main
+        name: "home",
+        component: home
     },
     {
         path: "/password-reset",
@@ -66,9 +67,9 @@ const routes = [
         component: profileedit
     },
     {
-        path: "/axiosTest",
-        name: "axiosTest",
-        component: AxiosTest
+        path: "/flaskPlaylist",
+        name: "flaskPlaylist",
+        component: flaskPlaylist
     }
 
 ]

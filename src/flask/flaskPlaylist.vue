@@ -1,20 +1,26 @@
 <template>
-  <div id="axios">
-    <h1>Flask Test</h1>
-    <input type="text" v-model="flaskName" @keyup.enter="addFlaskTest">
+  <div id="flaskPlaylist">
     <ul>
-      <li class="flaskOutput" v-for="post in flaskTests" :key="post">
-        {{post.SongName}}{{post.Artist}}{{post.Album}}
+      <li class="row" v-for="post in flaskTests" :key="post">
+        <div class="column">
+          <span>{{post.SongName}}</span>
+        </div>
+        <div class="column">
+         <span>{{post.Artist}}</span>
+        </div>
+        <div class="column">
+          <span>{{post.Album}}</span>
+        </div>
       </li>
     </ul>
   </div>
 </template>
 <script>
-import axios from "@/flask/AxiosTest";
+import axios from "@/flask/flaskPlaylist";
 const baseURL = "http://localhost:5000"
 
 export default {
-  name: "AxiosTest",
+  name: "flaskPlaylist",
   data() {
     return {
       postId:[],
@@ -23,7 +29,7 @@ export default {
     };
   },
   async created(){
-    fetch("http://localhost:5000").then((r)=>r.json()).then((j)=>this.flaskTests=j)
+    fetch(baseURL).then((r)=>r.json()).then((j)=>this.flaskTests=j)
   },  async post(){
     try {
       const requestOptions = {
@@ -54,18 +60,24 @@ export default {
 
 <style scoped>
 
-li {
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 
 }
 
-ul {
-  padding: 0%;
-  margin: 0%;
+.column {
+  float: left;
+  width: 20%;
+  padding: 5%;
+  margin-bottom: -7%;
+
 }
 
-#axios
-{
-  color: white;
+li{
+  list-style-type: none;
 }
+
 
 </style>
