@@ -3,9 +3,9 @@
     <h1>Flask Test</h1>
     <input type="text" v-model="flaskName" @keyup.enter="addFlaskTest">
     <ul>
-      <div class="flaskOutput" v-for="post in flaskTests" :key="post">
+      <li class="flaskOutput" v-for="post in flaskTests" :key="post">
         {{post.SongName}}{{post.Artist}}{{post.Album}}
-      </div>
+      </li>
     </ul>
   </div>
 </template>
