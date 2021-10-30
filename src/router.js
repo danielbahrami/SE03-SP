@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import App from "./App";
 import signUp from "./components/login/signUp";
 import forgotPassword from "./components/login/forgotPassword";
-import main from "./views/main";
+import home from "./components/content/home";
 import hitlists from "./components/content/hitlists";
 import playlists from "./components/content/playlists";
 import genres from "./components/content/genres";
@@ -28,8 +28,8 @@ const routes = [
     },
     {
         path: "/home",
-        name: "main",
-        component: main
+        name: "home",
+        component: home
     },
     {
         path: "/password-reset",

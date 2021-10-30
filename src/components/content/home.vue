@@ -8,13 +8,9 @@
     </ul>
     <h1 class="workout">Workout Playlists</h1>
     <ul class="container1">
-      <li><img alt="" height="300" src="https://bit.ly/3nDyjOi" width="300"/><br>Bum Bum<p class="Author">Jan Per </p>
-      </li>
-      <li><img alt="" height="300" src="https://bit.ly/3GmRWmi" width="300"/><br>Li Li<p class="Author">Jan Per </p>
-      </li>
-      <li><img alt="" height="300" src="https://bit.ly/3ml6Z7Y" width="300"/><br>Fr Fr<p class="Author">Jan Per </p>
-      </li>
-
+      <li><img alt="" height="300" src="https://bit.ly/3nDyjOi" width="300"/><br>Bum Bum<p class="Author">Jan Per </p></li>
+      <li><img alt="" height="300" src="https://bit.ly/3GmRWmi" width="300"/><br>Li Li<p class="Author">Jan Per </p></li>
+      <li><img alt="" height="300" src="https://bit.ly/3ml6Z7Y" width="300"/><br>Fr Fr<p class="Author">Jan Per </p></li>
     </ul>
   </div>
 </template>
@@ -26,6 +22,26 @@ export default {
 </script>
 
 <style scoped>
+
+.home{
+  position: relative;
+  top: 4.25em;
+  right: 0;
+  left: 18%;
+  bottom: 2em;
+  width: 82%;
+
+  overflow: hidden;
+
+  font-size: 15px;
+  text-align: center;
+  color: white;
+
+  display: grid;
+
+
+
+}
 
 .recommended {
   text-align: left;
