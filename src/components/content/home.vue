@@ -12,6 +12,7 @@
       <li><img alt="" height="300" src="https://bit.ly/3GmRWmi" width="300"/><br>Li Li<p class="Author">Jan Per </p></li>
       <li><img alt="" height="300" src="https://bit.ly/3ml6Z7Y" width="300"/><br>Fr Fr<p class="Author">Jan Per </p></li>
     </ul>
+    <br><br>
   </div>
 </template>
 
@@ -39,8 +40,6 @@ export default {
 
   display: grid;
 
-
-
 }
 
 .recommended {
@@ -61,6 +60,7 @@ export default {
 }
 
 .container li {
+  list-style-type: none;
   float: left;
   text-align: center;
   margin-left: 4em;
@@ -70,6 +70,7 @@ export default {
 }
 
 .container1 li {
+  list-style-type: none;
   float: left;
   text-align: center;
   margin-left: 4em;
