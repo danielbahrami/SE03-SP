@@ -20,13 +20,14 @@ import topbar from "./components/universal/topbar";
 import sidebar from "./components/universal/sidebar";
 import albumArt from "./components/content/albumArt";
 
+
 export default {
   name: 'App',
   components: {
     mediaPlayer,
     topbar,
     sidebar,
-    albumArt,
+    albumArt
   }
 }
 

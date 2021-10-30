@@ -10,7 +10,8 @@ import genres from "./components/content/genres";
 import recently from "./components/content/recently";
 import profile from "./components/content/profile";
 import profileedit from "./components/content/profileEdit";
-import AxiosTest from "@/flask/AxiosTest";
+import flaskPlaylist from "@/flask/flaskPlaylist";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -66,9 +67,9 @@ const routes = [
         component: profileedit
     },
     {
-        path: "/axiosTest",
-        name: "axiosTest",
-        component: AxiosTest
+        path: "/flaskPlaylist",
+        name: "flaskPlaylist",
+        component: flaskPlaylist
     }
 
 ]
