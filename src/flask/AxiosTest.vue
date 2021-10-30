@@ -3,8 +3,8 @@
     <h1>Flask Test</h1>
     <input type="text" v-model="flaskName" @keyup.enter="addFlaskTest">
     <ul>
-      <div v-for="postId in postId" v-bind:key="postId">
-        <h2>{{flaskTests.SongName}}</h2>
+      <div class="flaskOutput" v-for="post in flaskTests" :key="post">
+        {{post.SongName}}{{post.Artist}}{{post.Album}}
       </div>
     </ul>
   </div>
@@ -18,17 +18,12 @@ export default {
   data() {
     return {
       postId:[],
-      flaskName: ""
+      flaskName: "",
+      flaskTests: []
     };
   },
   async created(){
-    try {
-      const res = await axios.get(baseURL)
-      this.flaskTests = res.data;
-    } catch (e)
-    {
-      console.error(e);
-    }
+    fetch("http://localhost:5000").then((r)=>r.json()).then((j)=>this.flaskTests=j)
   },  async post(){
     try {
       const requestOptions = {
@@ -70,10 +65,6 @@ ul {
 
 #axios
 {
-  color: white;
-}
-
-.h2 {
   color: white;
 }
 
