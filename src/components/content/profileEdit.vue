@@ -75,13 +75,13 @@ export default {}
   line-height: 1em;
   letter-spacing: -0.02em;
   color: #D6CD81;
+  
 }
 
 .headerPassword {
   position: absolute;
-  width: 9em;
   height: 1em;
-  padding-left: 0.5em;
+  margin-left: 0.7em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
@@ -89,6 +89,9 @@ export default {}
   line-height: 1em;
   letter-spacing: -0.02em;
   color: #FFFFFF;
+  border: 2px solid red;
+  box-sizing: border-box;
+  width:fit-content;
 }
 
 .username {
