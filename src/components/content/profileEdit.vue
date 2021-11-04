@@ -65,39 +65,36 @@ export default {}
 }
 
 .headerProfile {
-  width: 150px;
-  height: 38px;
-  padding-left: 22px;
-  top: 114px;
+  width: 4em;
+  height: 1em;
+  padding-left: 0.7em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 30px;
-  /* or 88% */
+  font-size: 2em;
+  line-height: 1em;
   letter-spacing: -0.02em;
   color: #D6CD81;
 }
 
 .headerPassword {
   position: absolute;
-  width: 186px;
-  height: 40px;
-  padding-left: 25px;
-  top: 480px;
+  width: 9em;
+  height: 1em;
+  padding-left: 0.5em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 2em;
+  line-height: 1em;
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
 
 .username {
-  width: 150px;
-  height: 68px;
-  padding-left: 50px;
+  width: 9em;
+  height: 1em;
+  padding-left: 0.5em;
   top: 169px;
   display: flex;
   font-family: Work Sans;
