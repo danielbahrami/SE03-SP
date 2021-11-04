@@ -130,7 +130,7 @@ export default {}
   width: 150px;
   height: 53px;
   padding-left: 50px;
-  top: 50px;
+  top: 159px;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
