@@ -15,12 +15,13 @@
       </div>
     </div>
     <div class="div4 buttons">
+      <p>Username</p>
       <!-- Login button and that other weird button -->
       <router-link active-class="active" class="top-btn" to="/profile"> <button aria-label="User" class="user__actions">
         <PersonIcon/>
       </button>
       </router-link>
-      <button aria-label="har ingen ide hvad denne knap er til for" class="VIP__STAR">
+      <button aria-label="favorites" class="favorites">
         <img height="24px" src="../../assets/free-rating-star-icon-2793-thumb.png"/>
       </button>
     </div>
@@ -28,25 +29,30 @@
 </template>
 
 <script>
-import PersonIcon from 'vue-material-design-icons/Account.vue'
-import SearchIcon from 'vue-material-design-icons/Magnify.vue'
-
-export default {
-  name: 'Top',
-  components: {
-    PersonIcon,
-    SearchIcon
-  }
+// Import the needed icons
+  import PersonIcon from 'vue-material-design-icons/Account.vue'
+  import SearchIcon from 'vue-material-design-icons/Magnify.vue'
+  export default {
+    name: 'Top',
+    // Initiate icons for use in html
+    components: {
+      PersonIcon,
+      SearchIcon
+    }
 }
 </script>
 <style scoped>
-@import url(http://fonts.cdnfonts.com/css/ponnala);
+    /* Tells the browser it should calculate the påadding and margin into the size of a box */
     *,::after,::before{box-sizing:border-box}
+
+
+     /* **************** Outer component setup; Use grid; **************** */
     .parent{
         position:fixed;
         background:#3f3f3f;
         height:3.8em;
         width: 100%;
+        top: 0;
         display:grid;
         font-family:Ponnala,sans-serif;
         line-height:1.6;
@@ -56,13 +62,13 @@ export default {
         align-items:center;
         font-size:1.125em;
 
+        /* Pull this component above other components */
         z-index: 999;
         
         grid-template-columns:.4fr repeat(5,1fr); /*Set first column to .4fr; repeat 1fr space for the next 5*/
         grid-template-rows:1fr; /*space for the rows*/
         grid-column-gap:30px; /*gap between the columns*/
         grid-row-gap:0;
-        padding:5px
     }
         .div1{grid-area:1/1/2/2} /* Row start, column start, row end, column end*/
         .div2{grid-area:1/2/2/3}
@@ -77,9 +83,11 @@ export default {
             justify-self:end;
             align-content:flex-end}
 
-    @media only screen and (max-width:900px){ /*Use to animate the search bar on small screens so it doesnt fill everything - Inspiration from Kevin Powell YT */
+    /*Use to animate the search bar on small screens so it doesnt fill everything - Inspiration from Kevin Powell YT */
+    @media only screen and (max-width:900px){ 
         .search{
-            --size:20px; /*Making a variable to reuse, later used for calculations*/
+            /*Making a variable to reuse, later used for calculations*/
+            --size:20px;
             border:2px solid #333;
             display:flex;
             border-radius:100vh;
@@ -88,7 +96,8 @@ export default {
             position:relative;
             width:var(--size);
             height:var(--size);
-            transition:width 450ms cubic-bezier(.18,.89,.32,1.28); /*https://cubic-bezier.com/#.18,.89,.32,1.28*/
+            /* animation: https://cubic-bezier.com/#.18,.89,.32,1.28*/
+            transition:width 450ms cubic-bezier(.18,.89,.32,1.28);
             padding:3px
         }
         .search__input{
@@ -108,6 +117,7 @@ export default {
             border:0;
             cursor:pointer;
             border-radius:100vh;
+            /* Animation support in different browsers */
             transition:background .2s ease-out;
                 -webkit-transition:background .2s ease-out;
                 -moz-transition:background .2s ease-out;
@@ -118,19 +128,23 @@ export default {
             color:grey;
             box-shadow:0 0 10px rgba(0,0,0,.15)
         }
+
         .search:focus-within{width:100%}
+
         .search__input{
             opacity:1;
             z-index:initial;
             cursor:initial;
             width:calc(80% - var(--size))
         }
+
         .search__submit:focus,
         .search__submit:hover{
             outline:0;
             box-shadow:0 0 10px rgba(0,0,0,.65)
         }
-    }
+    } /* END OF MEDIA QUERY FOR COLLAPSING SEARCH */
+
     .search{
         --size:40px;
         border:2px solid #333;
@@ -141,13 +155,16 @@ export default {
         font-size:1.25em;
         background: #FFF;
     }
+
     .search__input{
         flex-grow:1;
         padding:.25em 1em;
         border:0;
         background:0 0
     }
+
     .search__input:focus{outline:0}
+
     .search__submit{
         cursor:pointer;
         border:0;
@@ -159,45 +176,61 @@ export default {
         color:grey;
         box-shadow:0 0 10px rgba(0,0,0,.15)
     }
+
     .div2,.logo{height:100%}
+
     .search:focus-within{width:100%}
+
     .search__input{
         opacity:1;
         z-index:initial;
         cursor:initial;
         width:calc(100% - var(--size))
     }
+
     .search__submit:focus,
     .search__submit:hover{
         outline:0;
         box-shadow:0 0 10px rgba(0,0,0,.65)
     }
+    /* Center search icon in center of its box */
     .magnify-icon{margin-left:-2px}
-    .VIP__STAR,.user__actions{
+
+    .favorites,.user__actions{
         cursor:pointer;
         border:0;
         background:0 0;
         border-radius:100vh
     }
+    /* If screen is small enough, hide "Alrakis" make room for search bar */
     @media only screen and (min-width:0px) and (max-width:650px){
         .div2 span{
             display:none;
             color:transparent
         }
     }
+
     .logo{
         position:absolute;
         left:10px;
         top:0
     }
+
     .div2{
         display:flex;
         position:relative
     }
+
     .div2 span{
         position:absolute;
         top:5px;
         font-size:40px;
         color:#fff
     }
+    
+    .div4 p {
+      color: #CBCBCB;
+      margin: unset;
+    }
+
 </style>

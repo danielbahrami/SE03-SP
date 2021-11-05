@@ -19,7 +19,6 @@
     <div class="div4-media">
       <hr>
     </div>
-    <!-- TODO: change to actual repeat button -->
     <div class="div5-media">
       <button aria-label="Song repeat" class="music__repeat music">
         <RepeatIcon/>
@@ -79,7 +78,7 @@ export default {
 
 <style scoped>
 .parent-media {
-    width: 60%;
+    width: 70%;
     height: 2em;
     background: rgb(111, 110, 107);
     position: fixed;
@@ -91,13 +90,17 @@ export default {
     align-items: center;
 
 
+    /* Parent create grid */
     display: grid;
+    /* 12 column with space of 1fr */
     grid-template-columns: repeat(12, 1fr);
+    /* Make 1 rows with 1fr space */
     grid-template-rows: 1fr;
+    /* No gaps between columns or rows */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-    
+    /* Belonging to parent display:grid. grid-area means Row start, column start, row end, column end */
     .div1-media { grid-area: 1 / 1 / 2 / 2; }
     .div2-media { grid-area: 1 / 2 / 2 / 3; }
     .div3-media { grid-area: 1 / 3 / 2 / 4; }

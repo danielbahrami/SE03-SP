@@ -88,34 +88,29 @@
 <script>
 
 export default {
+  // TODO: Make the buttons clickable so that it scrolls instead of having a scroll bar
 }
 </script>
 <style scoped>
 .hitlists{
-  position: relative;
-  top: 4.25em;
-  right: 0;
-  left: 18%;
-  bottom: 2em;
-  width: 82%; /* 100% - sidebar@width */
-
   overflow: hidden;
-
   font-size: 15px;
   text-align: center;
   color: white;
 
+  /* Parent create grid */
   display: grid;
+  /* Repeat 1fr space for 3 columns */
   grid-template-columns: repeat(3, 1fr);
+  /* Make 6 rows with auto calculation of space */
   grid-template-rows: repeat(6, auto);
+  /* No gaps between columns or rows */
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-
+  /* Belonging to parent display:grid. grid-area means Row start, column start, row end, column end */
   .div-1 { grid-area: 1 / 2 / 2 / 4; }
-  .div-2 { 
-    text-align: center;
-    grid-area: 2 / 1 / 3 / 2; }
+  .div-2 { grid-area: 2 / 1 / 3 / 2; }
   .div-3 { grid-area: 2 / 2 / 3 / 3; }
   .div-4 { grid-area: 2 / 3 / 3 / 4; }
   .div-5 { grid-area: 3 / 2 / 4 / 4; }
@@ -127,11 +122,12 @@ export default {
   .div-11{ grid-area: 6 / 2 / 7 / 3; }
   .div-12{ grid-area: 6 / 3 / 7 / 4; }
 
+/* ********** TYPOGRAPHY ********** */
 .great, .new, .Old {
   text-align: left;
   color: #D6CD81;
 }
-
+/* SET A CONTAINER WIDTH, MAKE SCROLL IF CONTENT IS WIDER THAN WIDTH */
 .container {
   padding: unset;
   width: 55em;
@@ -146,7 +142,7 @@ export default {
   margin: 0.5em;
   box-sizing: content-box;
 }
-
+/* ********** GENERAL POSITION ********** */
 .prev, .next {
   position: relative;
   top: 50%;

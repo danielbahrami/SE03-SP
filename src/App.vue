@@ -3,7 +3,10 @@
     <topbar/>
     <sidebar/>
     <album-art/>
-    <router-view/>
+    <div class="contentFitter">
+      <router-view/>
+    </div>
+    <soundAndQueue/>
     <media-player/>
   </div>
 </template>
@@ -19,6 +22,7 @@ import mediaPlayer from "./components/universal/mediaPlayer";
 import topbar from "./components/universal/topbar";
 import sidebar from "./components/universal/sidebar";
 import albumArt from "./components/content/albumArt";
+import soundAndQueue from "./components/universal/soundAndQueue.vue";
 
 
 export default {
@@ -27,7 +31,8 @@ export default {
     mediaPlayer,
     topbar,
     sidebar,
-    albumArt
+    albumArt,
+    soundAndQueue
   }
 }
 
@@ -53,6 +58,17 @@ body {
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* This is added here, so that any updated 'content' always sits within its area and doesnt go behind the menus */
+.contentFitter{
+  position: relative;
+  top: 4.25em;
+  right: 0;
+  left: 18%;
+  bottom: 2em;
+  width: 82%; /* 100% - sidebar@width */
+}
+
 
 </style>
 
