@@ -1,6 +1,7 @@
 <template>
   <div class="recently">
-    Recently
+    <h1 class="title">Recently played</h1>
+
   </div>
 </template>
 
@@ -11,14 +12,25 @@ export default {
 </script>
 
 <style scoped>
+
 .recently {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  font-size: 40px;
-  color: rgb(167, 167, 167);
-  font-weight: 600;
+  position: relative;
+  top: 4.25em;
+  right: 0;
+  left: 18%;
+  bottom: 2em;
+  width: 82%; /* 100% - sidebar@width */
+
+  overflow: hidden;
+
+  font-size: 15px;
+  text-align: center;
+  color: white;
+
+}
+.title{
+  text-align: left;
+  margin-left: 100px;
+  color: #D6CD81;
 }
 </style>
