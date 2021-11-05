@@ -118,7 +118,7 @@ export default {}
   width: fit-content;
   padding: 0.5em;
   height: fit-content;
-  margin-left: 7em;
+  margin-left: 6em;
   display: flex;
   margin-top: 4em;
   border: 0.1em solid #FFFFFF;
@@ -133,7 +133,7 @@ export default {}
   width: fit-content;
   padding: 0.5em;
   height: fit-content;
-  margin-left: 7em;
+  margin-left: 6em;
   margin-top: 2em;
   display: flex;
   border: 0.1em solid #FFFFFF;
@@ -240,12 +240,12 @@ export default {}
   
   width: fit-content;
   height: fit-content;
-  margin-left: 10em;
-  margin-top: 2em;
+  margin-left: 28em;
+
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 2em;
   line-height: 1em;
   letter-spacing: -0.02em;
 
