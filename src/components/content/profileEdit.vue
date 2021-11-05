@@ -32,7 +32,7 @@
     <div>
       <img alt=""
            class="profileImage" height="207"
-           src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="212"/>
+           src="../../assets/alrakisImage.png"/>
       <p class="profileName">Image Profile</p>
       <button class="buttonUploadImage">Upload Image</button>
     </div>
@@ -79,7 +79,6 @@ export default {}
   font-size: 2em;
   letter-spacing: -0.02em;
   color: #D6CD81;
-  border: 2px solid red;
 }
 
 .headerPassword {
@@ -93,7 +92,6 @@ export default {}
   font-size: 1.5em;
   letter-spacing: -0.02em;
   color: #FFFFFF;
-  border: 2px solid red;
   box-sizing: border-box;
   width:fit-content;
 }
@@ -110,7 +108,6 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -126,7 +123,6 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -142,7 +138,6 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -158,7 +153,6 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  border: 2px solid red;
   color: #FFFFFF;
 }
 .headerConfirmPassword {
@@ -173,7 +167,6 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -271,44 +264,42 @@ export default {}
   margin-left: 2em;
   margin-top: 1em;
   border-radius: 0.2em;
-  padding-left: 0.7em;
-  padding-right: 0.7em;
+  padding: 0.4em;
 }
 
 .profileName {
   position: absolute;
   width: fit-content;
-  right: 109px;
-  top: 220px;
+  right: 3em;
+  top: 9.1em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5em;
   letter-spacing: -0.02em;
-  border: 2px solid red;
   color: #FFFFFF;
 }
 
 .profileImage {
   box-sizing: border-box;
   position: absolute;
-  top: 30px;
-  right: 79px;
-  width: 212px;
-  height: 207px;
-  border: 2px solid red;
+  top: 2.5em;
+  right: 3em;
+  width: 12em;
+  height: 12em;
+  border-radius: 10em;
+
 }
 
 .buttonUploadImage {
   color: white;
   background: transparent;
-  width: 100px;
-  padding: 5px;
-  height: 26px;
+  width: fit-content;
+  padding: 0.4em;
+  height: fit-content;
   position: absolute;
-  top: 280px;
-  right: 125px;
+  top: 20em;
+  right: 6.5em;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
