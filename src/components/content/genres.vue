@@ -2,9 +2,12 @@
   <div class="genres">
     <h1 class="title">Genres</h1>
     <ul class="container">
-      <li><img alt="" height="175" src="https://bit.ly/3pVbZCy" width="175"/>Genre 1</li>
-      <li><img alt="" height="175" src="https://bit.ly/3vX55Oh" width="175"/>Genre 2</li>
-      <li><img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 3</li>
+      <li><a href="#"> <img alt="" height="175" src="https://bit.ly/3pVbZCy" width="175"/>Genre 1</a></li>
+
+      <li><a href="#"> <img alt="" height="175" src="https://bit.ly/3vX55Oh" width="175"/>Genre 2</a></li>
+
+      <li> <a href="#"> <img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 3</a><li>
+
       <li><img alt="" height="175" src="https://bit.ly/2ZtQVI2" width="175"/>Genre 4</li>
       <li><img alt="" height="175" src="https://bit.ly/3nupEha" width="175"/>Genre 5</li>
       <li><img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 6</li>
