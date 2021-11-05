@@ -75,7 +75,7 @@ export default {}
   line-height: 1em;
   letter-spacing: -0.02em;
   color: #D6CD81;
-  
+  border: 2px solid red;
 }
 
 .headerPassword {
@@ -106,7 +106,7 @@ export default {}
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.02em;
-
+  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -122,7 +122,7 @@ export default {}
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.02em;
-
+  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -138,7 +138,7 @@ export default {}
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.02em;
-
+  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -154,7 +154,7 @@ export default {}
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.02em;
-
+  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -170,7 +170,7 @@ export default {}
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.02em;
-
+  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -282,7 +282,7 @@ export default {}
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.02em;
-
+  border: 2px solid red;
   color: #FFFFFF;
 }
 
@@ -293,6 +293,7 @@ export default {}
   right: 79px;
   width: 212px;
   height: 207px;
+  border: 2px solid red;
 }
 
 .buttonUploadImage {
