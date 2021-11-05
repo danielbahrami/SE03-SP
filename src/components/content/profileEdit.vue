@@ -178,13 +178,11 @@ export default {}
 }
 
 .inputUsername {
-  position: sticky;
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
-  position: absolute;
   margin-top: 0.1em;
   margin-left: 1.9em;
   color: white;
@@ -196,7 +194,6 @@ export default {}
 }
 
 .inputEmail {
-  position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -213,7 +210,6 @@ export default {}
 }
 
 .inputOldPassword {
-  position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -229,7 +225,6 @@ export default {}
   box-sizing: border-box;
 }
 .inputNewPassword {
-  position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -246,7 +241,7 @@ export default {}
 }
 
 .inputConfirmPassword {
-  position: sticky;
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
