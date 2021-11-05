@@ -40,132 +40,133 @@ export default {}
 
   overflow: hidden;
 
-  font-size: 15px;
+  font-size: 1em;
   text-align: center;
   color: white;
 
 }
 .headerProfile {
-  width: 150px;
-  height: 38px;
-  padding-left: 22px;
-  top: 114px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2em;
+  margin-top: 1em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 30px;
+  font-size: 2em;
+  line-height: 2em;
   /* or 88% */
   letter-spacing: -0.02em;
-
+  
   color: #D6CD81;
 }
 
 .headerUsername {
-  width: 150px;
-  height: 68px;
-  padding-left: 80px;
-  top: 169px;
+  
+  width: fit-content;
+  height: fit-content;
+  margin-left: 5em;
+  margin-top: 1em;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1em;
+  line-height: 1em;
   letter-spacing: -0.02em;
 
   color: #FFFFFF;
 }
 
 .headerEmail {
-  width: 150px;
-  height: 59px;
-  padding-left: 80px;
-  top: 241px;
+
+  width: fit-content;
+  height: fit-content;
+  margin-left: 5em;
+  margin-top: 3em;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1em;
+  line-height: 1em;
   letter-spacing: -0.02em;
 
   color: #FFFFFF;
 }
 
 .headerPassword {
-
-  width: 150px;
-  height: 53px;
-  padding-left: 80px;
-  top: 308px;
+  
+  width: fit-content;
+  height: fit-content;
+  margin-left: 5em;
+  margin-top: 3em;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1em;
+  line-height: 1em;
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
 
 .buttonEditProfile {
+  cursor: pointer;
   color: white;
   background: transparent;
-  width: 80px;
-  padding: 5px;
-  height: 26px;
-  margin-left: 80px;
+  width: fit-content;
+  padding: 0.5em;
+  height: fit-content;
+  margin-left: 7em;
   display: flex;
-  top: 375px;
-  border: 1px solid #FFFFFF;
+  margin-top: 4em;
+  border: 0.1em solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.2em;
 }
 
 .buttonLogOut {
+  cursor: pointer;
   color: white;
   background: transparent;
-  width: 80px;
-  padding: 5px;
-  height: 26px;
-  margin-left: 80px;
-  margin-top: 19px;
+  width: fit-content;
+  padding: 0.5em;
+  height: fit-content;
+  margin-left: 7em;
+  margin-top: 2em;
   display: flex;
-  top: 420px;
-  border: 1px solid #FFFFFF;
+  border: 0.1em solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.2em;
 }
 
 
 .headerSettings {
-  width: 150px;
-  height: 40px;
-  padding-left: 22px;
-  padding-top: 20px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2em;
+  margin-top: 1em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 30px;
+  font-size: 2em;
+  line-height: 2em;
   letter-spacing: -0.02em;
-
   color: #D6CD81;
 }
 
 .linkSubscription {
+  margin-top: 1em;
   box-sizing: border-box;
-
-  margin-left: 80px;
+  margin-left: 5.5em;
   width: fit-content;
   display: flex;
-
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.9em;
+  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #FFFFFF;
@@ -173,15 +174,15 @@ export default {}
 
 .linkPrivacySafety {
   box-sizing: border-box;
-
-  margin-left: 80px;
+  margin-left: 5.5em;
+  margin-top: 1.5em;
   width: fit-content;
-  margin-top: 20px;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.9em;
+  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #FFFFFF;
@@ -189,15 +190,15 @@ export default {}
 
 .linkDisplayLanguage {
   box-sizing: border-box;
-
-  margin-left: 80px;
+  margin-left: 5.5em;
+  margin-top: 1.5em;
   width: fit-content;
-  margin-top: 20px;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.9em;
+  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #FFFFFF;
@@ -205,15 +206,15 @@ export default {}
 
 .linkHelpCenter {
   box-sizing: border-box;
-
-  margin-left: 80px;
+  margin-left: 5.5em;
+  margin-top: 1.5em;
   width: fit-content;
-  margin-top: 20px;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.9em;
+  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #FFFFFF;
@@ -221,31 +222,31 @@ export default {}
 
 .linkDeleteAccount {
   box-sizing: border-box;
-border: 2px solid red;
-  margin-left: 80px;
+  margin-left: 5.5em;
+  margin-top: 2em;
   width: fit-content;
-  margin-top: 20px;
-  margin-bottom: 70px;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.9em;
+  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #FFFFFF;
 }
 
 .profileName {
-  position: absolute;
+  
   width: fit-content;
-  right: 109px;
-  top: 220px;
+  height: fit-content;
+  margin-left: 10em;
+  margin-top: 2em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 5em;
+  line-height: 1em;
   letter-spacing: -0.02em;
 
   color: #FFFFFF;
@@ -253,25 +254,26 @@ border: 2px solid red;
 
 .profileImage {
   box-sizing: border-box;
-  position: absolute;
-  top: 30px;
-  right: 79px;
-  width: 212px;
-  height: 207px;
+  margin-top: 10%;
+  margin-right: 10%;
+  max-width: 20%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .buttonUploadImage {
+  cursor: pointer;
   color: white;
   background: transparent;
-  width: 100px;
+  width: fit-content;
   padding: 5px;
-  height: 26px;
-  position: absolute;
-  top: 280px;
-  right: 125px;
-  border: 1px solid #FFFFFF;
+  height: fit-content;
+
+  margin-top: 280px;
+  margin-right: 1em;
+  border: 0.1em solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.2em;
 }
 
 
