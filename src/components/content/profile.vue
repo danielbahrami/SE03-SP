@@ -16,7 +16,7 @@
     <a class="linkDeleteAccount" href="#">Delete Account</a>
 
     <img alt="" class="profileImage"
-         height="207" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="212"/>
+         height="207" src="../../assets/alrakisImage.png"/>
     <p class="profileName">Image Profile</p>
     <button class="buttonUploadImage">Upload Image</button>
 
@@ -237,43 +237,41 @@ export default {}
 }
 
 .profileName {
-  
+  position: absolute;
   width: fit-content;
-  height: fit-content;
-  margin-left: 28em;
-
+  right: 3em;
+  top: 9.1em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 2em;
-  line-height: 1em;
+  font-size: 1.5em;
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
 
 .profileImage {
   box-sizing: border-box;
-  margin-top: 10%;
-  margin-right: 10%;
-  max-width: 20%;
-  width: fit-content;
-  height: fit-content;
+  position: absolute;
+  top: 2.5em;
+  right: 3em;
+  width: 12em;
+  height: 12em;
+  border-radius: 10em;
+
 }
 
 .buttonUploadImage {
-  cursor: pointer;
   color: white;
   background: transparent;
   width: fit-content;
-  padding: 5px;
+  padding: 0.4em;
   height: fit-content;
-
-  margin-top: 280px;
-  margin-right: 1em;
-  border: 0.1em solid #FFFFFF;
+  position: absolute;
+  top: 21em;
+  right: 6.5em;
+  border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 0.2em;
+  border-radius: 4px;
 }
 
 
