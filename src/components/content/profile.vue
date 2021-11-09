@@ -239,8 +239,8 @@ export default {}
 .profileName {
   position: absolute;
   width: fit-content;
-  right: 3em;
-  top: 9.1em;
+  right: 3.1em;
+  top: 8.5em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
@@ -253,9 +253,9 @@ export default {}
   box-sizing: border-box;
   position: absolute;
   top: 2.5em;
-  right: 3em;
-  width: 12em;
-  height: 12em;
+  right: 3.5em;
+  width: 11em;
+  height: 11em;
   border-radius: 10em;
 
 }
@@ -267,8 +267,8 @@ export default {}
   padding: 0.4em;
   height: fit-content;
   position: absolute;
-  top: 21em;
-  right: 6.5em;
+  top: 20em;
+  right: 6.8em;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
