@@ -31,15 +31,7 @@ export default {}
 <style scoped>
 
 .profile{
-  position: relative;
-  top: 4.25em;
-  right: 0;
-  left: 18%;
-  bottom: 2em;
-  width: 82%; /* 100% - sidebar@width */
-
   overflow: hidden;
-
   font-size: 15px;
   text-align: center;
   color: white;

@@ -223,7 +223,6 @@
 
     .div2 span{
         position:absolute;
-        top:5px;
         font-size:40px;
         color:#fff
     }

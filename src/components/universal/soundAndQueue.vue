@@ -1,17 +1,36 @@
 <template>
     <div class="soundAndQueue">
-        <SoundIcon/>
+        <span v-if="value === 0"><VolumeMute/></span>
+        <span v-else-if="value > 0  && value < 20"><VolumeLow/></span>
+        <span v-else-if="value > 20 && value < 70"><VolumeMedium/></span>
+        <span v-else-if="value > 70 && value < 101"><VolumeHigh/></span>
+        <div class="sliderContainer">
+            <vue-slider v-model="value"></vue-slider>
+        </div>
     </div>
-    
 </template>
 <script>
-import SoundIcon from "vue-material-design-icons/VolumeLow.vue"
-export default {
-    name: 'soundAndQueue',
-    components: {
-        SoundIcon
-    }
+import VueSlider from 'vue-slider-component'
+import 'vue-slider-component/theme/material.css'
 
+import VolumeMute from 'vue-material-design-icons/VolumeMute.vue'
+import VolumeLow from 'vue-material-design-icons/VolumeLow.vue'
+import VolumeMedium from 'vue-material-design-icons/VolumeMedium.vue'
+import VolumeHigh from 'vue-material-design-icons/VolumeHigh.vue'
+
+export default {
+    data() {
+        return {
+            value: 0,
+        }
+    },
+    components: {
+        VueSlider,
+        VolumeMute,
+        VolumeLow,
+        VolumeMedium,
+        VolumeHigh
+    },
 }
 </script>
 <style scoped>
@@ -24,6 +43,15 @@ export default {
         right: 0;
         justify-content: center;
         align-items: center;
+        z-index: 999;
+    }
+    .sliderContainer{
+        width: 40%;
+        display: inline-block;
+        margin-left: 1em;
+    }
+    span {
+        display: inline-block;
     }
 
 </style>
