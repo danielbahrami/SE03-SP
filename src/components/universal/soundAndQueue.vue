@@ -7,6 +7,7 @@
         <div class="sliderContainer">
             <vue-slider v-model="value"></vue-slider>
         </div>
+        <!-- TODO: IMPLEMENT SPEED CHOOSER -->
     </div>
 </template>
 <script>
@@ -36,7 +37,7 @@ export default {
 <style scoped>
     .soundAndQueue{
         background: darkslategrey;
-        width: 12%;
+        width: 17%;
         height: 2em;
         position: fixed;
         bottom: 0;
@@ -48,10 +49,15 @@ export default {
     .sliderContainer{
         width: 40%;
         display: inline-block;
-        margin-left: 1em;
+        margin-left: 2em;
+        position: absolute;
+        top: 0.45em;
+
     }
     span {
         display: inline-block;
+        position: absolute;
+        top: 0.13em;
     }
 
 </style>

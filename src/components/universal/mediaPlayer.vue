@@ -78,7 +78,7 @@ export default {
 
 <style scoped>
 .parent-media {
-    width: 70%;
+    width: 65%;
     height: 2em;
     background: rgb(111, 110, 107);
     position: fixed;

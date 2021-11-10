@@ -7,12 +7,15 @@
       <router-view/>
     </div>
     <soundAndQueue/>
-    <!-- The slideout need to be outside of all the containers so it can fill the entire screen -->
-    <slide-out dock="right" :visible.sync="visible" title="Queue">
+    <!-- 
+        The slideout need to be outside of all the containers so it can fill the entire screen
+        *******Works with pressing escape 
+    -->
+    <slide-out dock="right" :visible.sync="visible" title="Queue" size="20%" customClass="sliderBackgroundColor">
       <p>Some song</p>
     </slide-out>
     <!-- Button to activate slideout -->
-     <button class="Queue" @click="visible = !visible">Show</button>
+     <button class="Queue" @click="visible = true"><List/></button>
     <media-player/>
   </div>
 </template>
@@ -30,10 +33,12 @@ import sidebar from "./components/universal/sidebar";
 import albumArt from "./components/content/albumArt";
 import soundAndQueue from "./components/universal/soundAndQueue.vue";
 
+//Import icon for slideout activation button
+import List from "vue-material-design-icons/FormatListBulleted.vue"
+
+//Import the slideout component and css 
 import SlideOut from '@hyjiacan/vue-slideout'
 import '@hyjiacan/vue-slideout/lib/slideout.css'
-
-
 
 export default {
   name: 'App',
@@ -43,7 +48,8 @@ export default {
     sidebar,
     albumArt,
     soundAndQueue,
-    SlideOut
+    SlideOut,
+    List
   },
   data() {
     return {
@@ -98,7 +104,7 @@ body {
 
 /* position button for slideout so it is where it should be according to design */
 .Queue {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   z-index: 1000;
@@ -107,6 +113,12 @@ body {
   color: inherit;
   border: none;
 }
+
+.sliderBackgroundColor > .vue-slideout-layout{
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
 
 
 </style>
