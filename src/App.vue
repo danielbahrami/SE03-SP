@@ -11,8 +11,24 @@
         The slideout need to be outside of all the containers so it can fill the entire screen
         *******Works with pressing escape 
     -->
-    <slide-out dock="right" :visible.sync="visible" title="Queue" size="20%" customClass="sliderBackgroundColor">
-      <p>Some song</p>
+    <slide-out dock="right" :visible.sync="visible" title="Queue" size="20%" customClass="slideOut">
+      <section>
+        <div class="queueImageHolder">
+          <img src="./assets/albumArts/Ariana.png">
+        </div>
+        <div class="queueTextHolder">
+          <p class="songAndArtist"> <strong > Song Name </strong> <br> Artist</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="queueImageHolder">
+          <img src="./assets/albumArts/Genesis.png">
+        </div>
+        <div class="queueTextHolder">
+          <p class="songAndArtist"> <strong > Song Name </strong> <br> Artist</p>
+        </div>
+      </section>
     </slide-out>
     <!-- Button to activate slideout -->
      <button class="Queue" @click="visible = true"><List/></button>
@@ -114,12 +130,51 @@ body {
   border: none;
 }
 
-.sliderBackgroundColor > .vue-slideout-layout{
+/* Styling for slideout */
+.slideOut .vue-slideout-layout .vue-slideout-header {
+  border-top: none;
+  border-bottom: 2px solid black;
+}
+.slideOut .vue-slideout-layout .vue-slideout-header .vue-slideout-title-text {
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-weight: 700;
+  color: #D6CD81;
+  font-size: 2.125em;
+}
+.slideOut > .vue-slideout-layout{
   background-color: rgb(30, 30, 30);
   color: white;
 }
+.slideOut section {
+  display: flex;
+  height: 4.6875em;
+  margin: 1em;
+}
+.slideOut section .queueImageHolder {
+  width: 4.6875em;
+  height: 4.6875em;
+}
+.slideOut section .queueTextHolder {
+  height: 4.6875em;
+  margin-left: 0.5em;
+  color: rgba(203, 203, 203, 80);
+}
+.slideOut section .queueTextHolder p{
+  margin: unset;
+  font-size: 0.9em;
+}
+.slideOut section .queueTextHolder p strong {
+  font-size: 1.25em;
+}
+.slideOut section .queueImageHolder img{
+  float: right;
+  max-width: 4.6875em;
+  max-height: 4.6875em;
+}
 
 
+/* <div style="display:flex;align-items:center;height:6em;">Text Content</div>
+ */
 
 </style>
 
