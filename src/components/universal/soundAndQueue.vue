@@ -8,6 +8,12 @@
             <vue-slider v-model="value" class="my-vue-slider"></vue-slider>
         </div>
         <!-- TODO: IMPLEMENT SPEED CHOOSER -->
+        <select style="width='5em' margin-left='9em'">
+            <option value="0.5">0.5x</option>
+            <option value="1.0">1.0x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2.0">2.0x</option>
+        </select>
     </div>
 </template>
 <script>
@@ -31,11 +37,17 @@ export default {
         VolumeMute,
         VolumeLow,
         VolumeMedium,
-        VolumeHigh
+        VolumeHigh,
     },
 }
 </script>
 <style scoped>
+    :root {
+        /* CSS VARIABLES */
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+    }
     .soundAndQueue{
         background: rgb(111, 110, 107);
         width: 17%;
@@ -62,7 +74,28 @@ export default {
         top: 0.13em;
     }
 
-    /* Little deep on the css tree but seemingly necessary to overwrite imported css in script */
+    select{
+        position: absolute;
+        margin-left: 8.75em;
+        top: 0.5em;
+        width: 4.5em;
+        background-color: rgb(111, 110, 107);
+         /* A reset of styles, including removing the default dropdown arrow */
+        appearance: none;
+        /* Additional resets for further consistency */
+        border: none;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+        text-align: center;
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+
+    /* Little deep on the css tree but seemingly necessary to overwrite imported css within script tag */
     /* Change the height of the volume bar */
     div.my-vue-slider.vue-slider.vue-slider-ltr[data-v-7fe1e2f6] {
         height: 2px !important;

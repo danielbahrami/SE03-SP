@@ -90,7 +90,7 @@
             --size:20px;
             border:2px solid #333;
             display:flex;
-            border-radius:100vh;
+            border-radius:2vh;
             overflow:hidden;
             font-size:1.25em;
             position:relative;
@@ -149,7 +149,7 @@
         --size:40px;
         border:2px solid #333;
         display:flex;
-        border-radius:100vh;
+        border-radius:2vh;
         height:var(--size);
         padding:2px;
         font-size:1.25em;

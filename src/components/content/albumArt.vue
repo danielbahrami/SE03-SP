@@ -2,7 +2,7 @@
   <div class="parent-album">
     <div class="div2-album"><h2><strong> Now Playing </strong></h2></div> <!-- Now Playing -->
     <div class="div3-album">
-      <img alt="" src="../../assets/logo.png">
+      <img alt="" src="../../assets/albumArts/AC-DC.png">
     </div> <!-- Album Art -->
     <div class="div4-album"><p>Choff and Dust</p></div> <!-- Song Name -->
     <div class="div5-album"><small> HYONNA </small></div> <!-- Artist -->
