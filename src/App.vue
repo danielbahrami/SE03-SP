@@ -31,7 +31,7 @@
       </section>
     </slide-out>
     <!-- Button to activate slideout -->
-     <button class="Queue" @click="visible = true"><List/></button>
+    <button class="Queue" @click="visible = true"><List/></button>
     <media-player/>
   </div>
 </template>
@@ -170,6 +170,10 @@ body {
   float: right;
   max-width: 4.6875em;
   max-height: 4.6875em;
+}
+
+.slideOut .vue-slideout-btn-close svg {
+  fill: white;
 }
 
 

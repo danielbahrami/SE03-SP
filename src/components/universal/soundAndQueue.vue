@@ -49,7 +49,7 @@ export default {
     --select-arrow: var(--select-border);
     }
     .soundAndQueue{
-        background: rgb(111, 110, 107);
+        background: #706E6B;
         width: 17%;
         height: 2em;
         position: fixed;

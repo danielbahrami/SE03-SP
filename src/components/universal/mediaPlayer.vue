@@ -80,11 +80,11 @@ export default {
 .parent-media {
     width: 65%;
     height: 2em;
-    background: rgb(111, 110, 107);
+    background: #706E6B;
     position: fixed;
     bottom: 0;
     left: 18%;
-    border-right: 2px solid black;
+    border-right: 0.125em solid black;
     
     justify-content: center;
     align-items: center;

@@ -213,7 +213,7 @@
     .logo{
         position:absolute;
         left:10px;
-        top:0
+        top:0;
     }
 
     .div2{

@@ -28,7 +28,7 @@ export default {
     text-transform: uppercase;
     /* PULL INFRONT */
     z-index: 999;
-    border-top: 0.01em solid grey;
+    border-top: 0.1em solid #323232;
 
     /* Parent create grid */
     display: grid;

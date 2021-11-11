@@ -85,7 +85,7 @@ export default {}
   font-size: 38px;
   font-family: Ag header;
   font-weight: bolder;
-  border-bottom: 0.01em solid grey;
+  border-bottom: 0.1em solid #323232;
   padding-left: 0.5em;
 }
 
