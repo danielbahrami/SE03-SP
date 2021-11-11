@@ -272,6 +272,7 @@ export default {}
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 

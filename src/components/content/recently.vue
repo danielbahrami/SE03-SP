@@ -1,7 +1,7 @@
 <template>
   <div class="recently">
     <h1 class="title">Recently played</h1>
-
+    <div class="l1"></div>
   </div>
 </template>
 
@@ -32,5 +32,14 @@ export default {
   text-align: left;
   margin-left: 100px;
   color: #D6CD81;
+}
+
+.l1{
+  position: absolute;
+  width: 100%;
+  height: 0em;
+  left: 0em;
+  top: 4.5em;
+  border: 2px solid #323232;
 }
 </style>
