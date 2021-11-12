@@ -223,7 +223,7 @@ export default {}
 .linkDeleteAccount {
   box-sizing: border-box;
   margin-left: 5.5em;
-  margin-top: 2em;
+  margin-top: 1em;
   width: fit-content;
   display: flex;
   font-family: Work Sans;
