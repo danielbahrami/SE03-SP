@@ -123,7 +123,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10;
 
   background: none;
   color: inherit;

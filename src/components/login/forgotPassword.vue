@@ -119,5 +119,8 @@ label {
     margin-bottom: 0.5rem;
     color: white;
 }
+.vm2_wrapper.vm2__animate-opacity{
+    backdrop-filter: blur(5px);
+}
 
 </style>

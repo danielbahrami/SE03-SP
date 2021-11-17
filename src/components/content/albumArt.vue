@@ -27,7 +27,7 @@ export default {
     text-align: center;
     text-transform: uppercase;
     /* PULL INFRONT */
-    z-index: 999;
+    z-index: 10;
     border-top: 0.1em solid #323232;
 
     /* Parent create grid */

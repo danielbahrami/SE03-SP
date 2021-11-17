@@ -138,4 +138,7 @@ button[data-v-a65090a4]{
   margin-top: 1rem;
 }
 
+.vm2_wrapper.vm2__animate-opacity{
+    backdrop-filter: blur(5px);
+}
 </style>

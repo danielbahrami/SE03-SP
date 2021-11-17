@@ -51,7 +51,7 @@ export default {
         right: 0;
         justify-content: center;
         align-items: center;
-        z-index: 999;
+        z-index: 10;
         border-left: 0.125em solid black;
     }
     .sliderContainer{

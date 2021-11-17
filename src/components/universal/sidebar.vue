@@ -49,7 +49,7 @@ export default {}
 .sidebar{
   background: rgb(30, 30, 30); /* TODO: Change to correct color */
   position: fixed; /* Fixed to the screen; always on the side */
-  z-index: 999; /* Z-index to pull it on top */
+  z-index: 10; /* Z-index to pull it on top */
   left: 0;
   top: 4.25em;
   bottom: 15em;
