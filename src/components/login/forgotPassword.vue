@@ -18,7 +18,7 @@
       </div>
       <div class="content">
           <label for="email">Email</label>
-          <input class="input form-control" name="email" placeholder="Email">
+          <input class="input form-control" id="email" name="email" placeholder="Email">
       </div>
       <button class="button">Send email</button>
       <br><br>
@@ -60,10 +60,6 @@ export default {
 
 }
 
-.h2 {
-  color: white;
-}
-
 .input {
   background-color: white;
 }
@@ -89,6 +85,7 @@ export default {
   color: white;
   cursor: pointer;
 }
+
 .floatLeft>svg{
   margin-top: 1.5rem;
   margin-left: 1.25rem;
@@ -122,7 +119,5 @@ label {
     margin-bottom: 0.5rem;
     color: white;
 }
-
-
 
 </style>

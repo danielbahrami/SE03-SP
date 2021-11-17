@@ -18,11 +18,11 @@
                   </div>
                   <div class="content">
                     <label for="email">Email</label>
-                    <input type="email" class="input form-control" name="email" placeholder="Email">
+                    <input type="email" class="input form-control" id="email" name="email" placeholder="Email">
                   </div>
                   <div class="content">
                     <label for="password">Password</label>
-                    <input type="password" class="input form-control" name="password">
+                    <input type="password" class="input form-control" id="password" name="password" placeholder="Password">
                   </div>
                   <router-link to="/profile">
                   <button class="button" @click="$vm2.close('login')">
@@ -71,10 +71,6 @@ export default {
 
 }
 
-.h2 {
-  color: white;
-}
-
 .input {
   background-color: white;
 }
@@ -95,11 +91,13 @@ export default {
   color: white;
   cursor: pointer;
 }
+
 .floatLeft>svg{
   margin-top: 1.5rem;
   margin-left: 1.25rem;
   display: flex;
 }
+
 .close{
   height: 2rem;
 }
@@ -109,6 +107,7 @@ export default {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .content{
   margin-top: 1rem;
   display: flex;

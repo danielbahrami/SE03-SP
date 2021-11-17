@@ -18,11 +18,11 @@
                   </div>
                   <div class="content">
                     <label for="email">Email</label>
-                    <input type="email" class="input form-control" name="email" placeholder="Email">
+                    <input type="email" class="input form-control" id="email" name="email" placeholder="Email">
                   </div>
                   <div class="content">
                     <label for="password">Password</label>
-                    <input type="password" class="input form-control" name="password">
+                    <input type="password" class="input form-control" id="password" name="password" placeholder="Password">
                   </div>
                   <button class="button">
                     <slot>Sign Up</slot>
@@ -98,11 +98,13 @@ a.login {
   color: white;
   cursor: pointer;
 }
+
 .floatLeft>svg{
   margin-top: 1.25rem;
   margin-left: 1.25rem;
   display: flex;
 }
+
 .content{
   margin-top: 1rem;
   display: flex;
@@ -135,4 +137,5 @@ label {
 button[data-v-a65090a4]{
   margin-top: 1rem;
 }
+
 </style>
