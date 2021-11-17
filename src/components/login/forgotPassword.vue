@@ -1,38 +1,55 @@
 <template>
-  <div class="forgotPassword">
-    <div id="parent">
-      <close-button class="Close_Button"></close-button>
-      <h1 class="h1">Forgot Password</h1>
-    </div>
-    <h2 class="h2">Email</h2>
-    <input class="input" placeholder="Email">
-    <br><br>
-    <button class="button">
-      <slot>Send email</slot>
-    </button>
-    <br><br>
-    <router-link class="link" to="/login">Back to login</router-link>
-  </div>
+  <modal-vue
+      @on-close="$vm2.close('forgotPassword')"
+      name="forgotPassword"
+      darkMode
+      fontDark
+      noFooter
+      noHeader
+      modalSize="md"
+  >
 
+    <div class="forgotPassword">
+      <div class="close">
+        <exitIcon class="floatLeft" @click="close"/>
+      </div>
+      <div id="parent">
+        <h1 class="h1">Forgot password</h1>
+      </div>
+      <div class="content">
+          <label for="email">Email</label>
+          <input class="input form-control" id="email" name="email" placeholder="Email">
+      </div>
+      <button class="button">Send email</button>
+      <br><br>
+      <a class="link" @click="$vm2.open('login'), $vm2.close('forgotPassword')">Back to login</a>
+      <br><br>
+    </div>
+  </modal-vue>
 </template>
 
-<script>
+<script scoped>
 
-import closeButton from "../universal/closeButton";
+import exitIcon from 'vue-material-design-icons/Close.vue'
 
 export default {
-  name: "ForgotPassword",
+  name: "forgotPassword",
   components: {
-    closeButton
+    exitIcon
+  },
+  methods: {
+    close() {
+      this.$vm2.close("forgotPassword");
+    }
   }
 }
+
 </script>
 
-
 <style scoped>
+
 .forgotPassword {
   text-align: center;
-  width: 350px;
   border: 5px solid rgb(30, 30, 30);
   background-color: rgb(30, 30, 30);
 }
@@ -43,10 +60,6 @@ export default {
 
 }
 
-.h2 {
-  color: white;
-}
-
 .input {
   background-color: white;
 }
@@ -54,24 +67,57 @@ export default {
 .button {
   border: none;
   color: black;
-  padding: 15px 32px;
   text-align: center;
   font-size: 16px;
   font-family: "Arial";
   background-color: rgb(212, 205, 138);
-  border-radius: 12px;
-}
-
-.link {
-  color: white;
-}
-
-.Close_Button {
-  float: left;
+  border-radius: 0.6rem;
+  margin-top: 4.1rem;
+  margin-bottom: 4.1rem;
 }
 
 #parent {
   padding-left: 10px;
+}
+
+.floatLeft{
+  float: left;
+  color: white;
+  cursor: pointer;
+}
+
+.floatLeft>svg{
+  margin-top: 1.5rem;
+  margin-left: 1.25rem;
+  display: flex;
+}
+
+.content{
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-control {
+    align-self: center;
+    display: block;
+    width: 45%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: white;
 }
 
 </style>
