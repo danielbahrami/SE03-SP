@@ -6,6 +6,7 @@
       fontDark
       noFooter
       noHeader
+      modalSize="md"
   >
           
                 <div class="login">
@@ -15,26 +16,29 @@
                   <div id="parent">
                     <h1 class="h1">Login</h1>
                   </div>
-                  <h2 class="h2">Email</h2>
-                  <input class="input" placeholder="Email">
-                  <h2 class="h2">Password</h2>
-                  <input class="input" placeholder="Password">
-                  <br><br>
+                  <div class="content">
+                    <label for="email">Email</label>
+                    <input type="email" class="input form-control" name="email" placeholder="Email">
+                  </div>
+                  <div class="content">
+                    <label for="password">Password</label>
+                    <input type="password" class="input form-control" name="password">
+                  </div>
                   <router-link to="/profile">
                   <button class="button" @click="$vm2.close('login')">
                     <slot>Login</slot>
                   </button>
                   </router-link>
                   <br><br>
-                  <a class="signUp" @click="$vm2.open('forgotPassword'), $vm2.close('login')">Forgot password?</a>
+                  <a class="link" @click="$vm2.open('forgotPassword'), $vm2.close('login')">Forgot password?</a>
                   <br><br>
-                  <a class="signUp" @click="$vm2.open('signUp'), $vm2.close('login')">Sign up</a>
+                  <a class="link" @click="$vm2.open('signUp'), $vm2.close('login')">Sign up</a>
                   <br><br>
                 </div>
             </modal-vue>
 </template>
 
-<script>
+<script scoped>
 
 import exitIcon from 'vue-material-design-icons/Close.vue'
 
@@ -59,7 +63,6 @@ export default {
 
 .login {
   text-align: center;
-  width: 350px;
   background-color: rgb(30, 30, 30);
 }
 
@@ -92,14 +95,51 @@ export default {
   color: white;
   cursor: pointer;
 }
+.floatLeft>svg{
+  margin-top: 1.5rem;
+  margin-left: 1.25rem;
+  display: flex;
+}
 .close{
   height: 2rem;
 }
 
-.signUp {
+.link {
   color: white;
   text-decoration: underline;
   cursor: pointer;
+}
+.content{
+  margin-top: 1rem;
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-control {
+    align-self: center;
+    display: block;
+    width: 45%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+a[data-v-11fe6c4e]> button{
+  margin-top: 1rem;
 }
 
 </style>

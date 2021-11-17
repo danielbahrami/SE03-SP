@@ -6,6 +6,7 @@
       fontDark
       noFooter
       noHeader
+      modalSize="md"
   >
 
                 <div class="signUp" id="signUp">
@@ -15,11 +16,14 @@
                   <div id="parent">
                     <h1 class="h1">Registration</h1>
                   </div>
-                  <h2 class="h2">Email</h2>
-                  <input class="input" placeholder="Email">
-                  <h2 class="h2">Password</h2>
-                  <input class="input" placeholder="Password">
-                  <br><br>
+                  <div class="content">
+                    <label for="email">Email</label>
+                    <input type="email" class="input form-control" name="email" placeholder="Email">
+                  </div>
+                  <div class="content">
+                    <label for="password">Password</label>
+                    <input type="password" class="input form-control" name="password">
+                  </div>
                   <button class="button">
                     <slot>Sign Up</slot>
                   </button>
@@ -52,7 +56,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 #signUp {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -61,8 +65,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
-  background-color: gray;
-  width: 350px;
   border: 5px solid rgb(30, 30, 30);
   background-color: rgb(30, 30, 30);
 }
@@ -81,7 +83,7 @@ export default {
 
 }
 
-.login {
+a.login {
   color: white;
   text-decoration: underline;
   cursor: pointer;
@@ -91,4 +93,46 @@ export default {
   padding-left: 10px;
 }
 
+.floatLeft{
+  float: left;
+  color: white;
+  cursor: pointer;
+}
+.floatLeft>svg{
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+  display: flex;
+}
+.content{
+  margin-top: 1rem;
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-control {
+    align-self: center;
+    display: block;
+    width: 45%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+button[data-v-a65090a4]{
+  margin-top: 1rem;
+}
 </style>
