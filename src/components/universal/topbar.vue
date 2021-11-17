@@ -1,7 +1,9 @@
 <template>
   <div class="parent">
     <div class="div1 logo">
+      <router-link to="/home">
       <img alt="Logo" height="50px" src="../../assets/logo.png">
+      </router-link>
     </div>
     <div class="div2">
       <span>Alrakis</span>
