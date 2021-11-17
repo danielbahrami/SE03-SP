@@ -9,7 +9,8 @@
     <button class="buttonLogOut">Log out</button>
 
     <h1 class="headerSettings">Settings</h1>
-    <a class="linkSubscription" href="#">View subscription</a>
+    <router-link active-class="active" class="linkSubscription" to="/viewSubscription"><button>viewSubscription</button></router-link>
+    <!-- <a class="linkSubscription" href="">View subscription</a> -->
     <a class="linkPrivacySafety" href="#">Privacy and safety</a>
     <a class="linkDisplayLanguage" href="#">Display and language</a>
     <a class="linkHelpCenter" href="#">Help center</a>

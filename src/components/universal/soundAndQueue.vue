@@ -42,12 +42,6 @@ export default {
 }
 </script>
 <style scoped>
-    :root {
-        /* CSS VARIABLES */
-    --select-border: #777;
-    --select-focus: blue;
-    --select-arrow: var(--select-border);
-    }
     .soundAndQueue{
         background: #706E6B;
         width: 17%;

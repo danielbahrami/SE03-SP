@@ -10,6 +10,7 @@ import genres from "./components/content/genres";
 import recently from "./components/content/recently";
 import profile from "./components/content/profile";
 import profileedit from "./components/content/profileEdit";
+import viewSubscription from "./components/content/viewSubscription"
 import flaskPlaylist from "@/flask/flaskPlaylist";
 
 Vue.use(VueRouter);
@@ -70,6 +71,11 @@ const routes = [
         path: "/flaskPlaylist",
         name: "flaskPlaylist",
         component: flaskPlaylist
+    },
+    {
+        path: "/viewSubscription",
+        name: "viewSubscription",
+        component: viewSubscription
     }
 
 ]
