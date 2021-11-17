@@ -54,18 +54,23 @@ export default {}
   top: 4.25em;
   bottom: 15em;
   width: 18%;
-  display: grid;
+  
     justify-content:center;
     align-items:center;
     text-align: center;
   overflow: scroll;
 
-
+  /* Parent create grid */
+    display: grid;
+    /* 1 column with space of 1fr */
     grid-template-columns: 1fr;
+    /* Make 6 rows with 1fr space */
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 1em;
+    /* No gaps between columns or rows */
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
 }
+/* Belonging to parent display:grid. grid-area means Row start, column start, row end, column end */
     .title        { grid-area: 1 / 1 / 2 / 2; }
     .div1-sidebar { grid-area: 2 / 1 / 3 / 2; }
     .div2-sidebar { grid-area: 3 / 1 / 4 / 2; }
@@ -73,15 +78,18 @@ export default {}
     .div4-sidebar { grid-area: 5 / 1 / 6 / 2; }
     .div5-sidebar { grid-area: 6 / 1 / 7 / 2; }
 
+/* TYPOGRAPHY */
 .title {
   text-align: center;
   color: #D6CD81;
   font-size: 38px;
   font-family: Ag header;
   font-weight: bolder;
-  border-bottom: 0.01em solid grey;
+  border-bottom: 0.1em solid #323232;
+  padding-left: 0.5em;
 }
 
+/* BUTTONS */
 .side-btn {
   font-family: "Work Sans";
   font-weight: normal;
@@ -92,6 +100,7 @@ export default {}
   font-weight: 500;
   color: grey;
   background-color: transparent;
+  margin: unset;
 }
 
 .side-btn:focus {

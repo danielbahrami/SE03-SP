@@ -2,7 +2,7 @@
   <div class="parent-album">
     <div class="div2-album"><h2><strong> Now Playing </strong></h2></div> <!-- Now Playing -->
     <div class="div3-album">
-      <img alt="" src="../../assets/logo.png">
+      <img alt="" src="../../assets/albumArts/AC-DC.png">
     </div> <!-- Album Art -->
     <div class="div4-album"><p>Choff and Dust</p></div> <!-- Song Name -->
     <div class="div5-album"><small> HYONNA </small></div> <!-- Artist -->
@@ -15,6 +15,7 @@ export default {
 </script>
 <style scoped>
   .parent-album {
+    /* GENERAL STYLING */
     width: 18%;
     height: 15em;
     background: rgb(30, 30, 30);
@@ -25,16 +26,21 @@ export default {
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-
+    /* PULL INFRONT */
     z-index: 999;
-    border-top: 0.01em solid grey;
+    border-top: 0.1em solid #323232;
 
+    /* Parent create grid */
     display: grid;
+     /* Repeat 1fr space for 3 columns */
     grid-template-columns: repeat(3, 1fr);
+    /* Make 4 rows with 1fr space */
     grid-template-rows: repeat(4, 1fr);
+    /* No gaps between columns or rows */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
+  /* Belonging to parent display:grid. grid-area means Row start, column start, row end, column end */
     .div2-album { grid-area: 1 / 1 / 2 / 4; }
     .div3-album { grid-area: 2 / 1 / 3 / 4; }
     .div4-album { 
@@ -44,6 +50,7 @@ export default {
         align-self: baseline;
         grid-area: 4 / 1 / 5 / 4; }
 
+  /* TYPOGRAPHY */
   small{
       align-content: space-around;
       color: grey;
@@ -55,8 +62,9 @@ export default {
   h2{
       font-size: .75em;
   }
+  /* IMAGE */
   img{
-      max-width: 60%;
-      max-height: 60%;
+      max-width: 40%;
+      max-height: 40%;
   }
 </style>
