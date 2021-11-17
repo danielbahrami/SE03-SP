@@ -19,7 +19,7 @@ const routes = [
         path: "/app",
         name: "app",
         component: App,
-        redirect: "/home" //TODO change to HOME
+        redirect: "/home"
     },
     {
         path: "/signup",

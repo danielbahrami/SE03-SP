@@ -1,19 +1,19 @@
 <template>
   <modal-vue
-      @on-close="$vm2.close('login')"
-      name="login"
+      @on-close="$vm2.close('signUp')"
+      name="signUp"
       darkMode
       fontDark
       noFooter
       noHeader
   >
-          
-                <div class="login">
+
+                <div class="signUp" id="signUp">
                   <div class="close">
                     <exitIcon class="floatLeft" @click="close"/>
                   </div>
                   <div id="parent">
-                    <h1 class="h1">Register</h1>
+                    <h1 class="h1">Registration</h1>
                   </div>
                   <h2 class="h2">Email</h2>
                   <input class="input" placeholder="Email">
@@ -21,37 +21,39 @@
                   <input class="input" placeholder="Password">
                   <br><br>
                   <button class="button">
-                    <slot>Login</slot>
+                    <slot>Sign Up</slot>
                   </button>
                   <br><br>
-                  <router-link class="link" to="/password-reset">Forgot password?</router-link>
-                  <br><br>
-                  <!-- <router-link class="link" to="/signup"> -->
-                  <button @click="$vm2.open('register')"></button>
-                  <!-- </router-link> -->
-                  <br><br>
+                  <a class="login" @click="$vm2.open('login'), $vm2.close('signUp')">Login</a>
                 </div>
             </modal-vue>
 </template>
 
 <script>
 
-// import closeButton from "../universal/closeButton";
+import exitIcon from 'vue-material-design-icons/Close.vue'
 
 export default {
   name: 'signUp',
   components: {
-    // closeButton
+    exitIcon
   },
   props: {
     emailText: String,
     newPasswordText: String,
     newUsernameText: String
+  },
+  methods: {
+    close() {
+      this.$vm2.close("signUp");
+    }
   }
 }
+
 </script>
 
 <style>
+
 #signUp {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -63,14 +65,6 @@ export default {
   width: 350px;
   border: 5px solid rgb(30, 30, 30);
   background-color: rgb(30, 30, 30);
-}
-
-.SignUp {
-  margin-top: 30px;
-}
-
-.userInformation {
-  margin-top: 200px;
 }
 
 .button {
@@ -87,13 +81,10 @@ export default {
 
 }
 
-.h3 {
+.login {
   color: white;
-  text-align: center;
-}
-
-.Login {
-  color: white;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #parent {

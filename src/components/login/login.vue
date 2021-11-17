@@ -24,17 +24,16 @@
                     <slot>Login</slot>
                   </button>
                   <br><br>
-                  <router-link class="link" to="/password-reset">Forgot password?</router-link>
+                  <a class="signUp" @click="$vm2.open('forgotPassword'), $vm2.close('login')">Forgot password?</a>
                   <br><br>
-                  <!-- <router-link class="link" to="/signup"> -->
-                  <button @click="$vm2.open('register')"></button>
-                  <!-- </router-link> -->
+                  <a class="signUp" @click="$vm2.open('signUp'), $vm2.close('login')">Sign up</a>
                   <br><br>
                 </div>
             </modal-vue>
 </template>
 
 <script>
+
 import exitIcon from 'vue-material-design-icons/Close.vue'
 
 export default {
@@ -43,17 +42,15 @@ export default {
     password: String
   },
   methods: {
-    goToNewUserPage() {
-      this.$route
-    },
     close() {
       this.$vm2.close("login");
-    },
+    }
   },
   components: {
     exitIcon,
   }
 }
+
 </script>
 
 <style>
@@ -66,7 +63,6 @@ export default {
 
 .h1 {
   color: rgb(212, 205, 138);
-  margin: 0 auto;
 
 }
 
@@ -89,10 +85,6 @@ export default {
   border-radius: 12px;
 }
 
-.link {
-  color: white;
-}
-
 .floatLeft{
   float: left;
   color: white;
@@ -101,4 +93,11 @@ export default {
 .close{
   height: 2rem;
 }
+
+.signUp {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 </style>

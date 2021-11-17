@@ -27,16 +27,16 @@
     </div>
       <Login/>
       <Register/>
-
+    <forgot-password/>
   </div>
 </template>
 
 <script>
 import PersonIcon from 'vue-material-design-icons/Account.vue'
 import SearchIcon from 'vue-material-design-icons/Magnify.vue'
-
 import Login from '../login/login.vue'
 import Register from '../login/signUp.vue'
+import forgotPassword from '../login/forgotPassword'
 
 export default {
   name: 'Top',
@@ -44,7 +44,8 @@ export default {
     PersonIcon,
     SearchIcon,
     Login,
-    Register
+    Register,
+    forgotPassword
   },
   methods: {
     close() {
