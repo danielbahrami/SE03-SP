@@ -1,8 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App";
-import signUp from "./components/login/signUp";
-import forgotPassword from "./components/login/forgotPassword";
 import home from "./components/content/home";
 import hitlists from "./components/content/hitlists";
 import playlists from "./components/content/playlists";
@@ -22,19 +20,9 @@ const routes = [
         redirect: "/home"
     },
     {
-        path: "/signup",
-        name: "signUp",
-        component: signUp
-    },
-    {
         path: "/home",
         name: "home",
         component: home
-    },
-    {
-        path: "/password-reset",
-        name: "forgotPassword",
-        component: forgotPassword
     },
     {
         path: "/hitlists",
@@ -74,12 +62,11 @@ const routes = [
 
 ]
 
-// DO NOT TOUCH!
 const router = new VueRouter({
     mode: "history",
     base: process.env.BASE_URL,
     routes
 });
-//Redirects the app to load a view from the start TODO change this to HOME
+
 router.replace({path: "/app", redirect: "login"}).then(() => "/login")
 export default router;

@@ -20,9 +20,11 @@
                   <h2 class="h2">Password</h2>
                   <input class="input" placeholder="Password">
                   <br><br>
-                  <button class="button">
+                  <router-link to="/profile">
+                  <button class="button" @click="$vm2.close('login')">
                     <slot>Login</slot>
                   </button>
+                  </router-link>
                   <br><br>
                   <a class="signUp" @click="$vm2.open('forgotPassword'), $vm2.close('login')">Forgot password?</a>
                   <br><br>
