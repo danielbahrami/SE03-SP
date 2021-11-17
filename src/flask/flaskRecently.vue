@@ -1,5 +1,5 @@
 <template>
-  <div id="flaskRecently">
+  <div class="flaskRecently">
     <ul>
       <li class="row" v-for="post in flaskTests" :key="post">
         <div class="column">
@@ -60,6 +60,20 @@ export default {
 
 <style scoped>
 
+.flaskRecently{
+  position: relative;
+  top: 4.25em;
+  right: 0;
+  left: 18%;
+  bottom: 2em;
+  width: 82%; /* 100% - sidebar@width */
+
+  overflow: hidden;
+
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
 .row:after {
   content: "";
   display: table;
