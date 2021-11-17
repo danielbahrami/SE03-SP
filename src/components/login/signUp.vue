@@ -66,8 +66,6 @@ export default {
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
-  font-family: "Comic Sans MS";
-  background-color: rgb(102, 212, 110);
   border-radius: 12px;
 }
 
