@@ -20,36 +20,62 @@ export default {
 <style scoped>
 
 .recently {
-  position: relative;
+  /*
+  width: fit-content;
+  position: absolute;
+  height: fit-content;
+  left: 7em;
+  top: 2em;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  */
+  position: absolute;
   top: 4.25em;
   right: 10%;
   left: 18%;
   bottom: 2em;
   width: 82%;
-
+height: auto;
   overflow: hidden;
-
   font-size: 15px;
   text-align: center;
   color: white;
 
   display: grid;
+
 }
-
 .l1 {
-  position: absolute;
-  width: 70%;
-  height: 0%;
-  left: 20%;
-  top: 25%;
-  border: 2px solid #323232;
+  overflow: hidden;
+  list-style: none;
+  /*grid-template-columns: repeat(4, 1fr);*/
+color: #FFFFFF;
+  /*grid-auto-rows: minmax(2em, auto);*/
+  margin-bottom: 5em;
+  margin-toptop: 5em;
 
+
+}
+.l1 li{
+  position: static;
+  height: auto;
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  margin-left: 2em;
+  margin-top: 2em;
+  font-size: medium;
+  color: white;
+  font-weight: bolder;
+  clear: left;
 }
 .header1 {
   text-align: left;
   margin-left: 100px;
   color: #D6CD81;
-
 
 }
 
