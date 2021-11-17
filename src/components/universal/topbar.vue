@@ -16,14 +16,18 @@
     </div>
     <div class="div4 buttons">
       <!-- Login button and that other weird button -->
-      <router-link active-class="active" class="top-btn" to="/profile"> <button aria-label="User" class="user__actions">
+      <!-- <router-link active-class="active" class="top-btn" to="/profile"> -->
+      <button aria-label="User" class="user__actions" @click="$vm2.open('login')">
         <PersonIcon/>
       </button>
-      </router-link>
+      <!-- </router-link> -->
       <button aria-label="har ingen ide hvad denne knap er til for" class="VIP__STAR">
         <img height="24px" src="../../assets/free-rating-star-icon-2793-thumb.png"/>
       </button>
     </div>
+      <Login/>
+      <Register/>
+
   </div>
 </template>
 
@@ -31,12 +35,23 @@
 import PersonIcon from 'vue-material-design-icons/Account.vue'
 import SearchIcon from 'vue-material-design-icons/Magnify.vue'
 
+import Login from '../login/login.vue'
+import Register from '../login/signUp.vue'
+
 export default {
   name: 'Top',
   components: {
     PersonIcon,
-    SearchIcon
+    SearchIcon,
+    Login,
+    Register
+  },
+  methods: {
+    close() {
+      this.$vm2.close("login");
+    },
   }
+
 }
 </script>
 <style scoped>

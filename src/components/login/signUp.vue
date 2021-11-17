@@ -1,34 +1,47 @@
 <template>
-  <div id="signUp">
-    <div id="parent">
-      <close-button class="Close_Button"></close-button>
-      <h1 class="h1">Registration</h1>
-    </div>
-    <div class="registrationAreas">
-      <h3 class="h3">Username</h3>
-      <input placeholder="Username">
-      <h3 class="h3">Password</h3>
-      <input placeholder="password">
-      <h3 class="h3">Email</h3>
-      <input placeholder="Email">
-    </div>
-    <div class="SignUp">
-      <button class="button">
-        <slot>Sign Up</slot>
-      </button>
-    </div>
-    <router-link class="Login" to="/login">Login</router-link>
-  </div>
+  <modal-vue
+      @on-close="$vm2.close('login')"
+      name="login"
+      darkMode
+      fontDark
+      noFooter
+      noHeader
+  >
+          
+                <div class="login">
+                  <div class="close">
+                    <exitIcon class="floatLeft" @click="close"/>
+                  </div>
+                  <div id="parent">
+                    <h1 class="h1">Register</h1>
+                  </div>
+                  <h2 class="h2">Email</h2>
+                  <input class="input" placeholder="Email">
+                  <h2 class="h2">Password</h2>
+                  <input class="input" placeholder="Password">
+                  <br><br>
+                  <button class="button">
+                    <slot>Login</slot>
+                  </button>
+                  <br><br>
+                  <router-link class="link" to="/password-reset">Forgot password?</router-link>
+                  <br><br>
+                  <!-- <router-link class="link" to="/signup"> -->
+                  <button @click="$vm2.open('register')"></button>
+                  <!-- </router-link> -->
+                  <br><br>
+                </div>
+            </modal-vue>
 </template>
 
 <script>
 
-import closeButton from "../universal/closeButton";
+// import closeButton from "../universal/closeButton";
 
 export default {
   name: 'signUp',
   components: {
-    closeButton
+    // closeButton
   },
   props: {
     emailText: String,
