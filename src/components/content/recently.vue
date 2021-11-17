@@ -42,9 +42,9 @@ export default {
 height: auto;
   overflow: hidden;
   font-size: 15px;
-  text-align: center;
-  color: white;
 
+  color: white;
+text-align: left;
   display: grid;
 
 }
@@ -56,8 +56,9 @@ color: #FFFFFF;
   /*grid-auto-rows: minmax(2em, auto);*/
   margin-bottom: 5em;
   margin-toptop: 5em;
-
-
+position: fixed;
+  top: 20%;
+width: 50%;
 }
 .l1 li{
   position: static;
