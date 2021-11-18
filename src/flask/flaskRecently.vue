@@ -1,12 +1,22 @@
 <template>
   <div class="flaskRecently">
 
-    <table class = "table" v-for="post in flaskTests" :key="post">
-      <tb><span>{{post.SongName}}</span></tb>
-      <tb><span>{{post.Artist}}</span></tb>
-      <tb><span>{{post.Album}}</span></tb>
+    <table class = "table" v-for="post in flaskTests" :key="post" width="100%">
 
+      <tr>
+        <td><span>{{post.SongName}}</span></td>
+       <td><span>{{post.Artist}}</span></td>
+      <td><span>{{post.Album}}</span></td>
+      <table class="icons">
+          <tr>
+          <a href="#"><img alt="" height="20" src="src/assets/favorit.png" width="20"/></a>
+          <a href="#"><img alt="" height="20" src="src/assets/favorit.png" width="20"/></a>
+          <a href="#"><img alt="" height="20" src="src/assets/favorit.png" width="20"/></a>
+          </tr>
+      </table>
+      </tr>
     </table>
+
 
     <ul>
       <li class="row" v-for="post in flaskTests" :key="post">
@@ -72,9 +82,22 @@ export default {
 
 
 .table{
-  border: 1px solid white;
-  width: 80%;
-  border-spacing: 0.5rem;
+
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
+  margin: 0 auto;
+
+}
+/*
+td {
+ padding: 0.1em;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}*/
+
+.icons:first-child{
+  display: none;
 }
 .table:after {
   content: "";
@@ -86,14 +109,36 @@ export default {
   font-weight: bold;
 }
 
+
+.table td{
+  width: 30%;
+padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 8em;
+
+}
+.table tr{
+  border: 1px solid #323232;
+
+}
+
+.table:first-child{
+
+  border-bottom: 2px solid #323232;
+  border-top: 2px solid #323232;
+
+}
+
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
+
 .row {
-  border-top: 0.1em solid white;
+  /*border-top: 0.1em solid white;*/
   border-bottom: 0.1em solid white;
 }
 
@@ -109,7 +154,7 @@ font-weight: bold;
   float: left;
   width: 23%;
   padding:1% ;
-  border-left: 0.1em solid white;
+  /*border-left: 0.1em solid white;*/
   border-right: 0.1em solid white;
 }
 
@@ -120,6 +165,8 @@ font-weight: bold;
   border-right: none;
 width: 3%;
 }
+
+
 
 
 .column1{
