@@ -81,7 +81,7 @@ export default {
         
         grid-template-columns:.4fr repeat(5,1fr); /*Set first column to .4fr; repeat 1fr space for the next 5*/
         grid-template-rows:1fr; /*space for the rows*/
-        grid-column-gap:30px; /*gap between the columns*/
+        grid-column-gap:1em ; /*gap between the columns ~20px*/
         grid-row-gap:0;
     }
         .div1{grid-area:1/1/2/2} /* Row start, column start, row end, column end*/
@@ -90,12 +90,16 @@ export default {
             background: #3f3f3f;
             padding:5px;
             width:50vw ; 
-            grid-area:1/3/2/6}
+            grid-area:1/3/2/6;
+        }
         .div4{
             grid-area:1/6/2/7;
+            height: 100%;
             display:flex;
-            justify-self:end;
-            align-content:flex-end}
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-end;
+          }
 
     /*Use to animate the search bar on small screens so it doesnt fill everything - Inspiration from Kevin Powell YT */
     @media only screen and (max-width:900px){ 
@@ -225,6 +229,8 @@ export default {
     }
 
     .logo{
+        display: flex;
+        align-items: center;
         position:absolute;
         left:10px;
         top:0;
@@ -232,12 +238,14 @@ export default {
 
     .div2{
         display:flex;
+        align-items: center;
         position:relative
     }
 
     .div2 span{
+      font-family: "robotoregular" !important;
         position:absolute;
-        font-size:40px;
+        font-size:2em;
         color:#fff
     }
     

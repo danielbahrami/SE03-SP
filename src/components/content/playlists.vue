@@ -39,7 +39,7 @@ export default {
   height: 43px;
   left: 329px;
   top: 109px;
-  font-family: Work Sans;
+  font-family: "work_sansregular";
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
