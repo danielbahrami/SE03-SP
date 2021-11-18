@@ -10,6 +10,7 @@ import profile from "./components/content/profile";
 import profileedit from "./components/content/profileEdit";
 import viewSubscription from "./components/content/viewSubscription"
 import flaskPlaylist from "@/flask/flaskPlaylist";
+import favorites from "./components/content/favorites";
 
 Vue.use(VueRouter);
 
@@ -49,6 +50,11 @@ const routes = [
         path: "/profile",
         name: "profile",
         component: profile
+    },
+    {
+        path: "/favorites",
+        name: "favorites",
+        component: favorites
     },
     {
         path: "/profileedit",

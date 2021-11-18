@@ -21,9 +21,11 @@
       <button aria-label="User" class="user__actions" @click="$vm2.open('login')">
         <PersonIcon/>
       </button>
+      <router-link to="/favorites">
       <button aria-label="favorites" class="favorites">
         <img height="24px" src="../../assets/free-rating-star-icon-2793-thumb.png"/>
       </button>
+      </router-link>
     </div>
       <Login/>
       <Register/>
