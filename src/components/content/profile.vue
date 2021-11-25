@@ -9,7 +9,7 @@
     <button class="buttonLogOut">Log out</button>
 
     <h1 class="headerSettings">Settings</h1>
-    <router-link active-class="active" class="linkSubscription" to="/viewSubscription"><button>viewSubscription</button></router-link>
+    <router-link active-class="active" class="linkSubscription" to="/viewSubscription"><button class="viewSubscription">View subscriptions</button></router-link>
     <!-- <a class="linkSubscription" href="">View subscription</a> -->
     <a class="linkPrivacySafety" href="#">Privacy and safety</a>
     <a class="linkDisplayLanguage" href="#">Display and language</a>
@@ -265,6 +265,14 @@ export default {}
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.viewSubscription{
+  background: none;
+  color: white;
+  text-decoration: underline;
+  border: none;
+  padding: unset;
 }
 
 

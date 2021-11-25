@@ -89,11 +89,15 @@ export default {
 </script>
 
 <style>
+@import url('fonts/workSans/stylesheet.css');
+@import url('fonts/Roboto/stylesheet.css');
 
+*{
+  font-family: "work_sansregular" !important;
+}
 
 #app {
 
-  font-family: Avenir, Helvetica, Arial, sans-serif, "Work Sans", "Ag header 1";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
