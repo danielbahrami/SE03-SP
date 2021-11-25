@@ -9,7 +9,7 @@
       <td><span>{{post.Album}}</span></td>
       <table class="icons">
           <tr>
-          <a href="#"><img alt="" height="20" src="../assets/tableIcons/favorite.png" width="20"/></a>
+          <a href="#"><img alt="" height="20" src="../assets/tableIcons/favorite.png" width="20" /></a>
           <a href="#"><img alt="" height="20" src="../assets/tableIcons/add.png" width="20"/></a>
           <a href="#"><img alt="" height="20" src="../assets/tableIcons/edit.png" /></a>
           </tr>
@@ -17,22 +17,6 @@
       </tr>
     </table>
 
-
-    <ul>
-      <li class="row" v-for="post in flaskTests" :key="post">
-        <div class="column" >
-          <span>{{post.SongName}}</span>
-        </div>
-        <div class="column">
-          <span>{{post.Artist}}</span>
-        </div>
-        <div class="column">
-          <span>{{post.Album}}</span>
-        </div>
-        <div class="column">
-        </div>
-      </li>
-    </ul>
   </div>
 </template>
 <script>
@@ -97,11 +81,10 @@ td {
 }*/
 
 .icons{
-
 }
 
 .icons:first-child{
-  display: block;
+  display: none;
 }
 .table:after {
   content: "";
@@ -133,67 +116,6 @@ padding-top: 0.5rem;
 
 }
 
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.row {
-  /*border-top: 0.1em solid white;*/
-  border-bottom: 0.1em solid white;
-}
-
-.row:first-child{
-font-weight: bold;
-}
-
-.row:last-child{
-  border-bottom: 0.1em solid white;
-}
-
-.column{
-  float: left;
-  width: 23%;
-  padding:1% ;
-  /*border-left: 0.1em solid white;*/
-  border-right: 0.1em solid white;
-}
-
-.column:first-child{
-  border-left: none;
-}
-.column:last-child{
-  border-right: none;
-width: 3%;
-}
-
-
-
-
-.column1{
-  float: left;
-  width: 23%;
-  padding: 1%;
-
-}
-.column2{
-  float: left;
-  width: 23%;
-  padding: 1%;
-}
-.column3{
-  float: left;
-  width: 24%;
-  padding: 1%;
-}
-
-li{
-  list-style-type: none;
-
-}
 
 
 </style>

@@ -20,41 +20,13 @@ export default {
 <style scoped>
 
 .recently {
-  /*
-  width: fit-content;
-  position: absolute;
-  height: fit-content;
-  left: 7em;
-  top: 2em;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1em;
-  line-height: 1em;
-  letter-spacing: -0.02em;
-
-  position: absolute;
-  top: 4.25em;
-  right: 10%;
-  left: 18%;
-  bottom: 2em;
-  width: 82%;
-height: auto;
-  overflow: hidden;
-  font-size: 15px;
-
-  color: white;
-text-align: left;
-  display: grid; */
   position: relative;
   top: 4.25em;
   right: 0;
   left: 18%;
   bottom: 2em;
   width: 82%; /* 100% - sidebar@width */
-
   overflow: hidden;
-
   font-size: 1em;
   text-align: left;
   color: white;
@@ -68,7 +40,7 @@ color: #FFFFFF;
   margin-bottom: 5em;
 position: fixed;
   top: 20%;
-width: 50%;
+width: 82%;
 }
 .l1 li{
   position: static;
@@ -89,6 +61,8 @@ width: 50%;
   color: #D6CD81;
 
 }
+
+
 
 
 
