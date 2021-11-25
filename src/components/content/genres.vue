@@ -1,8 +1,6 @@
 <template>
   <div class="genres">
-    <h1 class="title">Genres</h1>
     <ul class="container">
-      <div class="l1"></div>
       <li><a href="#"> <img alt="" height="200" src="../../assets/Genres/Jazz.png" width="200"/></a></li>
 
       <li><a href="#"> <img alt="" height="200"  src="../../assets/Genres/Rock.png" width="200"/></a></li>
@@ -35,7 +33,6 @@
 
       <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Folk.png" width="200"/></a></li>
 
-
     </ul>
     <br><br>
   </div>
@@ -50,11 +47,11 @@ export default {}
 
 .genres {
   position: relative;
-  top: 4.25em;
+  top: 1em;
   right: 10%;
-  left: 18%;
-  bottom: 2em;
-  width: 82%;
+  left: 10%;
+  width: 90%;
+  margin-bottom: 10%;
 
   overflow: hidden;
   font-size: 15px;
@@ -97,12 +94,5 @@ export default {}
   border-radius: 0.4em;
 }
 
-.l1{
-  position: absolute;
-  width: 100%;
-  height: 0em;
-  left: 0em;
-  top: 4.5em;
-  border: 2px solid #323232;
-}
+
 </style>
