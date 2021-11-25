@@ -32,7 +32,7 @@ export default {
   font-size: 1em;
   line-height: 1em;
   letter-spacing: -0.02em;
-  */
+
   position: absolute;
   top: 4.25em;
   right: 10%;
@@ -45,8 +45,19 @@ height: auto;
 
   color: white;
 text-align: left;
-  display: grid;
+  display: grid; */
+  position: relative;
+  top: 4.25em;
+  right: 0;
+  left: 18%;
+  bottom: 2em;
+  width: 82%; /* 100% - sidebar@width */
 
+  overflow: hidden;
+
+  font-size: 1em;
+  text-align: left;
+  color: white;
 }
 .l1 {
   overflow: hidden;
@@ -55,7 +66,6 @@ text-align: left;
 color: #FFFFFF;
   /*grid-auto-rows: minmax(2em, auto);*/
   margin-bottom: 5em;
-  margin-toptop: 5em;
 position: fixed;
   top: 20%;
 width: 50%;

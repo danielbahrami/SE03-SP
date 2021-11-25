@@ -1,7 +1,7 @@
 <template>
   <div class="flaskRecently">
 
-    <table class = "table" v-for="post in flaskTests" :key="post" width="100%">
+    <table class = "table" v-for="post in flaskTests" :key="post">
 
       <tr>
         <td><span>{{post.SongName}}</span></td>
@@ -9,9 +9,9 @@
       <td><span>{{post.Album}}</span></td>
       <table class="icons">
           <tr>
-          <a href="#"><img alt="" height="20" src="src/assets/favorit.png" width="20"/></a>
-          <a href="#"><img alt="" height="20" src="src/assets/favorit.png" width="20"/></a>
-          <a href="#"><img alt="" height="20" src="src/assets/favorit.png" width="20"/></a>
+          <a href="#"><img alt="" height="20" src="../assets/tableIcons/favorite.png" width="20"/></a>
+          <a href="#"><img alt="" height="20" src="../assets/tableIcons/add.png" width="20"/></a>
+          <a href="#"><img alt="" height="20" src="../assets/tableIcons/edit.png" /></a>
           </tr>
       </table>
       </tr>
@@ -96,8 +96,12 @@ td {
   border-bottom: 1px solid #ddd;
 }*/
 
+.icons{
+
+}
+
 .icons:first-child{
-  display: none;
+  display: block;
 }
 .table:after {
   content: "";
