@@ -2,26 +2,40 @@
   <div class="genres">
     <h1 class="title">Genres</h1>
     <ul class="container">
-      <li><img alt="" height="175" src="https://bit.ly/3pVbZCy" width="175"/>Genre 1</li>
-      <li><img alt="" height="175" src="https://bit.ly/3vX55Oh" width="175"/>Genre 2</li>
-      <li><img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 3</li>
-      <li><img alt="" height="175" src="https://bit.ly/2ZtQVI2" width="175"/>Genre 4</li>
-      <li><img alt="" height="175" src="https://bit.ly/3nupEha" width="175"/>Genre 5</li>
-      <li><img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 6</li>
-      <li><img alt="" height="175" src="https://bit.ly/2ZtQVI2" width="175"/>Genre 7</li>
-      <li><img alt="" height="175" src="https://bit.ly/3nupEha" width="175"/>Genre 8</li>
-      <li><img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 9</li>
-      <li><img alt="" height="175" src="https://bit.ly/2ZtQVI2" width="175"/>Genre 10</li>
-      <li><img alt="" height="175" src="https://bit.ly/3nupEha" width="175"/>Genre 11</li>
-      <li><img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 12</li>
-      <li><img alt="" height="175" src="https://bit.ly/2ZtQVI2" width="175"/>Genre 13</li>
-      <li><img alt="" height="175" src="https://bit.ly/3nupEha" width="175"/>Genre 14</li>
-      <li><img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 15</li>
-      <li><img alt="" height="175" src="https://bit.ly/2ZtQVI2" width="175"/>Genre 16</li>
-      <li><img alt="" height="175" src="https://bit.ly/3nupEha" width="175"/>Genre 17</li>
-      <li><img alt="" height="175" src="https://bit.ly/3GtyoNm" width="175"/>Genre 18</li>
-      <li><img alt="" height="175" src="https://bit.ly/2ZtQVI2" width="175"/>Genre 19</li>
-      <li><img alt="" height="175" src="https://bit.ly/2ZtQVI2" width="175"/>Genre 20</li>
+      <div class="l1"></div>
+      <li><a href="#"> <img alt="" height="200" src="../../assets/Genres/Jazz.png" width="200"/></a></li>
+
+      <li><a href="#"> <img alt="" height="200"  src="../../assets/Genres/Rock.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Pop.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Classic.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Country.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Blues.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Soul.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Dance.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/HipHop.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Kpop.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Rap.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/LiveMusic.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/RnB.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Metal.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Reggae.png" width="200"/></a></li>
+
+      <li> <a href="#"> <img alt="" height="200" src="../../assets/Genres/Folk.png" width="200"/></a></li>
+
+
     </ul>
     <br><br>
   </div>
@@ -35,6 +49,13 @@ export default {}
 <style scoped>
 
 .genres {
+  position: relative;
+  top: 4.25em;
+  right: 10%;
+  left: 18%;
+  bottom: 2em;
+  width: 82%;
+
   overflow: hidden;
   font-size: 15px;
   text-align: center;
@@ -51,30 +72,37 @@ export default {}
 .container {
   overflow: hidden;
   list-style: none;
+  /*grid-template-columns: repeat(4, 1fr);*/
+  display: block;
+  /*grid-auto-rows: minmax(2em, auto);*/
+
 }
 
 .container li {
   list-style-type: none;
   float: left;
   text-align: center;
-  margin-left: 4em;
+  margin-left: 2em;
+  margin-top: 2em;
   font-size: medium;
   color: white;
   font-weight: bolder;
+
+
 }
 
-.container1 li {
-  list-style-type: none;
-  float: left;
-  text-align: center;
-  margin-left: 4em;
-  font-size: medium;
-  color: white;
-  font-weight: bolder;
-  width: auto;
-}
 
 .container img {
   display: block;
+  border-radius: 0.4em;
+}
+
+.l1{
+  position: absolute;
+  width: 100%;
+  height: 0em;
+  left: 0em;
+  top: 4.5em;
+  border: 2px solid #323232;
 }
 </style>

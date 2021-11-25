@@ -3,32 +3,36 @@
   <div class="profileEdit">
   <div>
     <h1 class="headerProfile">Profile</h1>
-    <h2 class="headerPassword">New Password</h2>
+
+
     <div>
       <form action="#">
-        <label class="username" for="username">Username:</label>
-        <input id="username" class="usernameinput" name="username" type="text"><br><br>
+        <label class="headerUsername" for="headerUsername">Username:</label>
+        <input id="headerUsername" class="inputUsername" name="inputUsername" type="text"><br><br>
 
-        <label class="email" for="email">Email:</label>
-        <input id="email" class="emailinput" name="email" type="text"><br><br>
+        <label class="headerEmail" for="headerEmail">Email:</label>
+        <input id="headerEmail" class="inputEmail" name="inputEmail" type="text"><br><br>
 
-        <label class="newpassword" for="newpassword">Password:</label>
-        <input id="newpassword" class="newpasswordinput" name="newpassword" type="password"><br><br>
 
-        <label class="replacepassword" for="replacepassword">Password:</label>
-        <input id="replacepassword" class="replacepasswordinput" name="replacepassword" type="password"><br><br>
+        <label class="headerOldPassword" for="headerOldPassword">Password:</label>
+        <input id="headerOldPassword" class="inputOldPassword" name="inputOldPassword" type="password"><br><br>
 
-        <label class="confirm" for="confirmpassword">Confirm Password:</label>
-        <input id="confirmpassword" class="confirminput" name="confirmpassword" type="password"><br><br>
+        <h2 class="headerPassword">New Password</h2>
 
-        <input class="saveinput" type="submit" value="Save">
+        <label class="headerNewPassword" for="headerNewPassword">Password:</label>
+        <input id="headerNewPassword" class="inputNewPassword" name="inputNewPassword" type="password"><br><br>
+
+        <label class="headerConfirmPassword" for="headerConfirmPassword">Confirm Password:</label>
+        <input id="headerConfirmPassword" class="inputConfirmPassword" name="inputConfirmPassword" type="password"><br><br>
+
+        <button class="buttonSave">Save</button>
       </form>
     </div>
 
     <div>
       <img alt=""
            class="profileImage" height="207"
-           src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="212"/>
+           src="../../assets/alrakisImage.png"/>
       <p class="profileName">Image Profile</p>
       <button class="buttonUploadImage">Upload Image</button>
     </div>
@@ -65,245 +69,237 @@ export default {}
 }
 
 .headerProfile {
-  width: 150px;
-  height: 38px;
-  padding-left: 22px;
-  top: 114px;
+  position: sticky;
+  width:fit-content;
+  height: fit-content;
+  margin-left: 0.7em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 30px;
-  /* or 88% */
+  font-size: 2em;
   letter-spacing: -0.02em;
   color: #D6CD81;
 }
 
 .headerPassword {
-  position: absolute;
-  width: 186px;
-  height: 40px;
-  padding-left: 25px;
-  top: 480px;
+  position: sticky;
+  height: fit-content;
+  margin-top: 2em;
+  margin-left: 0.7em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5em;
   letter-spacing: -0.02em;
   color: #FFFFFF;
+  box-sizing: border-box;
+  width:fit-content;
 }
 
-.username {
-  width: 150px;
-  height: 68px;
-  padding-left: 50px;
-  top: 169px;
+.headerUsername {
+  position: sticky;
+  width:fit-content;
+  height: fit-content;
+  margin-left: 1.3em;
+  margin-top: 2em;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1em;
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
 
-.email {
-  width: 150px;
-  height: 59px;
-  padding-left: 50px;
-  top: 241px;
+.headerEmail {
+  position: sticky;
+  width:fit-content;
+  height: fit-content;
+  margin-left: 1.3em;
+  margin-top: 1em;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1em;
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
 
-.newpassword {
-  width: 150px;
-  height: 53px;
-  padding-left: 50px;
-  top: 50px;
+.headerOldPassword {
+  position: sticky;
+  width:fit-content;
+  height: fit-content;
+  margin-left: 1.3em;
+  margin-top: 1em;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1em;
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
 
-.confirm {
-  width: 150px;
-  height: 59px;
-  padding-left: 50px;
-  top: 241px;
+.headerNewPassword {
+  position: sticky;
+  width:fit-content;
+  height: fit-content;
+  margin-left: 1.3em;
+  margin-top: 1em;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1em;
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
-
-.replacepassword {
-  width: 150px;
-  height: 53px;
-  padding-left: 50px;
-  margin-top: 70px;
+.headerConfirmPassword {
+  position: sticky;
+  width:fit-content;
+  height: fit-content;
+  margin-left: 1.3em;
+  margin-top: 1em;
   display: flex;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1em;
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
 
-.usernameinput {
+.inputUsername {
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
-  position: absolute;
-  top: 110px;
-  margin-left: 50px;
+  margin-top: 0.1em;
+  margin-left: 1.9em;
   color: white;
-  width: 328px;
-  height: 25px;
+  width: 25em;
+  height: 2em;
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
 
-.emailinput {
+.inputEmail {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   position: absolute;
-  top: 212px;
-  margin-left: 50px;
+  margin-top: 0.1em;
+  margin-left: 1.9em;
   color: white;
-  width: 328px;
-  height: 25px;
+  width: 25em;
+  height: 2em;
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
 
-.newpasswordinput {
+.inputOldPassword {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   position: absolute;
-  top: 305px;
-  margin-left: 50px;
+  margin-top: 0.1em;
+  margin-left: 1.9em;
   color: white;
-  width: 328px;
-  height: 25px;
+  width: 25em;
+  height: 2em;
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
-.replacepasswordinput {
+.inputNewPassword {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   position: absolute;
-  top: 460px;
-  margin-left: 50px;
+  margin-top: 0.1em;
+  margin-left: 1.9em;
   color: white;
-  width: 328px;
-  height: 25px;
-  background: transparent;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-}
-
-.confirminput {
-
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  top: 680px;
-  margin-left: 50px;
-  color: white;
-  width: 328px;
-  height: 25px;
+  width: 25em;
+  height: 2em;
   background: transparent;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
 
-
-
-.saveinput {
-  background: transparent;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-  color: white;
+.inputConfirmPassword {
   position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  left: 250px;
-  top: 750px;
+  margin-top: 0.1em;
+  margin-left: 1.9em;
+  color: white;
+  width: 25em;
+  height: 2em;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+
+
+.buttonSave {
+  position: sticky;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 2em;
+  margin-top: 1em;
+  border-radius: 0.2em;
+  padding: 0.4em;
 }
 
 .profileName {
   position: absolute;
   width: fit-content;
-  right: 109px;
-  top: 220px;
+  right: 3em;
+  top: 9.1em;
   font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5em;
   letter-spacing: -0.02em;
-
   color: #FFFFFF;
 }
 
 .profileImage {
   box-sizing: border-box;
   position: absolute;
-  top: 30px;
-  right: 79px;
-  width: 212px;
-  height: 207px;
+  top: 2.5em;
+  right: 3em;
+  width: 12em;
+  height: 12em;
+  border-radius: 10em;
+
 }
 
 .buttonUploadImage {
   color: white;
   background: transparent;
-  width: 100px;
-  padding: 5px;
-  height: 26px;
+  width: fit-content;
+  padding: 0.4em;
+  height: fit-content;
   position: absolute;
-  top: 280px;
-  right: 125px;
+  top: 20em;
+  right: 6.5em;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
