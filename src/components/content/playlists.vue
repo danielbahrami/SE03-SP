@@ -12,13 +12,12 @@ import flaskPlaylist from "@/flask/flaskPlaylist";
 
 export default {
   components: {
-    flaskPlaylist
-  }
-}
+    flaskPlaylist,
+  },
+};
 </script>
 
 <style scoped>
-
 .playlists {
   color: white;
   font-weight: bolder;
@@ -31,7 +30,6 @@ export default {
   left: 20%;
   top: 25%;
   border: 2px solid #323232;
-
 }
 .header1 {
   position: absolute;
@@ -45,11 +43,6 @@ export default {
   font-size: 34px;
   line-height: 30px;
   letter-spacing: -0.02em;
-  color: #D6CD81;
-
-
+  color: #d6cd81;
 }
-
-
-
 </style>

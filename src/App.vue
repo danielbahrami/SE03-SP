@@ -1,38 +1,50 @@
 <template>
   <div class="app">
-    <topbar/>
-    <sidebar/>
-    <album-art/>
+    <topbar />
+    <sidebar />
+    <album-art />
     <div class="contentFitter">
-      <router-view/>
+      <router-view />
     </div>
-    <soundAndQueue/>
+    <soundAndQueue />
     <!-- 
         The slideout need to be outside of all the containers so it can fill the entire screen
         *******Works with pressing escape 
     -->
-    <slide-out dock="right" :visible.sync="visible" title="Queue" size="20%" customClass="slideOut">
+    <slide-out
+      dock="right"
+      :visible.sync="visible"
+      title="Queue"
+      size="20%"
+      customClass="slideOut"
+    >
       <section>
         <div class="queueImageHolder">
-          <img src="./assets/albumArts/Ariana.png">
+          <img src="./assets/albumArts/Ariana.png" />
         </div>
         <div class="queueTextHolder">
-          <p class="songAndArtist"> <strong > Song Name </strong> <br> Artist</p>
+          <p class="songAndArtist">
+            <strong> Song Name </strong> <br />
+            Artist
+          </p>
         </div>
       </section>
 
       <section>
         <div class="queueImageHolder">
-          <img src="./assets/albumArts/Genesis.png">
+          <img src="./assets/albumArts/Genesis.png" />
         </div>
         <div class="queueTextHolder">
-          <p class="songAndArtist"> <strong > Song Name </strong> <br> Artist</p>
+          <p class="songAndArtist">
+            <strong> Song Name </strong> <br />
+            Artist
+          </p>
         </div>
       </section>
     </slide-out>
     <!-- Button to activate slideout -->
-    <button class="Queue" @click="visible = true"><List/></button>
-    <media-player/>
+    <button class="Queue" @click="visible = true"><List /></button>
+    <media-player />
   </div>
 </template>
 <!--template displayer alt på localhost porten. I.e det vi ser i browseren-->
@@ -50,14 +62,14 @@ import albumArt from "./components/content/albumArt";
 import soundAndQueue from "./components/universal/soundAndQueue.vue";
 
 //Import icon for slideout activation button
-import List from "vue-material-design-icons/FormatListBulleted.vue"
+import List from "vue-material-design-icons/FormatListBulleted.vue";
 
-//Import the slideout component and css 
-import SlideOut from '@hyjiacan/vue-slideout'
-import '@hyjiacan/vue-slideout/lib/slideout.css'
+//Import the slideout component and css
+import SlideOut from "@hyjiacan/vue-slideout";
+import "@hyjiacan/vue-slideout/lib/slideout.css";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     mediaPlayer,
     topbar,
@@ -65,34 +77,33 @@ export default {
     albumArt,
     soundAndQueue,
     SlideOut,
-    List
+    List,
   },
   data() {
     return {
       // this is to set the slideout visibility
       visible: false,
-    }
+    };
   },
   methods: {
-    onClosing (e) {
+    onClosing(e) {
       // prevent close and wait
-      e.pause = true
+      e.pause = true;
       // close after 3 seconds
       setTimeout(() => {
         // assign true to close, do nothing or assign false to cancel close.
-        e.resume = true
-      }, 3000)
-    }
+        e.resume = true;
+      }, 3000);
+    },
   },
-}
-
+};
 </script>
 
 <style>
-@import url('fonts/workSans/stylesheet.css');
-@import url('fonts/Roboto/stylesheet.css');
+@import url("fonts/workSans/stylesheet.css");
+@import url("fonts/Roboto/stylesheet.css");
 
-*{
+* {
   font-family: "work_sansregular" !important;
 }
 
@@ -103,7 +114,6 @@ app {
   text-align: center;
   color: #2c3e50;
   margin-top: 90px;
-
 }
 
 body {
@@ -113,7 +123,7 @@ body {
 }
 
 /* This is added here, so that any updated 'content' always sits within its area and doesnt go behind the menus */
-.contentFitter{
+.contentFitter {
   position: relative;
   top: 4.25em;
   right: 0;
@@ -142,10 +152,10 @@ body {
 .slideOut .vue-slideout-layout .vue-slideout-header .vue-slideout-title-text {
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-weight: 700;
-  color: #D6CD81;
+  color: #d6cd81;
   font-size: 2.125em;
 }
-.slideOut > .vue-slideout-layout{
+.slideOut > .vue-slideout-layout {
   background-color: rgb(30, 30, 30);
   color: white;
 }
@@ -163,14 +173,14 @@ body {
   margin-left: 0.5em;
   color: rgba(203, 203, 203, 80);
 }
-.slideOut section .queueTextHolder p{
+.slideOut section .queueTextHolder p {
   margin: unset;
   font-size: 0.9em;
 }
 .slideOut section .queueTextHolder p strong {
   font-size: 1.25em;
 }
-.slideOut section .queueImageHolder img{
+.slideOut section .queueImageHolder img {
   float: right;
   max-width: 4.6875em;
   max-height: 4.6875em;
@@ -180,10 +190,6 @@ body {
   fill: white;
 }
 
-
 /* <div style="display:flex;align-items:center;height:6em;">Text Content</div>
  */
-
 </style>
-
-

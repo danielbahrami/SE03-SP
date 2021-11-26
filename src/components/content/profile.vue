@@ -1,37 +1,48 @@
 <template>
-<div class="profile">
-  <div>
-    <h1 class="headerProfile">Profile</h1>
-    <h3 class="headerUsername">Username:</h3>
-    <h3 class="headerEmail">Email:</h3>
-    <h3 class="headerPassword">Password:</h3>
-    <router-link active-class="active" class="editButton" to="/profileedit"><button class="buttonEditProfile">Edit Profile</button></router-link>
-    <button class="buttonLogOut">Log out</button>
+  <div class="profile">
+    <div>
+      <h1 class="headerProfile">Profile</h1>
+      <h3 class="headerUsername">Username:</h3>
+      <h3 class="headerEmail">Email:</h3>
+      <h3 class="headerPassword">Password:</h3>
+      <router-link active-class="active" class="editButton" to="/profileedit"
+        ><button class="buttonEditProfile">Edit Profile</button></router-link
+      >
+      <button class="buttonLogOut">Log out</button>
 
-    <h1 class="headerSettings">Settings</h1>
-    <router-link active-class="active" class="linkSubscription" to="/viewSubscription"><button class="viewSubscription">View subscriptions</button></router-link>
-    <!-- <a class="linkSubscription" href="">View subscription</a> -->
-    <a class="linkPrivacySafety" href="#">Privacy and safety</a>
-    <a class="linkDisplayLanguage" href="#">Display and language</a>
-    <a class="linkHelpCenter" href="#">Help center</a>
-    <a class="linkDeleteAccount" href="#">Delete Account</a>
+      <h1 class="headerSettings">Settings</h1>
+      <router-link
+        active-class="active"
+        class="linkSubscription"
+        to="/viewSubscription"
+        ><button class="viewSubscription">
+          View subscriptions
+        </button></router-link
+      >
+      <!-- <a class="linkSubscription" href="">View subscription</a> -->
+      <a class="linkPrivacySafety" href="#">Privacy and safety</a>
+      <a class="linkDisplayLanguage" href="#">Display and language</a>
+      <a class="linkHelpCenter" href="#">Help center</a>
+      <a class="linkDeleteAccount" href="#">Delete Account</a>
 
-    <img alt="" class="profileImage"
-         height="207" src="../../assets/alrakisImage.png"/>
-    <p class="profileName">Image Profile</p>
-    <button class="buttonUploadImage">Upload Image</button>
-
-  </div>
+      <img
+        alt=""
+        class="profileImage"
+        height="207"
+        src="../../assets/alrakisImage.png"
+      />
+      <p class="profileName">Image Profile</p>
+      <button class="buttonUploadImage">Upload Image</button>
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped>
-
-.profile{
+.profile {
   overflow: hidden;
   font-size: 1em;
   text-align: center;
@@ -49,8 +60,8 @@ export default {}
   line-height: 2em;
   /* or 88% */
   letter-spacing: -0.02em;
-  
-  color: #D6CD81;
+
+  color: #d6cd81;
 }
 
 .headerUsername {
@@ -89,7 +100,7 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .buttonEditProfile {
@@ -102,7 +113,7 @@ export default {}
   margin-left: 3em;
   display: flex;
   margin-top: 4em;
-  border: 0.1em solid #FFFFFF;
+  border: 0.1em solid #ffffff;
   box-sizing: border-box;
   border-radius: 0.2em;
 }
@@ -117,11 +128,10 @@ export default {}
   margin-left: 3em;
   margin-top: 2em;
   display: flex;
-  border: 0.1em solid #FFFFFF;
+  border: 0.1em solid #ffffff;
   box-sizing: border-box;
   border-radius: 0.2em;
 }
-
 
 .headerSettings {
   width: fit-content;
@@ -133,7 +143,7 @@ export default {}
   font-size: 2em;
   line-height: 2em;
   letter-spacing: -0.02em;
-  color: #D6CD81;
+  color: #d6cd81;
 }
 
 .linkSubscription {
@@ -147,7 +157,7 @@ export default {}
   font-size: 0.9em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .linkPrivacySafety {
@@ -161,7 +171,7 @@ export default {}
   font-size: 0.9em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .linkDisplayLanguage {
@@ -175,7 +185,7 @@ export default {}
   font-size: 0.9em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .linkHelpCenter {
@@ -189,7 +199,7 @@ export default {}
   font-size: 0.9em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .linkDeleteAccount {
@@ -225,7 +235,7 @@ export default {}
   font-weight: bold;
   font-size: 1.5em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .profileImage {
@@ -236,7 +246,6 @@ export default {}
   width: 11em;
   height: 11em;
   border-radius: 10em;
-
 }
 
 .buttonUploadImage {
@@ -248,12 +257,9 @@ export default {}
   position: absolute;
   top: 20em;
   right: 6.8em;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 0.25em;
   cursor: pointer;
 }
 
-
-
-</style>

@@ -12,13 +12,12 @@ import flaskRecently from "@/flask/flaskRecently";
 
 export default {
   components: {
-    flaskRecently
-  }
-}
+    flaskRecently,
+  },
+};
 </script>
 
 <style scoped>
-
 .recently {
   overflow: hidden;
 
@@ -30,14 +29,14 @@ export default {
   overflow: hidden;
   list-style: none;
   /*grid-template-columns: repeat(4, 1fr);*/
-color: #FFFFFF;
+  color: #ffffff;
   /*grid-auto-rows: minmax(2em, auto);*/
   margin-bottom: 5em;
-position: fixed;
+  position: fixed;
   top: 20%;
-width: 82%;
+  width: 82%;
 }
-.l1 li{
+.l1 li {
   position: static;
   height: auto;
   list-style-type: none;
@@ -56,9 +55,4 @@ width: 82%;
   color: #D6CD81;
 
 }
-
-
-
-
-
 </style>

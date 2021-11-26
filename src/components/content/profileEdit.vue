@@ -1,48 +1,78 @@
 <template>
-
   <div class="profileEdit">
-  <div>
-    <h1 class="headerProfile">Profile</h1>
-
-
     <div>
-      <form action="#">
-        <label class="headerUsername" for="headerUsername">Username:</label>
-        <input id="headerUsername" class="inputUsername" name="inputUsername" type="text"><br><br>
+      <h1 class="headerProfile">Profile</h1>
 
-        <label class="headerEmail" for="headerEmail">Email:</label>
-        <input id="headerEmail" class="inputEmail" name="inputEmail" type="text"><br><br>
+      <div>
+        <form action="#">
+          <label class="headerUsername" for="headerUsername">Username:</label>
+          <input
+            id="headerUsername"
+            class="inputUsername"
+            name="inputUsername"
+            type="text"
+          /><br /><br />
 
+          <label class="headerEmail" for="headerEmail">Email:</label>
+          <input
+            id="headerEmail"
+            class="inputEmail"
+            name="inputEmail"
+            type="text"
+          /><br /><br />
 
-        <label class="headerOldPassword" for="headerOldPassword">Password:</label>
-        <input id="headerOldPassword" class="inputOldPassword" name="inputOldPassword" type="password"><br><br>
+          <label class="headerOldPassword" for="headerOldPassword"
+            >Password:</label
+          >
+          <input
+            id="headerOldPassword"
+            class="inputOldPassword"
+            name="inputOldPassword"
+            type="password"
+          /><br /><br />
 
-        <h2 class="headerPassword">New Password</h2>
+          <h2 class="headerPassword">New Password</h2>
 
-        <label class="headerNewPassword" for="headerNewPassword">Password:</label>
-        <input id="headerNewPassword" class="inputNewPassword" name="inputNewPassword" type="password"><br><br>
+          <label class="headerNewPassword" for="headerNewPassword"
+            >Password:</label
+          >
+          <input
+            id="headerNewPassword"
+            class="inputNewPassword"
+            name="inputNewPassword"
+            type="password"
+          /><br /><br />
 
-        <label class="headerConfirmPassword" for="headerConfirmPassword">Confirm Password:</label>
-        <input id="headerConfirmPassword" class="inputConfirmPassword" name="inputConfirmPassword" type="password"><br><br>
+          <label class="headerConfirmPassword" for="headerConfirmPassword"
+            >Confirm Password:</label
+          >
+          <input
+            id="headerConfirmPassword"
+            class="inputConfirmPassword"
+            name="inputConfirmPassword"
+            type="password"
+          /><br /><br />
 
-        <button class="buttonSave">Save</button>
-      </form>
+          <button class="buttonSave">Save</button>
+        </form>
+      </div>
+
+      <div>
+        <img
+          alt=""
+          class="profileImage"
+          height="207"
+          src="../../assets/alrakisImage.png"
+        />
+        <p class="profileName">Image Profile</p>
+        <button class="buttonUploadImage">Upload Image</button>
+      </div>
     </div>
-
-    <div>
-      <img alt=""
-           class="profileImage" height="207"
-           src="../../assets/alrakisImage.png"/>
-      <p class="profileName">Image Profile</p>
-      <button class="buttonUploadImage">Upload Image</button>
-    </div>
-
-  </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped>
@@ -78,13 +108,13 @@ export default {}
   font-weight: bold;
   font-size: 1.5em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   box-sizing: border-box;
 }
 
 .headerUsername {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 2.5em;
   margin-top: 0.5em;
@@ -93,7 +123,7 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headerEmail {
@@ -106,7 +136,7 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headerOldPassword {
@@ -119,12 +149,12 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headerNewPassword {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 2.5em;
   margin-top: 0.5em;
@@ -133,11 +163,11 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .headerConfirmPassword {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 2.5em;
   margin-top: 0.5em;
@@ -146,7 +176,7 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .inputUsername {
@@ -161,7 +191,7 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
@@ -177,7 +207,7 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
@@ -193,7 +223,7 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 .inputNewPassword {
@@ -208,7 +238,7 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
@@ -224,16 +254,14 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
-
-
 
 .buttonSave {
   position: static;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   color: white;
   display: flex;
@@ -256,7 +284,7 @@ export default {}
   font-weight: bold;
   font-size: 1.5em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .profileImage {
@@ -267,7 +295,6 @@ export default {}
   width: 11em;
   height: 11em;
   border-radius: 10em;
-
 }
 
 .buttonUploadImage {
@@ -284,6 +311,4 @@ export default {}
   border-radius: 4px;
   cursor: pointer;
 }
-
-
 </style>
