@@ -1,52 +1,70 @@
 <template>
   <div class="sidebar">
-    <div class="title">
-      Menu
-    </div>
+    <div class="title">Menu</div>
     <div class="div1-sidebar">
-      <router-link active-class="active" class="side-btn" exact tag="button" to="/home">
-        <div class="link-container">
-          Home
-        </div>
+      <router-link
+        active-class="active"
+        class="side-btn"
+        exact
+        tag="button"
+        to="/home"
+      >
+        <div class="link-container">Home</div>
       </router-link>
     </div>
     <div class="div2-sidebar">
-      <router-link active-class="active" class="side-btn" exact tag="button" to="/playlists">
-        <div class="link-container">
-          Playlists
-        </div>
+      <router-link
+        active-class="active"
+        class="side-btn"
+        exact
+        tag="button"
+        to="/playlists"
+      >
+        <div class="link-container">Playlists</div>
       </router-link>
     </div>
     <div class="div3-sidebar">
-      <router-link active-class="active" class="side-btn" exact tag="button" to="/hitlists">
-        <div class="link-container">
-          Hitlists
-        </div>
+      <router-link
+        active-class="active"
+        class="side-btn"
+        exact
+        tag="button"
+        to="/hitlists"
+      >
+        <div class="link-container">Hitlists</div>
       </router-link>
     </div>
     <div class="div4-sidebar">
-      <router-link active-class="active" class="side-btn" exact tag="button" to="/genres">
-        <div class="link-container">
-          Genres
-        </div>
+      <router-link
+        active-class="active"
+        class="side-btn"
+        exact
+        tag="button"
+        to="/genres"
+      >
+        <div class="link-container">Genres</div>
       </router-link>
     </div>
     <div class="div5-sidebar">
-      <router-link active-class="active" class="side-btn" exact tag="button" to="/recently">
-        <div class="link-container">
-          Recently
-        </div>
+      <router-link
+        active-class="active"
+        class="side-btn"
+        exact
+        tag="button"
+        to="/recently"
+      >
+        <div class="link-container">Recently</div>
       </router-link>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped>
-.sidebar{
+.sidebar {
   background: rgb(30, 30, 30); /* TODO: Change to correct color */
   position: fixed; /* Fixed to the screen; always on the side */
   z-index: 10; /* Z-index to pull it on top */
@@ -54,34 +72,46 @@ export default {}
   top: 4.25em;
   bottom: 15em;
   width: 18%;
-  
-    justify-content:center;
-    align-items:center;
-    text-align: center;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   overflow: scroll;
 
   /* Parent create grid */
-    display: grid;
-    /* 1 column with space of 1fr */
-    grid-template-columns: 1fr;
-    /* Make 6 rows with 1fr space */
-    grid-template-rows: repeat(6, 1fr);
-    /* No gaps between columns or rows */
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
+  display: grid;
+  /* 1 column with space of 1fr */
+  grid-template-columns: 1fr;
+  /* Make 6 rows with 1fr space */
+  grid-template-rows: repeat(6, 1fr);
+  /* No gaps between columns or rows */
+  grid-column-gap: 0em;
+  grid-row-gap: 0em;
 }
 /* Belonging to parent display:grid. grid-area means Row start, column start, row end, column end */
-    .title        { grid-area: 1 / 1 / 2 / 2; }
-    .div1-sidebar { grid-area: 2 / 1 / 3 / 2; }
-    .div2-sidebar { grid-area: 3 / 1 / 4 / 2; }
-    .div3-sidebar { grid-area: 4 / 1 / 5 / 2; }
-    .div4-sidebar { grid-area: 5 / 1 / 6 / 2; }
-    .div5-sidebar { grid-area: 6 / 1 / 7 / 2; }
+.title {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div1-sidebar {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div2-sidebar {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div3-sidebar {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.div4-sidebar {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.div5-sidebar {
+  grid-area: 6 / 1 / 7 / 2;
+}
 
 /* TYPOGRAPHY */
 .title {
   text-align: center;
-  color: #D6CD81;
+  color: #d6cd81;
   font-size: 38px;
   font-family: Ag header;
   font-weight: bolder;
@@ -109,9 +139,8 @@ export default {}
 
 .side-btn.active {
   position: relative;
-  color: #D6CD81;
+  color: #d6cd81;
   font-weight: 600;
   margin-left: 0px;
 }
-
 </style>

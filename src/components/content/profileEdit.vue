@@ -54,7 +54,7 @@
           /><br /><br />
 
           <router-link to="/profile">
-          <button class="buttonSave">Save</button>
+            <button class="buttonSave">Save</button>
           </router-link>
         </form>
       </div>
@@ -78,8 +78,7 @@ export default {};
 </script>
 
 <style scoped>
-
-.profileEdit{
+.profileEdit {
   overflow: hidden;
   font-size: 1em;
   text-align: center;
@@ -98,11 +97,11 @@ export default {};
   /* or 88% */
   letter-spacing: -0.02em;
 
-  color: #D6CD81;
+  color: #d6cd81;
 }
 
 .headerPassword {
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-top: 2em;
   margin-left: 1.5em;
@@ -129,7 +128,7 @@ export default {};
 }
 
 .headerEmail {
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 2.5em;
   margin-top: 0.5em;
@@ -142,7 +141,7 @@ export default {};
 }
 
 .headerOldPassword {
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 2.5em;
   margin-top: 0.5em;
@@ -308,7 +307,7 @@ export default {};
   position: absolute;
   top: 20em;
   right: 6.8em;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;

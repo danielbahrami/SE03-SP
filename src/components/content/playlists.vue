@@ -52,7 +52,6 @@ export default {
 .header1 {
   text-align: left;
   margin-left: 1em;
-  color: #D6CD81;
-
+  color: #d6cd81;
 }
 </style>

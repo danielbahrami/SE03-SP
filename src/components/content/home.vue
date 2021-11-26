@@ -105,7 +105,7 @@ export default {};
   font-weight: bolder;
 }
 
-.container li:first-child{
+.container li:first-child {
   margin-left: 2em;
 }
 
@@ -120,7 +120,7 @@ export default {};
   width: auto;
 }
 
-.container1 li:first-child{
+.container1 li:first-child {
   margin-left: 2em;
 }
 

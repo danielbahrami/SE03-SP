@@ -9,7 +9,7 @@
         ><button class="buttonEditProfile">Edit Profile</button></router-link
       >
       <router-link to="/home">
-      <button class="buttonLogOut">Log out</button>
+        <button class="buttonLogOut">Log out</button>
       </router-link>
 
       <h1 class="headerSettings">Settings</h1>
@@ -51,7 +51,6 @@ export default {};
   color: white;
 }
 .headerProfile {
-
   width: fit-content;
   height: fit-content;
   margin-left: 1.1em;
@@ -76,7 +75,7 @@ export default {};
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headerEmail {
@@ -89,7 +88,7 @@ export default {};
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headerPassword {
@@ -215,11 +214,11 @@ export default {};
   font-size: 0.9em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 7em;
 }
 
-.viewSubscription{
+.viewSubscription {
   background: none;
   color: white;
   text-decoration: underline;
@@ -264,5 +263,4 @@ export default {};
   border-radius: 0.25em;
   cursor: pointer;
 }
-
 </style>

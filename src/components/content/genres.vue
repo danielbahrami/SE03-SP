@@ -177,7 +177,6 @@ export default {};
   color: white;
 }
 
-
 .container {
   overflow: hidden;
   list-style: none;
