@@ -71,7 +71,7 @@ export default {};
 <style scoped>
 .home {
   overflow: hidden;
-  font-size: 15px;
+  font-size: 1em;
   text-align: center;
   color: white;
 
