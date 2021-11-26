@@ -96,7 +96,7 @@ export default {
   font-family: "work_sansregular" !important;
 }
 
-#app {
+app {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

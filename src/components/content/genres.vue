@@ -46,33 +46,17 @@ export default {}
 <style scoped>
 
 .genres {
-  position: relative;
-  top: 1em;
-  right: 10%;
-  left: 10%;
-  width: 90%;
-  margin-bottom: 10%;
-
   overflow: hidden;
-  font-size: 15px;
+  font-size: 1em;
   text-align: center;
   color: white;
-  display: grid;
 }
 
-.title {
-  text-align: left;
-  margin-left: 100px;
-  color: #D6CD81;
-}
 
 .container {
   overflow: hidden;
   list-style: none;
-  /*grid-template-columns: repeat(4, 1fr);*/
   display: block;
-  /*grid-auto-rows: minmax(2em, auto);*/
-
 }
 
 .container li {
@@ -84,8 +68,6 @@ export default {}
   font-size: medium;
   color: white;
   font-weight: bolder;
-
-
 }
 
 
