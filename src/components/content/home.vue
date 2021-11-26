@@ -71,7 +71,7 @@ export default {};
 <style scoped>
 .home {
   overflow: hidden;
-  font-size: 15px;
+  font-size: 1em;
   text-align: center;
   color: white;
 
@@ -80,13 +80,13 @@ export default {};
 
 .recommended {
   text-align: left;
-  margin-left: 100px;
   color: #d6cd81;
+  margin-left: 2em;
 }
 
 .workout {
   text-align: left;
-  margin-left: 100px;
+  margin-left: 2em;
   color: #d6cd81;
 }
 
@@ -99,21 +99,29 @@ export default {};
   list-style-type: none;
   float: left;
   text-align: center;
-  margin-left: 4em;
+  margin-right: 4em;
   font-size: medium;
   color: white;
   font-weight: bolder;
+}
+
+.container li:first-child {
+  margin-left: 2em;
 }
 
 .container1 li {
   list-style-type: none;
   float: left;
   text-align: center;
-  margin-left: 4em;
+  margin-right: 4em;
   font-size: medium;
   color: white;
   font-weight: bolder;
   width: auto;
+}
+
+.container1 li:first-child {
+  margin-left: 2em;
 }
 
 .Author {

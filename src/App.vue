@@ -107,7 +107,7 @@ export default {
   font-family: "work_sansregular" !important;
 }
 
-#app {
+app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -188,7 +188,4 @@ body {
 .slideOut .vue-slideout-btn-close svg {
   fill: white;
 }
-
-/* <div style="display:flex;align-items:center;height:6em;">Text Content</div>
- */
 </style>

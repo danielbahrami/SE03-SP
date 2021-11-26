@@ -53,7 +53,9 @@
             type="password"
           /><br /><br />
 
-          <button class="buttonSave">Save</button>
+          <router-link to="/profile">
+            <button class="buttonSave">Save</button>
+          </router-link>
         </form>
       </div>
 
@@ -77,62 +79,47 @@ export default {};
 
 <style scoped>
 .profileEdit {
-  position: relative;
-  top: 4.25em;
-  right: 0;
-  left: 18%;
-  bottom: 2em;
-  width: 82%; /* 100% - sidebar@width */
-
   overflow: hidden;
-
-  font-size: 15px;
+  font-size: 1em;
   text-align: center;
   color: white;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, auto);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
 .headerProfile {
-  position: sticky;
   width: fit-content;
   height: fit-content;
-  margin-left: 0.7em;
-  font-family: Work Sans;
+  margin-left: 1.1em;
+  margin-top: 0.1em;
   font-style: normal;
   font-weight: bold;
   font-size: 2em;
+  line-height: 2em;
+  /* or 88% */
   letter-spacing: -0.02em;
+
   color: #d6cd81;
 }
 
 .headerPassword {
-  position: sticky;
+  width: fit-content;
   height: fit-content;
   margin-top: 2em;
-  margin-left: 0.7em;
-  font-family: Work Sans;
+  margin-left: 1.5em;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5em;
   letter-spacing: -0.02em;
   color: #ffffff;
   box-sizing: border-box;
-  width: fit-content;
 }
 
 .headerUsername {
   position: sticky;
   width: fit-content;
   height: fit-content;
-  margin-left: 1.3em;
-  margin-top: 2em;
+  margin-left: 2.5em;
+  margin-top: 0.5em;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
@@ -141,13 +128,11 @@ export default {};
 }
 
 .headerEmail {
-  position: sticky;
   width: fit-content;
   height: fit-content;
-  margin-left: 1.3em;
-  margin-top: 1em;
+  margin-left: 2.5em;
+  margin-top: 0.5em;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
@@ -156,13 +141,11 @@ export default {};
 }
 
 .headerOldPassword {
-  position: sticky;
   width: fit-content;
   height: fit-content;
-  margin-left: 1.3em;
-  margin-top: 1em;
+  margin-left: 2.5em;
+  margin-top: 0.5em;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
@@ -174,10 +157,9 @@ export default {};
   position: sticky;
   width: fit-content;
   height: fit-content;
-  margin-left: 1.3em;
-  margin-top: 1em;
+  margin-left: 2.5em;
+  margin-top: 0.5em;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
@@ -188,10 +170,9 @@ export default {};
   position: sticky;
   width: fit-content;
   height: fit-content;
-  margin-left: 1.3em;
-  margin-top: 1em;
+  margin-left: 2.5em;
+  margin-top: 0.5em;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
@@ -206,7 +187,7 @@ export default {};
   align-items: center;
   justify-content: space-evenly;
   margin-top: 0.1em;
-  margin-left: 1.9em;
+  margin-left: 3em;
   color: white;
   width: 25em;
   height: 2em;
@@ -222,7 +203,7 @@ export default {};
   justify-content: space-evenly;
   position: absolute;
   margin-top: 0.1em;
-  margin-left: 1.9em;
+  margin-left: 3em;
   color: white;
   width: 25em;
   height: 2em;
@@ -238,7 +219,7 @@ export default {};
   justify-content: space-evenly;
   position: absolute;
   margin-top: 0.1em;
-  margin-left: 1.9em;
+  margin-left: 3em;
   color: white;
   width: 25em;
   height: 2em;
@@ -253,7 +234,7 @@ export default {};
   justify-content: space-evenly;
   position: absolute;
   margin-top: 0.1em;
-  margin-left: 1.9em;
+  margin-left: 3em;
   color: white;
   width: 25em;
   height: 2em;
@@ -269,7 +250,7 @@ export default {};
   align-items: center;
   justify-content: space-evenly;
   margin-top: 0.1em;
-  margin-left: 1.9em;
+  margin-left: 3em;
   color: white;
   width: 25em;
   height: 2em;
@@ -279,27 +260,27 @@ export default {};
 }
 
 .buttonSave {
-  position: sticky;
+  position: static;
   background: transparent;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   color: white;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: 2em;
+  margin-left: 3em;
   margin-top: 1em;
-  border-radius: 0.2em;
+  margin-bottom: 7em;
+  width: fit-content;
   padding: 0.4em;
+  height: fit-content;
+  border-radius: 0.25em;
+  cursor: pointer;
 }
 
 .profileName {
   position: absolute;
   width: fit-content;
-  right: 3em;
-  top: 9.1em;
-  font-family: Work Sans;
+  right: 3.1em;
+  top: 8.5em;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5em;
@@ -311,9 +292,9 @@ export default {};
   box-sizing: border-box;
   position: absolute;
   top: 2.5em;
-  right: 3em;
-  width: 12em;
-  height: 12em;
+  right: 3.5em;
+  width: 11em;
+  height: 11em;
   border-radius: 10em;
 }
 
@@ -325,9 +306,10 @@ export default {};
   height: fit-content;
   position: absolute;
   top: 20em;
-  right: 6.5em;
+  right: 6.8em;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 </style>

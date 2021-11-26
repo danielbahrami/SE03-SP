@@ -8,7 +8,9 @@
       <router-link active-class="active" class="editButton" to="/profileedit"
         ><button class="buttonEditProfile">Edit Profile</button></router-link
       >
-      <button class="buttonLogOut">Log out</button>
+      <router-link to="/home">
+        <button class="buttonLogOut">Log out</button>
+      </router-link>
 
       <h1 class="headerSettings">Settings</h1>
       <router-link
@@ -44,7 +46,6 @@ export default {};
 <style scoped>
 .profile {
   overflow: hidden;
-
   font-size: 1em;
   text-align: center;
   color: white;
@@ -52,9 +53,8 @@ export default {};
 .headerProfile {
   width: fit-content;
   height: fit-content;
-  margin-left: 2em;
-  margin-top: 1em;
-  font-family: Work Sans;
+  margin-left: 1.1em;
+  margin-top: 0.1em;
   font-style: normal;
   font-weight: bold;
   font-size: 2em;
@@ -68,46 +68,38 @@ export default {};
 .headerUsername {
   width: fit-content;
   height: fit-content;
-  margin-left: 5em;
-  margin-top: 1em;
+  margin-left: 2.5em;
+  margin-top: 0.5em;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
-  line-height: 1em;
   letter-spacing: -0.02em;
-
   color: #ffffff;
 }
 
 .headerEmail {
   width: fit-content;
   height: fit-content;
-  margin-left: 5em;
-  margin-top: 3em;
+  margin-left: 2.5em;
+  margin-top: 3.9em;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
-  line-height: 1em;
   letter-spacing: -0.02em;
-
   color: #ffffff;
 }
 
 .headerPassword {
   width: fit-content;
   height: fit-content;
-  margin-left: 5em;
-  margin-top: 3em;
+  margin-left: 2.5em;
+  margin-top: 3.9em;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
-  line-height: 1em;
   letter-spacing: -0.02em;
   color: #ffffff;
 }
@@ -119,7 +111,7 @@ export default {};
   width: fit-content;
   padding: 0.5em;
   height: fit-content;
-  margin-left: 6em;
+  margin-left: 3em;
   display: flex;
   margin-top: 4em;
   border: 0.1em solid #ffffff;
@@ -134,7 +126,7 @@ export default {};
   width: fit-content;
   padding: 0.5em;
   height: fit-content;
-  margin-left: 6em;
+  margin-left: 3em;
   margin-top: 2em;
   display: flex;
   border: 0.1em solid #ffffff;
@@ -145,9 +137,8 @@ export default {};
 .headerSettings {
   width: fit-content;
   height: fit-content;
-  margin-left: 2em;
-  margin-top: 1em;
-  font-family: Work Sans;
+  margin-left: 1.1em;
+  margin-top: 2.1em;
   font-style: normal;
   font-weight: bold;
   font-size: 2em;
@@ -159,14 +150,12 @@ export default {};
 .linkSubscription {
   margin-top: 1em;
   box-sizing: border-box;
-  margin-left: 5.5em;
+  margin-left: 2.5em;
   width: fit-content;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 0.9em;
-  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #ffffff;
@@ -174,15 +163,13 @@ export default {};
 
 .linkPrivacySafety {
   box-sizing: border-box;
-  margin-left: 5.5em;
+  margin-left: 2.5em;
   margin-top: 1.5em;
   width: fit-content;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 0.9em;
-  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #ffffff;
@@ -190,15 +177,13 @@ export default {};
 
 .linkDisplayLanguage {
   box-sizing: border-box;
-  margin-left: 5.5em;
+  margin-left: 2.5em;
   margin-top: 1.5em;
   width: fit-content;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 0.9em;
-  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #ffffff;
@@ -206,15 +191,13 @@ export default {};
 
 .linkHelpCenter {
   box-sizing: border-box;
-  margin-left: 5.5em;
+  margin-left: 2.5em;
   margin-top: 1.5em;
   width: fit-content;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 0.9em;
-  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #ffffff;
@@ -222,18 +205,26 @@ export default {};
 
 .linkDeleteAccount {
   box-sizing: border-box;
-  margin-left: 5.5em;
-  margin-top: 1em;
+  margin-left: 2.5em;
+  margin-top: 1.5em;
   width: fit-content;
   display: flex;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 0.9em;
-  line-height: 1em;
   letter-spacing: -0.02em;
   text-decoration-line: underline;
   color: #ffffff;
+  margin-bottom: 7em;
+}
+
+.viewSubscription {
+  background: none;
+  color: white;
+  text-decoration: underline;
+  border: none;
+  padding: unset;
+  cursor: pointer;
 }
 
 .profileName {
@@ -241,7 +232,6 @@ export default {};
   width: fit-content;
   right: 3.1em;
   top: 8.5em;
-  font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5em;
@@ -270,15 +260,7 @@ export default {};
   right: 6.8em;
   border: 1px solid #ffffff;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.25em;
   cursor: pointer;
-}
-
-.viewSubscription {
-  background: none;
-  color: white;
-  text-decoration: underline;
-  border: none;
-  padding: unset;
 }
 </style>
