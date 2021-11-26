@@ -8,7 +8,9 @@
       <router-link active-class="active" class="editButton" to="/profileedit"
         ><button class="buttonEditProfile">Edit Profile</button></router-link
       >
+      <router-link to="/home">
       <button class="buttonLogOut">Log out</button>
+      </router-link>
 
       <h1 class="headerSettings">Settings</h1>
       <router-link
