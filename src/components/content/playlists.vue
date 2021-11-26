@@ -19,30 +19,40 @@ export default {
 
 <style scoped>
 .playlists {
+  overflow: hidden;
+
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
+.l1 {
+  overflow: hidden;
+  list-style: none;
+  /*grid-template-columns: repeat(4, 1fr);*/
+  color: #ffffff;
+  /*grid-auto-rows: minmax(2em, auto);*/
+  margin-bottom: 5em;
+  position: fixed;
+  top: 20%;
+  width: 82%;
+}
+.l1 li {
+  position: static;
+  height: auto;
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  margin-left: 2em;
+  margin-top: 2em;
+  font-size: medium;
   color: white;
   font-weight: bolder;
-}
-
-.l1 {
-  position: absolute;
-  width: 70%;
-  height: 0%;
-  left: 20%;
-  top: 25%;
-  border: 2px solid #323232;
+  clear: left;
 }
 .header1 {
-  position: absolute;
-  width: 217px;
-  height: 43px;
-  left: 329px;
-  top: 109px;
-  font-family: "work_sansregular";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 30px;
-  letter-spacing: -0.02em;
-  color: #d6cd81;
+  text-align: left;
+  margin-left: 1em;
+  color: #D6CD81;
+
 }
 </style>
