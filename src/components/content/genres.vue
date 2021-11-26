@@ -5,9 +5,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Jazz.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -15,9 +15,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Rock.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -25,9 +25,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Pop.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -35,9 +35,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Classic.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -45,9 +45,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Country.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -55,9 +55,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Blues.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -65,9 +65,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Soul.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -75,9 +75,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Dance.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -85,9 +85,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/HipHop.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -95,9 +95,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Kpop.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -105,9 +105,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Rap.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -115,9 +115,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/LiveMusic.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -125,9 +125,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/RnB.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -135,9 +135,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Metal.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -145,9 +145,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Reggae.png"
-            width="200"
+            width="220"
         /></a>
       </li>
 
@@ -155,9 +155,9 @@
         <a href="#">
           <img
             alt=""
-            height="200"
+            height="220"
             src="../../assets/Genres/Folk.png"
-            width="200"
+            width="220"
         /></a>
       </li>
     </ul>
@@ -182,6 +182,7 @@ export default {};
   overflow: hidden;
   list-style: none;
   display: block;
+  margin-left: 2em;
 }
 
 .container li {

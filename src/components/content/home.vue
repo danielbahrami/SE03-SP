@@ -80,13 +80,13 @@ export default {};
 
 .recommended {
   text-align: left;
-  margin-left: 100px;
   color: #d6cd81;
+  margin-left: 1.1em;
 }
 
 .workout {
   text-align: left;
-  margin-left: 100px;
+  margin-left: 1.1em;
   color: #d6cd81;
 }
 
@@ -103,6 +103,10 @@ export default {};
   font-size: medium;
   color: white;
   font-weight: bolder;
+}
+
+.container:first-child{
+  margin-left: 0.1em;
 }
 
 .container1 li {
