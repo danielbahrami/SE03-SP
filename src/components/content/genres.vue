@@ -2,163 +2,179 @@
   <div class="genres">
     <ul class="container">
       <li>
-        <a href="#">
+        <router-link to="/genres/jazz">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Jazz.png"
             width="200"
-        /></a>
+          />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/rock">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Rock.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/pop">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Pop.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/classic">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Classic.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/country">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Country.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/blues">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Blues.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/soul">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Soul.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/dance">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Dance.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/hiphop">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/HipHop.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/kpop">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Kpop.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/rap">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Rap.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/livemusic">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/LiveMusic.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/rnb">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/RnB.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/metal">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Metal.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/reggae">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Reggae.png"
             width="200"
-        /></a>
+          />
+        </router-link>
       </li>
 
       <li>
-        <a href="#">
+        <router-link to="/genres/folk">
           <img
             alt=""
             height="200"
             src="../../assets/Genres/Folk.png"
             width="200"
-        /></a>
+        />
+        </router-link>
       </li>
     </ul>
     <br /><br />
