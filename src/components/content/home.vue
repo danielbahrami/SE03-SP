@@ -81,12 +81,12 @@ export default {};
 .recommended {
   text-align: left;
   color: #d6cd81;
-  margin-left: 1.1em;
+  margin-left: 2em;
 }
 
 .workout {
   text-align: left;
-  margin-left: 1.1em;
+  margin-left: 2em;
   color: #d6cd81;
 }
 
@@ -99,25 +99,29 @@ export default {};
   list-style-type: none;
   float: left;
   text-align: center;
-  margin-left: 4em;
+  margin-right: 4em;
   font-size: medium;
   color: white;
   font-weight: bolder;
 }
 
-.container:first-child{
-  margin-left: 0.1em;
+.container li:first-child{
+  margin-left: 2em;
 }
 
 .container1 li {
   list-style-type: none;
   float: left;
   text-align: center;
-  margin-left: 4em;
+  margin-right: 4em;
   font-size: medium;
   color: white;
   font-weight: bolder;
   width: auto;
+}
+
+.container1 li:first-child{
+  margin-left: 2em;
 }
 
 .Author {
