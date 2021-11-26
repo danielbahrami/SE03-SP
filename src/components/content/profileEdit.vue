@@ -1,53 +1,82 @@
 <template>
-
   <div class="profileEdit">
-  <div>
-    <h1 class="headerProfile">Profile</h1>
-
-
     <div>
-      <form action="#">
-        <label class="headerUsername" for="headerUsername">Username:</label>
-        <input id="headerUsername" class="inputUsername" name="inputUsername" type="text"><br><br>
+      <h1 class="headerProfile">Profile</h1>
 
-        <label class="headerEmail" for="headerEmail">Email:</label>
-        <input id="headerEmail" class="inputEmail" name="inputEmail" type="text"><br><br>
+      <div>
+        <form action="#">
+          <label class="headerUsername" for="headerUsername">Username:</label>
+          <input
+            id="headerUsername"
+            class="inputUsername"
+            name="inputUsername"
+            type="text"
+          /><br /><br />
 
+          <label class="headerEmail" for="headerEmail">Email:</label>
+          <input
+            id="headerEmail"
+            class="inputEmail"
+            name="inputEmail"
+            type="text"
+          /><br /><br />
 
-        <label class="headerOldPassword" for="headerOldPassword">Password:</label>
-        <input id="headerOldPassword" class="inputOldPassword" name="inputOldPassword" type="password"><br><br>
+          <label class="headerOldPassword" for="headerOldPassword"
+            >Password:</label
+          >
+          <input
+            id="headerOldPassword"
+            class="inputOldPassword"
+            name="inputOldPassword"
+            type="password"
+          /><br /><br />
 
-        <h2 class="headerPassword">New Password</h2>
+          <h2 class="headerPassword">New Password</h2>
 
-        <label class="headerNewPassword" for="headerNewPassword">Password:</label>
-        <input id="headerNewPassword" class="inputNewPassword" name="inputNewPassword" type="password"><br><br>
+          <label class="headerNewPassword" for="headerNewPassword"
+            >Password:</label
+          >
+          <input
+            id="headerNewPassword"
+            class="inputNewPassword"
+            name="inputNewPassword"
+            type="password"
+          /><br /><br />
 
-        <label class="headerConfirmPassword" for="headerConfirmPassword">Confirm Password:</label>
-        <input id="headerConfirmPassword" class="inputConfirmPassword" name="inputConfirmPassword" type="password"><br><br>
+          <label class="headerConfirmPassword" for="headerConfirmPassword"
+            >Confirm Password:</label
+          >
+          <input
+            id="headerConfirmPassword"
+            class="inputConfirmPassword"
+            name="inputConfirmPassword"
+            type="password"
+          /><br /><br />
 
-        <button class="buttonSave">Save</button>
-      </form>
+          <button class="buttonSave">Save</button>
+        </form>
+      </div>
+
+      <div>
+        <img
+          alt=""
+          class="profileImage"
+          height="207"
+          src="../../assets/alrakisImage.png"
+        />
+        <p class="profileName">Image Profile</p>
+        <button class="buttonUploadImage">Upload Image</button>
+      </div>
     </div>
-
-    <div>
-      <img alt=""
-           class="profileImage" height="207"
-           src="../../assets/alrakisImage.png"/>
-      <p class="profileName">Image Profile</p>
-      <button class="buttonUploadImage">Upload Image</button>
-    </div>
-
-  </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped>
-
-.profileEdit{
+.profileEdit {
   position: relative;
   top: 4.25em;
   right: 0;
@@ -70,7 +99,7 @@ export default {}
 
 .headerProfile {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 0.7em;
   font-family: Work Sans;
@@ -78,7 +107,7 @@ export default {}
   font-weight: bold;
   font-size: 2em;
   letter-spacing: -0.02em;
-  color: #D6CD81;
+  color: #d6cd81;
 }
 
 .headerPassword {
@@ -91,14 +120,14 @@ export default {}
   font-weight: bold;
   font-size: 1.5em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   box-sizing: border-box;
-  width:fit-content;
+  width: fit-content;
 }
 
 .headerUsername {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 1.3em;
   margin-top: 2em;
@@ -108,12 +137,12 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headerEmail {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 1.3em;
   margin-top: 1em;
@@ -123,12 +152,12 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headerOldPassword {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 1.3em;
   margin-top: 1em;
@@ -138,12 +167,12 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .headerNewPassword {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 1.3em;
   margin-top: 1em;
@@ -153,11 +182,11 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .headerConfirmPassword {
   position: sticky;
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
   margin-left: 1.3em;
   margin-top: 1em;
@@ -167,7 +196,7 @@ export default {}
   font-weight: normal;
   font-size: 1em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .inputUsername {
@@ -182,7 +211,7 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
@@ -198,7 +227,7 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
@@ -214,7 +243,7 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 .inputNewPassword {
@@ -229,7 +258,7 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
@@ -245,16 +274,14 @@ export default {}
   width: 25em;
   height: 2em;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
-
-
 
 .buttonSave {
   position: sticky;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   color: white;
   display: flex;
@@ -277,7 +304,7 @@ export default {}
   font-weight: bold;
   font-size: 1.5em;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .profileImage {
@@ -288,7 +315,6 @@ export default {}
   width: 12em;
   height: 12em;
   border-radius: 10em;
-
 }
 
 .buttonUploadImage {
@@ -300,10 +326,8 @@ export default {}
   position: absolute;
   top: 20em;
   right: 6.5em;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
 }
-
-
 </style>
