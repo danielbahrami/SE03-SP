@@ -53,7 +53,9 @@
             type="password"
           /><br /><br />
 
+          <router-link to="/profile">
           <button class="buttonSave">Save</button>
+          </router-link>
         </form>
       </div>
 
