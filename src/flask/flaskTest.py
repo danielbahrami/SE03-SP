@@ -17,5 +17,6 @@ def flaskTests():
             {"SongName": "Forget me too", "Artist": "Machine Gun Kelly", "Album": "Ticket´s to my downfall"}
         ]
     )
+
 if __name__ == '__main__':
     app.run()

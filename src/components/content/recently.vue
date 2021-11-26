@@ -19,15 +19,10 @@ export default {
 
 <style scoped>
 .recently {
-  position: relative;
-  top: 4.25em;
-  right: 0;
-  left: 18%;
-  bottom: 2em;
-  width: 82%; /* 100% - sidebar@width */
   overflow: hidden;
+
   font-size: 1em;
-  text-align: left;
+  text-align: center;
   color: white;
 }
 .l1 {
@@ -56,7 +51,7 @@ export default {
 }
 .header1 {
   text-align: left;
-  margin-left: 100px;
+  margin-left: 1em;
   color: #d6cd81;
 }
 </style>
