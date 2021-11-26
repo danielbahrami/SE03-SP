@@ -19,7 +19,7 @@
             height="200"
             src="../../assets/Genres/Rock.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -30,7 +30,7 @@
             height="200"
             src="../../assets/Genres/Pop.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -41,7 +41,7 @@
             height="200"
             src="../../assets/Genres/Classic.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -52,7 +52,7 @@
             height="200"
             src="../../assets/Genres/Country.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -63,7 +63,7 @@
             height="200"
             src="../../assets/Genres/Blues.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -74,7 +74,7 @@
             height="200"
             src="../../assets/Genres/Soul.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -85,7 +85,7 @@
             height="200"
             src="../../assets/Genres/Dance.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -96,7 +96,7 @@
             height="200"
             src="../../assets/Genres/HipHop.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -107,7 +107,7 @@
             height="200"
             src="../../assets/Genres/Kpop.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -118,7 +118,7 @@
             height="200"
             src="../../assets/Genres/Rap.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -129,7 +129,7 @@
             height="200"
             src="../../assets/Genres/LiveMusic.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -140,7 +140,7 @@
             height="200"
             src="../../assets/Genres/RnB.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -151,7 +151,7 @@
             height="200"
             src="../../assets/Genres/Metal.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
 
@@ -173,7 +173,7 @@
             height="200"
             src="../../assets/Genres/Folk.png"
             width="200"
-        />
+          />
         </router-link>
       </li>
     </ul>
