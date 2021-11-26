@@ -1,18 +1,22 @@
 <template>
-  <div id="flaskPlaylist">
-    <ul>
-      <li class="row" v-for="post in flaskTests" :key="post">
-        <div class="column">
-          <span>{{post.SongName}}</span>
-        </div>
-        <div class="column">
-         <span>{{post.Artist}}</span>
-        </div>
-        <div class="column">
-          <span>{{post.Album}}</span>
-        </div>
-      </li>
-    </ul>
+  <div class="flaskPlaylist">
+
+    <table class = "table" v-for="post in flaskTests" :key="post">
+
+      <tr>
+        <td><span>{{post.SongName}}</span></td>
+        <td><span>{{post.Artist}}</span></td>
+        <td><span>{{post.Album}}</span></td>
+        <table class="icons">
+          <tr>
+            <a href="#"><img alt="" height="20" src="../assets/tableIcons/favorite.png" width="20" /></a>
+            <a href="#"><img alt="" height="20" src="../assets/tableIcons/add.png" width="20"/></a>
+            <a href="#"><img alt="" height="20" src="../assets/tableIcons/edit.png" /></a>
+          </tr>
+        </table>
+      </tr>
+    </table>
+
   </div>
 </template>
 <script>
@@ -60,23 +64,48 @@ export default {
 
 <style scoped>
 
-.row:after {
+.table{
+
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.icons{
+}
+
+.icons:first-child{
+  display: none;
+}
+.table:after {
   content: "";
   display: table;
   clear: both;
+}
+
+
+.table td{
+  text-align: left;
+  width: 30%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3em;
+  color: darkgrey;
+
+}
+.table tr{
+  border: 1px solid #323232;
 
 }
 
-.column {
-  float: left;
-  width: 20%;
-  padding: 5%;
-  margin-bottom: -7%;
+.table:first-child{
+  font-weight: bold;
 
-}
+  border-bottom: 2px solid #323232;
+  border-top: 2px solid #323232;
 
-li{
-  list-style-type: none;
 }
 
 
