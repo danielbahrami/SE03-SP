@@ -15,6 +15,7 @@ def flaskTests():
             {"SongName": "High School Sweethearts", "Artist": "Melanie Martin EZ", "Album": "K-12"},
             {"SongName": "I'm not mad", "Artist": "Halsey", "Album": "Manic"},
             {"SongName": "Forget me too", "Artist": "Machine Gun Kelly", "Album": "Ticket´s to my downfall"}
+
         ]
     )
 if __name__ == '__main__':

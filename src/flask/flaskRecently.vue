@@ -92,16 +92,14 @@ td {
   clear: both;
 }
 
-.table:first-child{
-  font-weight: bold;
-}
-
 
 .table td{
+text-align: left;
   width: 30%;
 padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 8em;
+  padding-left: 3em;
+  color: darkgrey;
 
 }
 .table tr{
@@ -110,6 +108,7 @@ padding-top: 0.5rem;
 }
 
 .table:first-child{
+  font-weight: bold;
 
   border-bottom: 2px solid #323232;
   border-top: 2px solid #323232;
