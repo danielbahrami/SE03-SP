@@ -2,8 +2,7 @@
 FROM python:latest
 
 # updating and installing latest versions
-RUN apt-get update -y && \
-    apt-get install -y python-pip python-dev
+
 
 WORKDIR /template
 
