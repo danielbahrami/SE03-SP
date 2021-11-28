@@ -17,11 +17,11 @@ spec:
   ports:
     - port: 80            # incoming port
       protocol: TCP       # protocol
-      targetPort: 5000    # target port (flask container)
+      targetPort: 5000    # target port (to the flask container)
       
     - port: 80            # incoming port
       protocol: TCP       # protocol
-      targetPort: 8080    # target port (vue project container)
+      targetPort: 8080    # target port (to the vue project container)
 
 
   selector:
