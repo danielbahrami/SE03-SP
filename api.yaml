@@ -10,7 +10,7 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: service2          # the service name must start with t[1-14] or use service0[0-9] as name to communicate with the world
+  name: service02          # the service name must start with t[1-14] or use service0[0-9] as name to communicate with the world
                           # (must be unique to the Service otherwise other Service will be overwritten)
 
 spec:
@@ -21,7 +21,7 @@ spec:
 
 
   selector:
-    app: t1-api          # target container
+    app: t01-api          # target container
 
   type: ClusterIP         # always use internal communication, 'ClusterIP', read service name comment
                           # (.metadata.name) about how to communicate with the world
@@ -34,7 +34,7 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: t1-api                      # the deployment name must start with t[1-14]
+  name: t01-api                      # the deployment name must start with t[1-14]
                                     # (must be unique to the Deployment otherwise other Deployment will be overwritten)
 
 spec:
@@ -42,16 +42,16 @@ spec:
 
   selector:                         # define which Pod(s) the Deployment should manage
     matchLabels:
-      app: t1-api
+      app: t01-api
 
   template:
     metadata:
       labels:                       # label(s) for replica selector to match
-        app: t1-api
+        app: t01-api
 
     spec:
       containers:
-        - name: t1-api              # container name
+        - name: t01-api              # container name
           imagePullPolicy: Always   # always pull image from registry and if not found look in the cached images
           ports:
             - containerPort: 5000   # container port(s)
