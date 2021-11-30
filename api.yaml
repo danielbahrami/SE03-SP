@@ -35,7 +35,7 @@ kind: Deployment
 
 metadata:
   name: t01-api                      # the deployment name must start with t[1-14]
-                                    # (must be unique to the Deployment otherwise other Deployment will be overwritten)
+                                     # (must be unique to the Deployment otherwise other Deployment will be overwritten)
 
 spec:
   replicas: 1                       # Deployment creates x replicated Pod(s)
@@ -58,9 +58,6 @@ spec:
 
       imagePullSecrets:
         - name: sdugitlab           # this is necessary to access the sdu gitlab container registry
----
-
----
 
 #  Deployment
 #  -------------
