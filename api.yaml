@@ -52,9 +52,13 @@ spec:
     spec:
       containers:
         - name: t01-api              # container name
+          image: gitlab.sdu.dk:5050/semester-project-e2021/team-01/template/api
           imagePullPolicy: Always   # always pull image from registry and if not found look in the cached images
           ports:
             - containerPort: 5000   # container port(s)
+          env: 
+            - name: NODE_ENV
+              value: "production"
 
       imagePullSecrets:
         - name: sdugitlab           # this is necessary to access the sdu gitlab container registry
