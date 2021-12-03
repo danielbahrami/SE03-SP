@@ -21,7 +21,7 @@ spec:
 
 
   selector:
-    app: t01-api          # target container
+      app: t01-api          # target container
 
   type: ClusterIP         # always use internal communication, 'ClusterIP', read service name comment
                           # (.metadata.name) about how to communicate with the world
@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
         - name: t01-api              # container name
-          image: gitlab.sdu.dk:5050/semester-project-e2021/team-01/template/api
+          image: gitlab.sdu.dk:5050/semester-project-e2021/team-01/template/api:2.0.0
           imagePullPolicy: Always   # always pull image from registry and if not found look in the cached images
           ports:
             - containerPort: 5000   # container port(s)
@@ -62,6 +62,32 @@ spec:
 
       imagePullSecrets:
         - name: sdugitlab           # this is necessary to access the sdu gitlab container registry
+---
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: t01-autoscaler
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: t01-api
+  minReplicas: 1
+  maxReplicas: 1
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 40
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: AverageValue
+        averageValue: 50
+
 
 #  Deployment
 #  -------------
