@@ -79,5 +79,4 @@ const router = new VueRouter({
   routes,
 });
 
-router.replace({ path: "/app", redirect: "login" }).then(() => "/login");
 export default router;
