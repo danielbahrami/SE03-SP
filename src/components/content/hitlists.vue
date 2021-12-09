@@ -11,7 +11,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/Bruno.png"
+            src="../../assets/album-arts/Bruno.png"
             width="175"
           />
           <p class="greatText">Bruno Mars</p>
@@ -19,7 +19,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/starboy.png"
+            src="../../assets/album-arts/starboy.png"
             width="175"
           />
           <p class="greatText">The Weeknd</p>
@@ -27,7 +27,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/suit&tie.png"
+            src="../../assets/album-arts/suit&tie.png"
             width="175"
           />
           <p class="greatText">Justin Timberlake</p>
@@ -35,7 +35,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/katy_perry.png"
+            src="../../assets/album-arts/katy_perry.png"
             width="175"
           />
           <p class="greatText">Katy Perry</p>
@@ -43,7 +43,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/Ariana.png"
+            src="../../assets/album-arts/Ariana.png"
             width="175"
           />
           <p class="greatText">Ariana Grande</p>
@@ -51,7 +51,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/Justin.png"
+            src="../../assets/album-arts/Justin.png"
             width="175"
           />
           <p class="greatText">Justin Bieber</p>
@@ -74,35 +74,35 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/Selena.png"
+            src="../../assets/album-arts/Selena.png"
             width="175"
           />
           <p class="newText"></p>
           Selena Gomez
         </li>
         <li>
-          <img height="180" src="../../assets/albumArts/kygo.png" width="175" />
+          <img height="180" src="../../assets/album-arts/kygo.png" width="175" />
           <p class="newText"></p>
           Kygo
         </li>
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/weeknd.png"
+            src="../../assets/album-arts/weeknd.png"
             width="175"
           />
           <p class="newText"></p>
           The Weeknd
         </li>
         <li>
-          <img height="180" src="../../assets/albumArts/DNCE.png" width="175" />
+          <img height="180" src="../../assets/album-arts/DNCE.png" width="175" />
           <p class="newText"></p>
           DNCE
         </li>
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/Justin.png"
+            src="../../assets/album-arts/Justin.png"
             width="175"
           />
           <p class="newText"></p>
@@ -111,7 +111,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/David.png"
+            src="../../assets/album-arts/David.png"
             width="175"
           />
           <p class="newText"></p>
@@ -133,7 +133,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/Ricky.png"
+            src="../../assets/album-arts/Ricky.png"
             width="175"
           />
           <p class="oldText">Ricky Martin</p>
@@ -141,7 +141,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/Michael.png"
+            src="../../assets/album-arts/Michael.png"
             width="175"
           />
           <p class="oldText">Michael Jackson</p>
@@ -149,19 +149,19 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/icecube.png"
+            src="../../assets/album-arts/icecube.png"
             width="175"
           />
           <p class="oldText">IceCube</p>
         </li>
         <li>
-          <img height="180" src="../../assets/albumArts/Phil.png" width="175" />
+          <img height="180" src="../../assets/album-arts/Phil.png" width="175" />
           <p class="oldText">Phil Collins</p>
         </li>
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/Genesis.png"
+            src="../../assets/album-arts/Genesis.png"
             width="175"
           />
           <p class="oldText">Genesis</p>
@@ -169,7 +169,7 @@
         <li>
           <img
             height="180"
-            src="../../assets/albumArts/AC-DC.png"
+            src="../../assets/album-arts/AC-DC.png"
             width="175"
           />
           <p class="oldText">AC/DC</p>

@@ -20,7 +20,7 @@
     >
       <section>
         <div class="queueImageHolder">
-          <img src="./assets/albumArts/Ariana.png" />
+          <img src="assets/album-arts/Ariana.png" />
         </div>
         <div class="queueTextHolder">
           <p class="songAndArtist">
@@ -32,7 +32,7 @@
 
       <section>
         <div class="queueImageHolder">
-          <img src="./assets/albumArts/Genesis.png" />
+          <img src="assets/album-arts/Genesis.png" />
         </div>
         <div class="queueTextHolder">
           <p class="songAndArtist">
@@ -100,8 +100,8 @@ export default {
 </script>
 
 <style>
-@import url("fonts/workSans/stylesheet.css");
-@import url("fonts/Roboto/stylesheet.css");
+@import url("fonts/WorkSans/stylesheet.css");
+@import url("fonts/roboto/stylesheet.css");
 
 * {
   font-family: "work_sansregular" !important;
