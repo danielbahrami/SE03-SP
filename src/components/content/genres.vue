@@ -6,7 +6,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Jazz.png"
+            src="../../assets/Genres/Jazz.png"
             width="200"
           />
         </router-link>
@@ -17,7 +17,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Rock.png"
+            src="../../assets/Genres/Rock.png"
             width="200"
           />
         </router-link>
@@ -28,7 +28,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Pop.png"
+            src="../../assets/Genres/Pop.png"
             width="200"
           />
         </router-link>
@@ -39,7 +39,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Classic.png"
+            src="../../assets/Genres/Classic.png"
             width="200"
           />
         </router-link>
@@ -50,7 +50,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Country.png"
+            src="../../assets/Genres/Country.png"
             width="200"
           />
         </router-link>
@@ -61,7 +61,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Blues.png"
+            src="../../assets/Genres/Blues.png"
             width="200"
           />
         </router-link>
@@ -72,7 +72,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Soul.png"
+            src="../../assets/Genres/Soul.png"
             width="200"
           />
         </router-link>
@@ -83,7 +83,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Dance.png"
+            src="../../assets/Genres/Dance.png"
             width="200"
           />
         </router-link>
@@ -94,7 +94,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/HipHop.png"
+            src="../../assets/Genres/HipHop.png"
             width="200"
           />
         </router-link>
@@ -105,7 +105,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Kpop.png"
+            src="../../assets/Genres/Kpop.png"
             width="200"
           />
         </router-link>
@@ -116,7 +116,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Rap.png"
+            src="../../assets/Genres/Rap.png"
             width="200"
           />
         </router-link>
@@ -127,7 +127,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/LiveMusic.png"
+            src="../../assets/Genres/LiveMusic.png"
             width="200"
           />
         </router-link>
@@ -138,7 +138,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/RnB.png"
+            src="../../assets/Genres/RnB.png"
             width="200"
           />
         </router-link>
@@ -149,7 +149,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Metal.png"
+            src="../../assets/Genres/Metal.png"
             width="200"
           />
         </router-link>
@@ -160,7 +160,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Reggae.png"
+            src="../../assets/Genres/Reggae.png"
             width="200"
           />
         </router-link>
@@ -171,7 +171,7 @@
           <img
             alt=""
             height="220"
-            src="../../assets/genres/Folk.png"
+            src="../../assets/Genres/Folk.png"
             width="200"
           />
         </router-link>

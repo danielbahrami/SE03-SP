@@ -17,18 +17,18 @@
               ><img
                 alt=""
                 height="20"
-                src="../assets/table-icons/favorite.png"
+                src="../assets/tableIcons/favorite.png"
                 width="20"
             /></a>
             <a href="#"
               ><img
                 alt=""
                 height="20"
-                src="../assets/table-icons/add.png"
+                src="../assets/tableIcons/add.png"
                 width="20"
             /></a>
             <a href="#"
-              ><img alt="" height="20" src="../assets/table-icons/edit.png"
+              ><img alt="" height="20" src="../assets/tableIcons/edit.png"
             /></a>
           </tr>
         </table>
