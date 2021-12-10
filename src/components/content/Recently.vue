@@ -47,17 +47,17 @@ export default {
   name: "flaskRecently",
   data() {
     return {
-      postId: [],
-      flaskName: "",
-      flaskTests: [],
+      postId: [], //få fat i artist, song name osv.
+      flaskName: "", //giver den bare et navn så man kan kalde på den
+      flaskTests: [], //tager array fra flasktest
     };
   },
-  async created() {
-    fetch(baseURL)
-      .then((r) => r.json())
-      .then((j) => (this.flaskTests = j));
+  async created() { //henter vores data
+    fetch(baseURL) //defineret på linje 41
+      .then((r) => r.json()) //r er bare en identifier for response
+      .then((j) => (this.flaskTests = j)); //j er bare en identifier for response
   },
-  async post() {
+  async post() {  //poster vores data til vores flask api
     try {
       const requestOptions = {
         method: "POST",
@@ -71,15 +71,8 @@ export default {
       console.error(e);
     }
   },
-  methods: {
-    async addFlaskTest() {
-      const res = await axios.post(baseURL, { name: this.flaskName });
-
-      this.flaskTests = [...this.flaskTests, res.data];
-      this.flaskName = "";
-    },
-  },
 };
+
 </script>
 
 <style scoped>

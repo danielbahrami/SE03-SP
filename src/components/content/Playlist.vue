@@ -40,7 +40,10 @@
   </div>
 </template>
 <script>
+<<<<<<< Updated upstream:src/components/content/Playlist.vue
 import axios from "./Playlist";
+=======
+>>>>>>> Stashed changes:src/flask/flaskPlaylist.vue
 const baseURL = "http://localhost:5000";
 
 export default {
@@ -70,14 +73,6 @@ export default {
     } catch (e) {
       console.error(e);
     }
-  },
-  methods: {
-    async addFlaskTest() {
-      const res = await axios.post(baseURL, { name: this.flaskName });
-
-      this.flaskTests = [...this.flaskTests, res.data];
-      this.flaskName = "";
-    },
   },
 };
 </script>
