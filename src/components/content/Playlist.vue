@@ -40,10 +40,7 @@
   </div>
 </template>
 <script>
-<<<<<<< Updated upstream:src/components/content/Playlist.vue
-import axios from "./Playlist";
-=======
->>>>>>> Stashed changes:src/flask/flaskPlaylist.vue
+
 const baseURL = "http://localhost:5000";
 
 export default {
