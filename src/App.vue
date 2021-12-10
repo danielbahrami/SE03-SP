@@ -20,7 +20,7 @@
     >
       <section>
         <div class="queueImageHolder">
-          <img src="./assets/albumArts/Ariana.png" />
+          <img src="./assets/album-arts/Ariana.png" />
         </div>
         <div class="queueTextHolder">
           <p class="songAndArtist">
@@ -32,7 +32,7 @@
 
       <section>
         <div class="queueImageHolder">
-          <img src="./assets/albumArts/Genesis.png" />
+          <img src="./assets/album-arts/Genesis.png" />
         </div>
         <div class="queueTextHolder">
           <p class="songAndArtist">
@@ -55,11 +55,11 @@
 // Import becomes tags available for use in template
 
 // Allow App.vue access to other components
-import mediaPlayer from "./components/universal/mediaPlayer";
-import topbar from "./components/universal/topbar";
-import sidebar from "./components/universal/sidebar";
-import albumArt from "./components/content/albumArt";
-import soundAndQueue from "./components/universal/soundAndQueue.vue";
+import mediaPlayer from "./components/universal/MediaPlayer";
+import topbar from "./components/universal/Topbar";
+import sidebar from "./components/universal/Sidebar";
+import albumArt from "./components/content/AlbumArt";
+import soundAndQueue from "./components/universal/SoundAndQueue.vue";
 
 //Import icon for slideout activation button
 import List from "vue-material-design-icons/FormatListBulleted.vue";
@@ -100,8 +100,8 @@ export default {
 </script>
 
 <style>
-@import url("fonts/workSans/stylesheet.css");
-@import url("fonts/Roboto/stylesheet.css");
+@import url("fonts/work-sans/stylesheet.css");
+@import url("fonts/roboto/stylesheet.css");
 
 * {
   font-family: "work_sansregular" !important;

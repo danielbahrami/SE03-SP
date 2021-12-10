@@ -5,7 +5,7 @@
       <h3 class="headerUsername">Username:</h3>
       <h3 class="headerEmail">Email:</h3>
       <h3 class="headerPassword">Password:</h3>
-      <router-link active-class="active" class="editButton" to="/profileedit"
+      <router-link active-class="active" class="editButton" to="/edit-profile"
         ><button class="buttonEditProfile">Edit Profile</button></router-link
       >
       <router-link to="/home">
@@ -16,7 +16,7 @@
       <router-link
         active-class="active"
         class="linkSubscription"
-        to="/viewSubscription"
+        to="/subscription"
         ><button class="viewSubscription">
           View subscriptions
         </button></router-link

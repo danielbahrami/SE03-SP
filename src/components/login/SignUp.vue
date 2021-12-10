@@ -86,6 +86,7 @@ export default {
   text-align: center;
   font-size: 16px;
   border-radius: 12px;
+  margin-top: 1em;
 }
 
 .h1 {

@@ -1,16 +1,16 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App";
-import home from "./components/content/home";
-import hitlists from "./components/content/hitlists";
-import playlists from "./components/content/playlists";
-import genres from "./components/content/genres";
-import recently from "./components/content/recently";
-import profile from "./components/content/profile";
-import profileedit from "./components/content/profileEdit";
-import viewSubscription from "./components/content/viewSubscription";
+import home from "./components/content/Home";
+import hitlists from "./components/content/HitLists";
+import playlist from "./components/content/Playlist";
+import genres from "./components/content/Genres";
+import recently from "./components/content/Recently";
+import profile from "./components/content/Profile";
+import editprofile from "./components/content/EditProfile";
+import subscription from "./components/content/Subscription";
 import flaskPlaylist from "@/flask/flaskPlaylist";
-import favorites from "./components/content/favorites";
+import favorites from "./components/content/Favorites";
 
 Vue.use(VueRouter);
 
@@ -32,9 +32,9 @@ const routes = [
     component: hitlists,
   },
   {
-    path: "/playlists",
-    name: "playlists",
-    component: playlists,
+    path: "/playlist",
+    name: "playlist",
+    component: playlist,
   },
   {
     path: "/genres",
@@ -57,9 +57,9 @@ const routes = [
     component: favorites,
   },
   {
-    path: "/profileedit",
-    name: "profileedit",
-    component: profileedit,
+    path: "/edit-profile",
+    name: "editprofile",
+    component: editprofile,
   },
   {
     path: "/flaskPlaylist",
@@ -67,9 +67,9 @@ const routes = [
     component: flaskPlaylist,
   },
   {
-    path: "/viewSubscription",
-    name: "viewSubscription",
-    component: viewSubscription,
+    path: "/subscription",
+    name: "subscription",
+    component: subscription,
   },
 ];
 

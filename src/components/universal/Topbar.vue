@@ -48,9 +48,9 @@
 <script>
 import PersonIcon from "vue-material-design-icons/Account.vue";
 import SearchIcon from "vue-material-design-icons/Magnify.vue";
-import Login from "../login/login.vue";
-import Register from "../login/signUp.vue";
-import forgotPassword from "../login/forgotPassword";
+import Login from "../login/Login.vue";
+import Register from "../login/SignUp.vue";
+import forgotPassword from "../login/ForgotPassword";
 
 export default {
   name: "Top",

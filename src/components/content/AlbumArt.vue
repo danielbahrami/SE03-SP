@@ -5,7 +5,7 @@
     </div>
     <!-- Now Playing -->
     <div class="div3-album">
-      <img alt="" src="../../assets/albumArts/AC-DC.png" />
+      <img alt="" src="../../assets/album-arts/AC-DC.png" />
     </div>
     <!-- Album Art -->
     <div class="div4-album"><p>Choff and Dust</p></div>

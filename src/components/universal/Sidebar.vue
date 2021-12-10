@@ -18,7 +18,7 @@
         class="side-btn"
         exact
         tag="button"
-        to="/playlists"
+        to="/playlist"
       >
         <div class="link-container">Playlists</div>
       </router-link>

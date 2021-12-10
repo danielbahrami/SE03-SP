@@ -1,6 +1,6 @@
 <template>
   <div class="playlists">
-    <h1 class="header1">SpecificPlaylist:</h1>
+    <h1 class="header1">Playlist</h1>
     <div class="l1">
       <flask-playlist></flask-playlist>
     </div>
