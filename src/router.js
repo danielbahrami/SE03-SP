@@ -3,13 +3,12 @@ import VueRouter from "vue-router";
 import App from "./App";
 import home from "./components/content/Home";
 import hitlists from "./components/content/HitLists";
-import playlist from "./components/content/Playlist";
 import genres from "./components/content/Genres";
 import recently from "./components/content/Recently";
 import profile from "./components/content/Profile";
 import editprofile from "./components/content/EditProfile";
 import subscription from "./components/content/Subscription";
-import flaskPlaylist from "@/flask/flaskPlaylist";
+import playlist from "./components/content/Playlist";
 import favorites from "./components/content/Favorites";
 
 Vue.use(VueRouter);
@@ -64,7 +63,7 @@ const routes = [
   {
     path: "/flaskPlaylist",
     name: "flaskPlaylist",
-    component: flaskPlaylist,
+    component: playlist,
   },
   {
     path: "/subscription",

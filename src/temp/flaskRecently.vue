@@ -37,7 +37,7 @@
   </div>
 </template>
 <script>
-import axios from "@/flask/flaskRecently";
+import axios from "@/temp/flaskRecently";
 const baseURL = "http://localhost:5000";
 
 export default {

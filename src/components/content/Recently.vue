@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import flaskRecently from "@/flask/flaskRecently";
+import flaskRecently from "@/temp/flaskRecently";
 
 export default {
   components: {
