@@ -2,45 +2,47 @@
   <div class="recently">
     <h1 class="header1">Recently Played</h1>
     <div class="l1">
-    <table class="table" v-for="post in flaskTests" :key="post">
-      <tr>
-        <td>
-          <span>{{ post.SongName }}</span>
-        </td>
-        <td>
-          <span>{{ post.Artist }}</span>
-        </td>
-        <td>
-          <span>{{ post.Album }}</span>
-        </td>
-        <table class="icons">
-          <tr>
-            <a href="#"
-              ><img
-                alt=""
-                height="20"
-                src="../../assets/table-icons/favorite.png"
-                width="20"
-            /></a>
-            <a href="#"
-              ><img
-                alt=""
-                height="20"
-                src="../../assets/table-icons/add.png"
-                width="20"
-            /></a>
-            <a href="#"
-              ><img alt="" height="20" src="../../assets/table-icons/edit.png"
-            /></a>
-          </tr>
-        </table>
-      </tr>
-    </table>
+      <table class="table" v-for="post in flaskTests" :key="post">
+        <tr>
+          <td>
+            <span>{{ post.SongName }}</span>
+          </td>
+          <td>
+            <span>{{ post.Artist }}</span>
+          </td>
+          <td>
+            <span>{{ post.Album }}</span>
+          </td>
+          <table class="icons">
+            <tr>
+              <a href="#"
+                ><img
+                  alt=""
+                  height="20"
+                  src="../../assets/table-icons/favorite.png"
+                  width="20"
+              /></a>
+              <a href="#"
+                ><img
+                  alt=""
+                  height="20"
+                  src="../../assets/table-icons/add.png"
+                  width="20"
+              /></a>
+              <a href="#"
+                ><img
+                  alt=""
+                  height="20"
+                  src="../../assets/table-icons/edit.png"
+              /></a>
+            </tr>
+          </table>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
 <script>
-
 const baseURL = "http://localhost:5000";
 
 export default {
@@ -52,12 +54,14 @@ export default {
       flaskTests: [], //tager array fra flasktest
     };
   },
-  async created() { //henter vores data
+  async created() {
+    //henter vores data
     fetch(baseURL) //defineret på linje 41
       .then((r) => r.json()) //r er bare en identifier for response
       .then((j) => (this.flaskTests = j)); //j er bare en identifier for response
   },
-  async post() {  //poster vores data til vores flask api
+  async post() {
+    //poster vores data til vores flask api
     try {
       const requestOptions = {
         method: "POST",
@@ -72,11 +76,9 @@ export default {
     }
   },
 };
-
 </script>
 
 <style scoped>
-
 .recently {
   overflow: hidden;
 

@@ -2,45 +2,47 @@
   <div class="playlist">
     <h1 class="header1">Playlist</h1>
     <div class="l1">
-    <table class="table" v-for="post in flaskTests" :key="post">
-      <tr>
-        <td>
-          <span>{{ post.SongName }}</span>
-        </td>
-        <td>
-          <span>{{ post.Artist }}</span>
-        </td>
-        <td>
-          <span>{{ post.Album }}</span>
-        </td>
-        <table class="icons">
-          <tr>
-            <a href="#"
-              ><img
-                alt=""
-                height="20"
-                src="../../assets/table-icons/favorite.png"
-                width="20"
-            /></a>
-            <a href="#"
-              ><img
-                alt=""
-                height="20"
-                src="../../assets/table-icons/add.png"
-                width="20"
-            /></a>
-            <a href="#"
-              ><img alt="" height="20" src="../../assets/table-icons/edit.png"
-            /></a>
-          </tr>
-        </table>
-      </tr>
-    </table>
+      <table class="table" v-for="post in flaskTests" :key="post">
+        <tr>
+          <td>
+            <span>{{ post.SongName }}</span>
+          </td>
+          <td>
+            <span>{{ post.Artist }}</span>
+          </td>
+          <td>
+            <span>{{ post.Album }}</span>
+          </td>
+          <table class="icons">
+            <tr>
+              <a href="#"
+                ><img
+                  alt=""
+                  height="20"
+                  src="../../assets/table-icons/favorite.png"
+                  width="20"
+              /></a>
+              <a href="#"
+                ><img
+                  alt=""
+                  height="20"
+                  src="../../assets/table-icons/add.png"
+                  width="20"
+              /></a>
+              <a href="#"
+                ><img
+                  alt=""
+                  height="20"
+                  src="../../assets/table-icons/edit.png"
+              /></a>
+            </tr>
+          </table>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
 <script>
-
 const baseURL = "http://localhost:5000";
 
 export default {
@@ -75,7 +77,6 @@ export default {
 </script>
 
 <style scoped>
-
 .playlist {
   overflow: hidden;
 

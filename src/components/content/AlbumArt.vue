@@ -14,11 +14,13 @@
     <!-- Artist -->
   </div>
 </template>
+
 <script>
 export default {
   name: "AlbumArt",
 };
 </script>
+
 <style scoped>
 .parent-album {
   /* GENERAL STYLING */

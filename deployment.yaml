@@ -10,21 +10,22 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: development          # the service name must start with t[1-14] or use service0[0-9] as name to communicate with the world
-                          # (must be unique to the Service otherwise other Service will be overwritten)
+  name:
+    development # the service name must start with t[1-14] or use service0[0-9] as name to communicate with the world
+    # (must be unique to the Service otherwise other Service will be overwritten)
 
 spec:
   ports:
-    - port: 80            # incoming port
-      protocol: TCP       # protocol
-      targetPort: 8080    # target port (to the vue project container)
-
+    - port: 80 # incoming port
+      protocol: TCP # protocol
+      targetPort: 8080 # target port (to the vue project container)
 
   selector:
-      app: t01-api          # target container
+    app: t01-api # target container
 
-  type: ClusterIP         # always use internal communication, 'ClusterIP', read service name comment
-                          # (.metadata.name) about how to communicate with the world
+  type:
+    ClusterIP # always use internal communication, 'ClusterIP', read service name comment
+    # (.metadata.name) about how to communicate with the world
 
 ---
 # Setup deployment
@@ -34,34 +35,35 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: t01-api                      # the deployment name must start with t[1-14]
-                                     # (must be unique to the Deployment otherwise other Deployment will be overwritten)
+  name:
+    t01-api # the deployment name must start with t[1-14]
+    # (must be unique to the Deployment otherwise other Deployment will be overwritten)
 
 spec:
-  replicas: 1                       # Deployment creates x replicated Pod(s)
+  replicas: 1 # Deployment creates x replicated Pod(s)
 
-  selector:                         # define which Pod(s) the Deployment should manage
+  selector: # define which Pod(s) the Deployment should manage
     matchLabels:
       app: t01-api
 
   template:
     metadata:
-      labels:                       # label(s) for replica selector to match
+      labels: # label(s) for replica selector to match
         app: t01-api
 
     spec:
       containers:
-        - name: t01-api              # container name
+        - name: t01-api # container name
           image: gitlab.sdu.dk:5050/semester-project-e2021/team-01/template/api:2.0.0
-          imagePullPolicy: Always   # always pull image from registry and if not found look in the cached images
+          imagePullPolicy: Always # always pull image from registry and if not found look in the cached images
           ports:
-            - containerPort: 5000   # container port(s)
-          env: 
+            - containerPort: 5000 # container port(s)
+          env:
             - name: NODE_ENV
               value: "production"
 
       imagePullSecrets:
-        - name: sdugitlab           # this is necessary to access the sdu gitlab container registry
+        - name: sdugitlab # this is necessary to access the sdu gitlab container registry
 ---
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
@@ -75,20 +77,18 @@ spec:
   minReplicas: 1
   maxReplicas: 1
   metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: 40
-  - type: Resource
-    resource:
-      name: memory
-      target:
-        type: AverageValue
-        averageValue: 50
-
-
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 40
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          type: AverageValue
+          averageValue: 50
 #  Deployment
 #  -------------
 #  $ kubectl get deployments

@@ -81,7 +81,11 @@
           Selena Gomez
         </li>
         <li>
-          <img height="180" src="../../assets/album-arts/kygo.png" width="175" />
+          <img
+            height="180"
+            src="../../assets/album-arts/kygo.png"
+            width="175"
+          />
           <p class="newText"></p>
           Kygo
         </li>
@@ -95,7 +99,11 @@
           The Weeknd
         </li>
         <li>
-          <img height="180" src="../../assets/album-arts/DNCE.png" width="175" />
+          <img
+            height="180"
+            src="../../assets/album-arts/DNCE.png"
+            width="175"
+          />
           <p class="newText"></p>
           DNCE
         </li>
@@ -155,7 +163,11 @@
           <p class="oldText">IceCube</p>
         </li>
         <li>
-          <img height="180" src="../../assets/album-arts/Phil.png" width="175" />
+          <img
+            height="180"
+            src="../../assets/album-arts/Phil.png"
+            width="175"
+          />
           <p class="oldText">Phil Collins</p>
         </li>
         <li>

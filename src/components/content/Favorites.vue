@@ -46,5 +46,4 @@ table {
   padding: 10px 5px;
   word-break: normal;
 }
-
 </style>
