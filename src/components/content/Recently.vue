@@ -40,7 +40,7 @@
   </div>
 </template>
 <script>
-import axios from "./Recently";
+
 const baseURL = "http://localhost:5000";
 
 export default {
