@@ -61,11 +61,6 @@ const routes = [
     component: editprofile,
   },
   {
-    path: "/flaskPlaylist",
-    name: "flaskPlaylist",
-    component: playlist,
-  },
-  {
     path: "/subscription",
     name: "subscription",
     component: subscription,
