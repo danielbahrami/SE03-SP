@@ -90,35 +90,43 @@ select::-ms-expand {
 
 /* Little deep on the css tree but seemingly necessary to overwrite imported css within script tag */
 /* Change the height of the volume bar */
-div.my-vue-slider.vue-slider.vue-slider-ltr[data-v-7fe1e2f6] {
+div.my-vue-slider.vue-slider.vue-slider-ltr {
   height: 2px !important;
 }
 /* Change color of 'unused' volume bar */
-div.my-vue-slider.vue-slider.vue-slider-ltr[data-v-7fe1e2f6] > :nth-child(1) {
+div.my-vue-slider.vue-slider.vue-slider-ltr > :nth-child(1) {
   background-color: darkgrey !important;
 }
 /* Change color of the progressed slider (how high the volume is) */
-div.my-vue-slider.vue-slider.vue-slider-ltr[data-v-7fe1e2f6]
+div.my-vue-slider.vue-slider.vue-slider-ltr
   > :nth-child(1)
   > :nth-child(1) {
   background-color: #d6cd81 !important;
 }
 /* Remove the display of the handler */
-div.my-vue-slider.vue-slider.vue-slider-ltr[data-v-7fe1e2f6]
+div.my-vue-slider.vue-slider.vue-slider-ltr
   > :nth-child(1)
   > :nth-child(2)
   > :nth-child(1) {
   display: none !important;
 }
+div.my-vue-slider.vue-slider.vue-slider-ltr:hover
+  > :nth-child(1)
+  > :nth-child(2)
+  > :nth-child(1) {
+  display: block !important;
+  background-color: #d6cd81;
+}
+
 /* Remove the border of the handler which is done by pseudo element after */
-div.my-vue-slider.vue-slider.vue-slider-ltr[data-v-7fe1e2f6]
+div.my-vue-slider.vue-slider.vue-slider-ltr
   > :nth-child(1)
   > :nth-child(2)
   > :nth-child(1):after {
   display: none !important;
 }
 /* Change the background of the popup tooltip when adjusting volume */
-div.my-vue-slider.vue-slider.vue-slider-ltr[data-v-7fe1e2f6]
+div.my-vue-slider.vue-slider.vue-slider-ltr
   > :nth-child(1)
   > :nth-child(2)
   > :nth-child(2)
