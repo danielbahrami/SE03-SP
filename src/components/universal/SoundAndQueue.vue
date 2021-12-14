@@ -98,9 +98,7 @@ div.my-vue-slider.vue-slider.vue-slider-ltr > :nth-child(1) {
   background-color: darkgrey !important;
 }
 /* Change color of the progressed slider (how high the volume is) */
-div.my-vue-slider.vue-slider.vue-slider-ltr
-  > :nth-child(1)
-  > :nth-child(1) {
+div.my-vue-slider.vue-slider.vue-slider-ltr > :nth-child(1) > :nth-child(1) {
   background-color: #d6cd81 !important;
 }
 /* Remove the display of the handler */
