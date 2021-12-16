@@ -58,7 +58,7 @@
 import mediaPlayer from "./components/universal/MediaPlayer";
 import topbar from "./components/universal/Topbar";
 import sidebar from "./components/universal/Sidebar";
-import albumArt from "./components/content/AlbumArt";
+import albumArt from "./components/universal/AlbumArt";
 import soundAndQueue from "./components/universal/SoundAndQueue.vue";
 
 //Import icon for slideout activation button

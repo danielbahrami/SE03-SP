@@ -6,8 +6,8 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY . /template/src/flask/docker
+COPY . /template/src/flask
 
 EXPOSE 5000
 
-CMD [ "python", "./template/src/flask/docker/flaskTest.py" ]
+CMD [ "python", "./template/src/flask/app.py" ]
