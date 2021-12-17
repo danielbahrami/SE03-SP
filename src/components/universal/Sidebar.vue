@@ -9,7 +9,10 @@
         tag="button"
         to="/home"
       >
-        <div class="link-container">Home</div>
+        <div class="link-container">
+          <Home class="white"/>
+          Home
+        </div>
       </router-link>
     </div>
     <div class="div2-sidebar">
@@ -20,7 +23,10 @@
         tag="button"
         to="/playlist"
       >
-        <div class="link-container">Playlists</div>
+        <div class="link-container">
+          <Headphones class="white"/>
+          Playlists
+        </div>
       </router-link>
     </div>
     <div class="div3-sidebar">
@@ -31,7 +37,10 @@
         tag="button"
         to="/hitlists"
       >
-        <div class="link-container">Hitlists</div>
+        <div class="link-container">
+          <Trophy class="white"/>
+          Hitlists
+        </div>
       </router-link>
     </div>
     <div class="div4-sidebar">
@@ -42,7 +51,10 @@
         tag="button"
         to="/genres"
       >
-        <div class="link-container">Genres</div>
+        <div class="link-container">
+          <MusicNote class="white"/>
+          Genres
+        </div>
       </router-link>
     </div>
     <div class="div5-sidebar">
@@ -53,17 +65,39 @@
         tag="button"
         to="/recently"
       >
-        <div class="link-container">Recently</div>
+        <div class="link-container">
+          <Clock  class="white"/>
+          Recently
+        </div>
       </router-link>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import MusicNote from "vue-material-design-icons/Music.vue";
+import Clock from "vue-material-design-icons/ClockOutline.vue";
+import Trophy from "vue-material-design-icons/TrophyOutline.vue";
+import Headphones from "vue-material-design-icons/Headphones.vue";
+import Home from "vue-material-design-icons/HomeOutline.vue";
+export default {
+  components: {
+    Clock,
+    MusicNote,
+    Trophy,
+    Headphones,
+    Home,
+  },
+};
 </script>
 
 <style scoped>
+.link-container{
+  display: flex;
+}
+.white{
+  color: white;
+}
 .sidebar {
   background: rgb(30, 30, 30); /* TODO: Change to correct color */
   position: fixed; /* Fixed to the screen; always on the side */
@@ -132,7 +166,7 @@ export default {};
   background-color: transparent;
   margin: unset;
   float: left;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 .side-btn:focus {
