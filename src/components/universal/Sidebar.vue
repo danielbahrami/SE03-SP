@@ -110,7 +110,7 @@ export default {};
 
 /* TYPOGRAPHY */
 .title {
-  text-align: center;
+  text-align: left;
   color: #d6cd81;
   font-size: 38px;
   font-family: Ag header;
@@ -131,6 +131,8 @@ export default {};
   color: grey;
   background-color: transparent;
   margin: unset;
+  float: left;
+  padding-left: 2em;
 }
 
 .side-btn:focus {
