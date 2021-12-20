@@ -72,7 +72,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .login {
   text-align: center;
   background-color: rgb(30, 30, 30);
