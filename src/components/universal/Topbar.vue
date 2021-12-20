@@ -10,12 +10,7 @@
     </div>
     <div class="div3">
       <div class="search">
-        <input
-          aria-label="search"
-          class="search__input"
-          placeholder="enter your search"
-          type="text"
-        />
+        <input aria-label="search" class="search__input" type="text" />
         <button aria-label="submit search" class="search__submit">
           <SearchIcon />
         </button>

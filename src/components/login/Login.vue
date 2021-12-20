@@ -92,7 +92,6 @@ export default {
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
-  font-family: "Arial";
   background-color: rgb(212, 205, 138);
   border-radius: 12px;
 }

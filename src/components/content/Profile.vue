@@ -33,7 +33,7 @@
         height="207"
         src="../../assets/alrakisImage.png"
       />
-      <p class="profileName">Image Profile</p>
+      <p class="profileName">Profile Picture</p>
       <button class="buttonUploadImage">Upload Image</button>
     </div>
   </div>

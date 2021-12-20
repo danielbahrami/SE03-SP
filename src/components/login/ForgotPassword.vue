@@ -71,7 +71,6 @@ export default {
   color: black;
   text-align: center;
   font-size: 16px;
-  font-family: "Arial";
   background-color: rgb(212, 205, 138);
   border-radius: 0.6rem;
   margin-top: 4.1rem;
