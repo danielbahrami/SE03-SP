@@ -1,68 +1,68 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App";
-import home from "./components/content/Home";
-import hitlists from "./components/content/HitLists";
-import genres from "./components/content/Genres";
-import recently from "./components/content/Recently";
-import profile from "./components/content/Profile";
-import editprofile from "./components/content/EditProfile";
-import subscription from "./components/content/Subscription";
-import playlist from "./components/content/Playlist";
-import favorites from "./components/content/Favorites";
+import Home from "./components/content/Home";
+import Playlist from "./components/content/Playlist";
+import HitLists from "./components/content/HitLists";
+import Genres from "./components/content/Genres";
+import Recently from "./components/content/Recently";
+import Favorites from "./components/content/Favorites";
+import Profile from "./components/content/Profile";
+import EditProfile from "./components/content/EditProfile";
+import Subscription from "./components/content/Subscription";
+import NotFound from "./components/errors/404";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/app",
-    name: "app",
     component: App,
+    redirect: "/",
+  },
+  {
+    path: "/",
+    component: Home,
   },
   {
     path: "/home",
-    name: "home",
-    component: home,
+    redirect: "/",
   },
   {
     path: "/hitlists",
-    name: "hitlists",
-    component: hitlists,
+    component: HitLists,
   },
   {
     path: "/playlist",
-    name: "playlist",
-    component: playlist,
+    component: Playlist,
   },
   {
     path: "/genres",
-    name: "genres",
-    component: genres,
+    component: Genres,
   },
   {
     path: "/recently",
-    name: "recently",
-    component: recently,
-  },
-  {
-    path: "/profile",
-    name: "profile",
-    component: profile,
+    component: Recently,
   },
   {
     path: "/favorites",
-    name: "favorites",
-    component: favorites,
+    component: Favorites,
   },
   {
-    path: "/edit-profile",
-    name: "editprofile",
-    component: editprofile,
+    path: "/profile",
+    component: Profile,
   },
   {
-    path: "/subscription",
-    name: "subscription",
-    component: subscription,
+    path: "/profile/edit",
+    component: EditProfile,
+  },
+  {
+    path: "/profile/subscription",
+    component: Subscription,
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    component: NotFound,
   },
 ];
 

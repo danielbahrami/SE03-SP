@@ -7,7 +7,7 @@
         class="side-btn"
         exact
         tag="button"
-        to="/home"
+        to="/"
       >
         <div class="link-container">
           <Home class="white" />
