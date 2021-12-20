@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY . /template/src/flask
+COPY . /template/src/api
 
 EXPOSE 5000
 
