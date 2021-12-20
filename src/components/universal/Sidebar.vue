@@ -10,7 +10,7 @@
         to="/home"
       >
         <div class="link-container">
-          <Home class="white"/>
+          <Home class="white" />
           Home
         </div>
       </router-link>
@@ -24,7 +24,7 @@
         to="/playlist"
       >
         <div class="link-container">
-          <Headphones class="white"/>
+          <Headphones class="white" />
           Playlists
         </div>
       </router-link>
@@ -38,7 +38,7 @@
         to="/hitlists"
       >
         <div class="link-container">
-          <Trophy class="white"/>
+          <Trophy class="white" />
           Hitlists
         </div>
       </router-link>
@@ -52,7 +52,7 @@
         to="/genres"
       >
         <div class="link-container">
-          <MusicNote class="white"/>
+          <MusicNote class="white" />
           Genres
         </div>
       </router-link>
@@ -66,7 +66,7 @@
         to="/recently"
       >
         <div class="link-container">
-          <Clock  class="white"/>
+          <Clock class="white" />
           Recently
         </div>
       </router-link>
@@ -92,10 +92,10 @@ export default {
 </script>
 
 <style scoped>
-.link-container{
+.link-container {
   display: flex;
 }
-.white{
+.white {
   color: white;
 }
 .sidebar {
